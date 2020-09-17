@@ -28,7 +28,7 @@ public class TstCalculoPrice {
 	@Parameters
 	public static Iterable getParameters() {
 		return Arrays.asList(new Object[][]{
-			{"Banco 1", 10000, 10, 2.0f, 1113,26f, 1132.65f},
+			{"Banco 1", 10000, 10, 2.0f, 1113.26f, 1132.65f},
 			{"Banco 2", 10000, 12, 1.8f, 934.01f, 1208.23f},
 			{"Banco 3", 10000, 15, 1.7f, 760.89f, 1413.43f},
 			{"Banco 2", 10000, 20, 1.5f, 582.45f, 1649.14f}

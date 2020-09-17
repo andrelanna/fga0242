@@ -1,8 +1,8 @@
 package tst;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
 import org.junit.experimental.categories.Category;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 import Financeiro.Modalidade;
 
@@ -12,21 +12,21 @@ public class CriacaoSimulacaoTeste {
 
 	@Test
 	@Category(TstFuncional.class)
-	public void bank_one() {
+	public void testBankOne() {
 		modalidade = Modalidade.criarSimulacao("Price", "bank one", 0.05f);
 		assertEquals(true, modalidade instanceof Modalidade);
 	}
 	
 	@Test
 	@Category(TstFuncional.class)
-	public void bank_two() {
+	public void testBankTwo() {
 		modalidade = Modalidade.criarSimulacao("Price", "bank two", 0.001f);
 		assertEquals(true, modalidade instanceof Modalidade);
 	}
 	
 	@Test
 	@Category(TstFuncional.class)
-	public void bank_three() {
+	public void testBankThree() {
 		modalidade = Modalidade.criarSimulacao("Price", "bank three", 0.15f);
 		assertEquals(true, modalidade instanceof Modalidade);
 	}

@@ -22,7 +22,5 @@ public class TstInformacoesFinanciamento {
 	@Category(TstExcecao.class)
 	public void testFinanciamentoFalha() throws PrestacaoMaiorQueMargemException {
 		Financiamento financiamento = Financiamento.criarFinanciamento(10000f, 12, 600f);
-		
-		Assert.assertTrue(financiamento instanceof Financiamento);
 	}
 }

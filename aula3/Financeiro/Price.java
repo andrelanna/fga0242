@@ -7,7 +7,7 @@ public class Price extends Modalidade {
 
 	public float calcularPrestacoes() {
 		parcelas = new Parcela[fin.getN()];
-		
+		System.out.println(fin.getN());
 		float pmt = (float) (Math.pow((1+i), fin.getN()) * i);
 		pmt = (float) (pmt/(Math.pow((1+i), fin.getN()) - 1));
 		pmt = fin.getPv() * pmt;

@@ -7,48 +7,48 @@ import Financeiro.Modalidade;
  
 public class CriacaoSimulacaoTeste {
 
-	private Modalidade modalidade;
+	private Modalidade simulacao;
 	
 	@Test
 	@Category(TstFuncional.class)
 	public void simulacaoBancoUmPrice() {
-		modalidade = Modalidade.criarSimulacao("Price", "Banco 1", 0.051f);
-		assertEquals(true, modalidade instanceof Modalidade);
+		simulacao = Modalidade.criarSimulacao("Price", "Banco 1", 0.051f);
+		assertEquals(true, simulacao instanceof Modalidade);
 	}
 
 	@Test
 	@Category(TstFuncional.class)
 	public void simulacaoBancoDoisPrice() {
-		modalidade = Modalidade.criarSimulacao("Price", "Banco 2", 0.052f);
-		assertEquals(true, modalidade instanceof Modalidade);
+		simulacao = Modalidade.criarSimulacao("Price", "Banco 2", 0.052f);
+		assertEquals(true, simulacao instanceof Modalidade);
 	}
 
 	@Test
 	@Category(TstFuncional.class)
 	public void simulacaoBancoTresPrice() {
-		modalidade = Modalidade.criarSimulacao("Price", "Banco 3", 0.053f);
-		assertEquals(true, modalidade instanceof Modalidade);
+		simulacao = Modalidade.criarSimulacao("Price", "Banco 3", 0.053f);
+		assertEquals(true, simulacao instanceof Modalidade);
 	}
 
 	@Test
 	@Category(TstFuncional.class)
 	public void simulacaoBancoUmOutraModalidade() {
-		modalidade = Modalidade.criarSimulacao("SAC", "Banco 1", 0.051f);
-		assertEquals(null, modalidade);
+		simulacao = Modalidade.criarSimulacao("SAC", "Banco 1", 0.051f);
+		assertEquals(null, simulacao);
 	}
 
 	@Test
 	@Category(TstFuncional.class)
 	public void simulacaoBancoDoisOutraModalidade() {
-		modalidade = Modalidade.criarSimulacao("SAC", "Banco 2", 0.052f);
-		assertEquals(null, modalidade);
+		simulacao = Modalidade.criarSimulacao("SAC", "Banco 2", 0.052f);
+		assertEquals(null, simulacao);
 	}
 
 	@Test
 	@Category(TstFuncional.class)
 	public void simulacaoBancoTresOutraModalidade() {
-		modalidade = Modalidade.criarSimulacao("SAC", "Banco 3", 0.053f);
-		assertEquals(null, modalidade);
+		simulacao = Modalidade.criarSimulacao("SAC", "Banco 3", 0.053f);
+		assertEquals(null, simulacao);
 	}
 
 }

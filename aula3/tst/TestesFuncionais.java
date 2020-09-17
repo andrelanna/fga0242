@@ -1,14 +1,14 @@
 package tst;
 
-import static org.junit.Assert.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite.SuiteClasses;
 
-import org.junit.Test;
+import org.junit.experimental.categories.Categories;
+import org.junit.experimental.categories.Categories.IncludeCategory;
 
+@RunWith(Categories.class)
+@SuiteClasses({ CriacaoSimulacaoTeste.class, TstInformacoesFinanciamento.class })
+@IncludeCategory(TstFuncional.class)
 public class TestesFuncionais {
-
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
 
 }

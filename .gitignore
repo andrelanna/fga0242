@@ -1,1 +1,14 @@
 /bin/
+/Parcela.class
+/Price.class
+/Financiamento.class
+/Modalidade.class
+/TstCalculoPrice.class
+/TstExcecao.class
+/TstFuncional.class
+/CriacaoSimulacaoTeste.class
+/TestesExcecao.class
+/AllTestes.class
+/TstInformacoesFinanciamento.class
+/TestesFuncionais.class
+/PrestacaoMaiorQueMargemException.class

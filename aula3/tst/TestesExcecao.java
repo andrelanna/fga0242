@@ -7,5 +7,5 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Categories.class)
 @IncludeCategory(TstExcecao.class)
-@SuiteClasses(TstInformacoesFinanciamento.class)
+@SuiteClasses({CriacaoSimulacaoTeste.class, TstInformacoesFinanciamento.class, TstCalculoPrice.class})
 public class TestesExcecao {}

@@ -5,7 +5,6 @@ import financeiroExceptions.PrestacaoMaiorQueMargemException;
 public class Financiamento {
 	private float pv;
 	private int n;
-	private float margem;
 	private Modalidade[] simulacoes = new Modalidade[0];
 
 	static Financiamento[] financiamentos = new Financiamento[0];
@@ -13,7 +12,6 @@ public class Financiamento {
 	private Financiamento (float pv, int n, float margem) {
 		this.pv = pv;
 		this.n = n;
-		this.margem = margem;
 	}
 
 	public static Financiamento criarFinanciamento (float pv, int n, float margem) throws PrestacaoMaiorQueMargemException {

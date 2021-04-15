@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  gradle:
+    build: .
+    container_name: testes_grupo2
+    volumes:
+      - .:/myapp

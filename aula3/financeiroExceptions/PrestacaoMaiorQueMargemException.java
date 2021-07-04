@@ -1,5 +1,6 @@
 package financeiroExceptions;
 
+@SuppressWarnings("serial")
 public class PrestacaoMaiorQueMargemException extends Exception {
 
 	public PrestacaoMaiorQueMargemException(float f, float margem) {

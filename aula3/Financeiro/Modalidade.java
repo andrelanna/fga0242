@@ -1,5 +1,8 @@
 package Financeiro;
 
+import financeiroExceptions.PrestacaoMaiorQueMargemException;
+import financeiroExceptions.TaxaDeJurosInvalidaException;
+
 public abstract class Modalidade {
 
 	String banco;
@@ -12,8 +15,12 @@ public abstract class Modalidade {
 		this.i = i;
 	}
 	
-	public static Modalidade criarSimulacao(String modalidade, String banco, float i) {
+	public static Modalidade criarSimulacao(String modalidade, String banco, float i) throws TaxaDeJurosInvalidaException {
 		Modalidade resposta = null;
+		if (i == 0.0f) {
+			throw new TaxaDeJurosInvalidaException();
+		}
+		
 		if (modalidade.equalsIgnoreCase("Price"))
 			resposta = new Price(banco, i);
 		else 

@@ -1,5 +1,6 @@
 package Financeiro;
 
+import financeiroExceptions.NumeroDeParcelasInvalidasException;
 import financeiroExceptions.PrestacaoMaiorQueMargemException;
 
 public class Financiamento {
@@ -16,13 +17,16 @@ public class Financiamento {
 		this.margem = margem;
 	}
 
-	public static Financiamento criarFinanciamento (float pv, int n, float margem) throws PrestacaoMaiorQueMargemException {
+	public static Financiamento criarFinanciamento (float pv, int n, float margem) throws PrestacaoMaiorQueMargemException, NumeroDeParcelasInvalidasException {
 		Financiamento resposta = null;
 		
-		//se o valor da prestacao for maior do que a margem, nao deve ser gerado financiamento
+		// se o valor da prestacao for maior do que a margem, nao deve ser gerado financiamento
 		if ((pv/n) > margem) { 
 			throw new PrestacaoMaiorQueMargemException(pv/n, margem);
-		} else { 
+		// se o número de parcelas for inferior a 5, não deve ser gerado financiamento
+		} else if (n < 5) {
+			throw new NumeroDeParcelasInvalidasException(n);
+		} else {
 			resposta = new Financiamento(pv, n, margem);
 		}
 		

@@ -1,6 +1,6 @@
-UnB - Universidade de Brasilia 
-FGA - Faculdade do Gama 
-TPPE - Técnicas de Programação em Plataformas Emergentes 
+UnB - Universidade de Brasilia  
+FGA - Faculdade do Gama  
+TPPE - Técnicas de Programação em Plataformas Emergentes  
 
 
 # Exercícios de fixação - Revisão de Testes Unitários

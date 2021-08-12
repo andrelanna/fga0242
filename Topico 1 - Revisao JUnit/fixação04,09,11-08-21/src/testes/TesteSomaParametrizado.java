@@ -51,24 +51,24 @@ public class TesteSomaParametrizado {
     @Test(expected=ArithmeticException.class)
     public void testeLimiteInferior() throws LimiteInferiorExtrapoladoException {
         Calculadora calculadora = new Calculadora(-32768, -1);
-        assertEquals(0, calculadora.soma());
+        assertEquals(-32769, calculadora.soma());
     }
 
     @Test(expected=ArithmeticException.class)
     public void testeLimiteInferior1() throws LimiteInferiorExtrapoladoException {
         Calculadora calculadora = new Calculadora(-32768, -2);
-        assertEquals(0, calculadora.soma());
+        assertEquals(-32770, calculadora.soma());
     }
 
     @Test(expected=ArithmeticException.class)
     public void testeLimiteSuperior() throws LimiteSuperiorExtrapoladoException {
         Calculadora calculadora = new Calculadora(32767, 1);
-        assertEquals(0, calculadora.soma());
+        assertEquals(32768, calculadora.soma());
     }
     @Test(expected=ArithmeticException.class)
     public void testeLimiteSuperior1() throws LimiteSuperiorExtrapoladoException {
         Calculadora calculadora = new Calculadora(32767, 2);
-        assertEquals(0, calculadora.soma());
+        assertEquals(32769, calculadora.soma());
     }
 
 

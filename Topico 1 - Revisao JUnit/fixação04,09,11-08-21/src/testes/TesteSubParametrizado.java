@@ -65,12 +65,12 @@ public class TesteSubParametrizado {
     @Test(expected=ArithmeticException.class)
     public void testeLimiteInferior() throws LimiteInferiorExtrapoladoException {
         Calculadora calculadora = new Calculadora(-32768, 1);
-        assertEquals(0, calculadora.sub());
+        assertEquals(-32769, calculadora.sub());
     }
 
     @Test(expected=ArithmeticException.class)
     public void testeLimiteSuperior() throws LimiteSuperiorExtrapoladoException {
         Calculadora calculadora = new Calculadora(1, -32768);
-        assertEquals(0, calculadora.sub());
+        assertEquals(32769, calculadora.sub());
     }
 }

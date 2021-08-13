@@ -13,10 +13,10 @@ package com.example.project;
 
 public class Calculadora {
 
-    public static boolean willAdditionOverflow(short left, short right) throws Exception {
+    public static boolean willAdditionOverflow(Short left, Short right) throws Exception {
         
-        if ((right < (short) 0) && right != Short.MIN_VALUE) {
-            return willSubtractionOverflow(left, (short) (- (short) right));
+        if ((right <  0) && right != Short.MIN_VALUE) {
+            return willSubtractionOverflow(left,  (short) -right);
         } else {
             boolean res =  (short)((short)~(short)((short)left ^ (short)right) & (short)((short)left ^ (short)((short)left + (short)right))) < (short) 0;
             if(res) {
@@ -26,10 +26,12 @@ public class Calculadora {
         }
     }
     
-    public static boolean willSubtractionOverflow(short left, short right) throws Exception{
-        if (right < (short) 0) {
-            // TODO convert right to a positive number ??
-            return willAdditionOverflow(left, (short) (- (short) right));
+    public static boolean willSubtractionOverflow(Short left, Short right) throws Exception{
+        if(right == Short.MIN_VALUE && left > 0){
+            throw new LimiteSuperiorExtrapoladoException();
+        }
+        if ((right <  0))  {
+            return willAdditionOverflow(left,  (short) -right);
         } else {
             boolean res = (short)((short)((short)left ^ (short)right) & (short)((short)left ^ (short)((short)left - (short)right))) < (short) 0;
             if(res) {
@@ -39,16 +41,15 @@ public class Calculadora {
         }
     }
 
-    public static short adicao(short a, short b) throws Exception {
+    public static Short adicao(Short a, Short b) throws Exception {
         willAdditionOverflow(a, b);
         return (short) (a+b);
 
     }
     
-    public static short subtracao(short a, short b) throws Exception {
+    public static Short subtracao(Short a, Short b) throws Exception {
         willSubtractionOverflow(a, b);
-        System.out.println("subtracao: " + (a-b));
-        return (short) (a-b);
+        return  (short) (a-b);
     }
 
 }

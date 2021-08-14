@@ -40,17 +40,4 @@ public class Calculadora {
         return (short) (this.primeiroOperando - this.segundoOperando);
     }
     
-    public static void main(String args[]){
-        try {
-            System.out.println(new Calculadora((short)32767, (short)1).soma());
-        } catch (LimiteSuperiorExceditoException ex) {
-            Logger.getLogger(Calculadora.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (LimiteInferiorExceditoException ex) {
-            Logger.getLogger(Calculadora.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    
-    }
-
-   
-    
 }

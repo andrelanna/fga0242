@@ -9,9 +9,9 @@ package app;
  *
  * @author marcos
  */
-public class LimiteSuperiorExceditoException extends ArithmeticException {
+public class LimiteSuperiorExtrapoladoException extends ArithmeticException {
 
-    public LimiteSuperiorExceditoException() {
+    public LimiteSuperiorExtrapoladoException() {
         super("Limite superior excedido");
     }
     

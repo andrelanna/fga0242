@@ -58,7 +58,7 @@ public class TesteSubtracaoParametrizado {
     }
     
     @Test
-    public void testWithParameters() throws LimiteSuperiorExceditoException, LimiteInferiorExceditoException{
+    public void testWithParameters() throws LimiteSuperiorExtrapoladoException, LimiteInferiorExtrapoladoException{
         short resultado = new Calculadora((short)primeiroOperando, (short)segundoOperando).subtracao();
         assertEquals(resultadoEsperado, resultado);
     }

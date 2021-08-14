@@ -21,21 +21,21 @@ public class Calculadora {
         this.segundoOperando = segundoOperando;
     }
     
-    private void verificarLimites(int valor) throws LimiteSuperiorExceditoException, LimiteInferiorExceditoException{
+    private void verificarLimites(int valor) throws LimiteSuperiorExtrapoladoException, LimiteInferiorExtrapoladoException{
         if(valor > 32767){
-            throw new LimiteSuperiorExceditoException();
+            throw new LimiteSuperiorExtrapoladoException();
         }
         if(valor < -32768){
-            throw new LimiteInferiorExceditoException();
+            throw new LimiteInferiorExtrapoladoException();
         }
     }
     
-    public short soma() throws LimiteSuperiorExceditoException, LimiteInferiorExceditoException{
+    public short soma() throws LimiteSuperiorExtrapoladoException, LimiteInferiorExtrapoladoException{
         this.verificarLimites((int)this.primeiroOperando + this.segundoOperando);
         return (short) (this.primeiroOperando + this.segundoOperando);
     }
     
-    public short subtracao() throws LimiteSuperiorExceditoException, LimiteInferiorExceditoException{
+    public short subtracao() throws LimiteSuperiorExtrapoladoException, LimiteInferiorExtrapoladoException{
         this.verificarLimites((int)this.primeiroOperando - this.segundoOperando);
         return (short) (this.primeiroOperando - this.segundoOperando);
     }

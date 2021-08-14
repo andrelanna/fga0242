@@ -45,7 +45,7 @@ public class TesteSomaParametrizado {
     }
     
     @Test
-    public void testWithParameters() throws LimiteSuperiorExceditoException, LimiteInferiorExceditoException{
+    public void testWithParameters() throws LimiteSuperiorExtrapoladoException, LimiteInferiorExtrapoladoException{
         short resultado = new Calculadora((short)primeiroOperando, (short)segundoOperando).soma();
         assertEquals(resultadoEsperado, resultado);
     }

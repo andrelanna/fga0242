@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: app.TesteSomaParametrizado
+Test set: app.TesteSubtracaoExceptions
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec

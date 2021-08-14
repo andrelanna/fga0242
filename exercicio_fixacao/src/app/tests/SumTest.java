@@ -39,16 +39,8 @@ public class SumTest {
 
     @Test()
     public void test() throws ArithmeticException {
-        try {
-            int result = new Calculator(this.v1, this.v2).sum();
+        int result = new Calculator(this.v1, this.v2).sum();
 
-            assertEquals(this.result, result);
-        } catch (LimiteInferiorExtrapoladoException exception) {
-            if (result < Calculator.SHORT_MIN) assert(true);
-            else fail();
-        } catch (LimiteSuperiorExtrapoladoException exception) {
-            if (result > Calculator.SHORT_MAX) assert(true);
-            else fail();
-        }
+        assertEquals(this.result, result);
     }
 }

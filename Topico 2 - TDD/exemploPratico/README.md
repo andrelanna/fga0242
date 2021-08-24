@@ -21,5 +21,5 @@ O material (código e testes) produzido em aula está disponível nessa pasta.
 Last edition: August, 23th. 2021
 
 [exemplopratico]: https://www.youtube.com/watch?v=v4ty7XCFRQ8
-[calculadoraIRPF]: https://receita.economia.gov.br/interface/lista-de-servicos/declaracoes-e-demonstrativos/dirpf/simular-aliquota
+[calculadoraIRPF]: http://www26.receita.fazenda.gov.br/irpfsimulaliq/private/pages/simuladoraliquota.jsf
 [videoaula]: https://www.youtube.com/watch?v=v4ty7XCFRQ8

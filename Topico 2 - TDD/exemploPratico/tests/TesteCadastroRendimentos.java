@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized.Parameters;
@@ -20,6 +21,7 @@ public class TesteCadastroRendimentos {
 	 */
 	private float salario[],
 	              resultadoEsperado;
+	private IRPF irpf;
 	
 	/**
 	 * Metodo construtor alternativo do objeto de teste 
@@ -54,9 +56,14 @@ public class TesteCadastroRendimentos {
 		return Arrays.asList(parametros);
 	}
 	
+	@Before
+	public void setup() {
+		irpf = new IRPF();
+	}
+	
 	@Test
 	public void testCadastroSalario() {
-		IRPF irpf = new IRPF();
+		
 		for (float s : this.salario) {
 			irpf.cadastrarSalario(s);
 		}

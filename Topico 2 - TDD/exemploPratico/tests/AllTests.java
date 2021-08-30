@@ -7,7 +7,9 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({ TestDeducaoPrevidenciaOficial.class, 
 	            TesteCadastroRendimentos.class, 
-	            TestCadastroDependentes.class})
+	            TestCadastroDependentes.class, 
+	            TestePensaoAlimenticia.class, 
+	            TestOutrasDeducoes.class})
 public class AllTests {
 
 }

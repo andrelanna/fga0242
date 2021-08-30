@@ -36,10 +36,9 @@ public class TestDeducaoPrevidenciaOficial {
 	}
 	
 	@Test
-	public void testCadastroPO1() {
+	public void testCadastroPO() {
 		IRPF irpf = new IRPF(); 
 		irpf.cadastrarPrevidenciaOficial(contribuicao);
 		assertEquals(respostaEsperada, irpf.getPrevidenciaOficial(), 0f);
 	}
-
 }

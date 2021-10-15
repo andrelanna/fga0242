@@ -15,6 +15,7 @@ public class FileReaderTest {
 
     private static final String NOT_EXISTING_PATH = "C:/Users/NotExistingPath/file.txt";
     private static final String DELIMITER = ";";
+    private static final String INVALID_DELIMITER = "--";
     private static final String READ_ONLY_PREFIX = "ReadOnly";
     private static final String READ_ONLY_SUFFIX = "txt";
 
@@ -36,5 +37,19 @@ public class FileReaderTest {
 
         fileReader.loadFile(readOnlyFile.getPath(), DELIMITER);
     }
+
+    @Test(expected = DelimitadorInvalidoException.class)
+    public void invalidDelimiterShouldThrowException() throws IOException, ArquivoNaoEncontradoException,
+            DelimitadorInvalidoException, EscritaNaoPermitidaException {
+
+        File readOnlyFile = File.createTempFile(READ_ONLY_PREFIX, READ_ONLY_SUFFIX,
+                new File(System.getProperty("user.home")));
+
+        readOnlyFile.deleteOnExit();
+
+        fileReader.loadFile(readOnlyFile.getPath(), INVALID_DELIMITER);
+    }
+    
+
 
 }

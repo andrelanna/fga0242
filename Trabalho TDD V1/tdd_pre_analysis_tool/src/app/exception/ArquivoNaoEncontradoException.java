@@ -1,4 +1,7 @@
 package app.exception;
 
-public class ArquivoNaoEncontradoException {
+public class ArquivoNaoEncontradoException extends Exception {
+    public ArquivoNaoEncontradoException(String message) {
+        super(message);
+    }
 }

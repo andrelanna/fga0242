@@ -56,6 +56,7 @@ public class FileReaderTest {
 		fileReader.loadFile(EXISTING_PATH, INVALID_DELIMITER, "colunas", OUTPUT_PATH);
 	}
 	
+	@Test
 	public void processFile() throws ArquivoNaoEncontradoException, EscritaNaoPermitidaException,
 	                                 DelimitadorInvalidoException, IOException {
 		

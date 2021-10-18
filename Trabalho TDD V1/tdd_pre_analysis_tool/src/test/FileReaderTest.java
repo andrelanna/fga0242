@@ -5,6 +5,7 @@ import main.java.app.exception.ArquivoNaoEncontradoException;
 import main.java.app.exception.DelimitadorInvalidoException;
 import main.java.app.exception.DisposicaoInvalidaException;
 import main.java.app.exception.EscritaNaoPermitidaException;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.File;
@@ -18,12 +19,14 @@ public class FileReaderTest {
 	private static final String DELIMITER = ";";
 	private static final String INVALID_DELIMITER = "--";
 	private static final String EXISTING_PATH = System.getProperty("user.dir") +
-	                                            "/tdd_pre_analysis_tool/src/main/resources/analysisMemory.out";
+	                                            "/tdd_pre_analysis_tool/src/main/resources/analysisTime.out";
+	private static String OUTPUT_PATH = System.getProperty("user.dir") +
+	                                    "/tdd_pre_analysis_tool/src/main/resources/analysisTimeTab.out";
 	
 	@Test(expected = ArquivoNaoEncontradoException.class)
 	public void fileNotFoundShouldThrowException() throws IOException, ArquivoNaoEncontradoException,
 	                                                      DelimitadorInvalidoException, EscritaNaoPermitidaException {
-		fileReader.loadFile(NOT_EXISTING_PATH, DELIMITER, "colunas");
+		fileReader.loadFile(NOT_EXISTING_PATH, DELIMITER, "colunas", OUTPUT_PATH);
 	}
 	
 	@Test(expected = DisposicaoInvalidaException.class)
@@ -31,7 +34,7 @@ public class FileReaderTest {
 	                                                 DelimitadorInvalidoException, EscritaNaoPermitidaException {
 		
 		fileReader.loadFile(EXISTING_PATH,
-		                    DELIMITER, "qualquercoisa");
+		                    DELIMITER, "qualquercoisa", OUTPUT_PATH);
 	}
 	
 	@Test(expected = EscritaNaoPermitidaException.class)
@@ -42,7 +45,7 @@ public class FileReaderTest {
 		File readOnlyFile = new File(EXISTING_PATH);
 		
 		readOnlyFile.setReadOnly();
-		fileReader.loadFile(EXISTING_PATH, readOnlyFile.getPath(), DELIMITER);
+		fileReader.loadFile(EXISTING_PATH, readOnlyFile.getPath(), DELIMITER, OUTPUT_PATH);
 		readOnlyFile.setReadable(true);
 	}
 	
@@ -50,7 +53,18 @@ public class FileReaderTest {
 	public void invalidDelimiterShouldThrowException() throws IOException, ArquivoNaoEncontradoException,
 	                                                          DelimitadorInvalidoException, EscritaNaoPermitidaException {
 		
-		fileReader.loadFile(EXISTING_PATH, INVALID_DELIMITER, "colunas");
+		fileReader.loadFile(EXISTING_PATH, INVALID_DELIMITER, "colunas", OUTPUT_PATH);
+	}
+	
+	public void processFile() throws ArquivoNaoEncontradoException, EscritaNaoPermitidaException,
+	                                 DelimitadorInvalidoException, IOException {
+		
+		fileReader.loadFile(EXISTING_PATH, DELIMITER, "colunas", OUTPUT_PATH);
+		
+		File file = new File(OUTPUT_PATH);
+		Assert.assertNotNull(file);
+		Assert.assertTrue(file.exists());
+		
 	}
 	
 }

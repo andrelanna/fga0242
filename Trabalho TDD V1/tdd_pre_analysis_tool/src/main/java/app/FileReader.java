@@ -8,10 +8,11 @@ import java.io.*;
 
 public class FileReader {
 	
-	public void loadFile(final String path, final String delimiter, final String disposition) throws IOException,
-	                                                                                                 ArquivoNaoEncontradoException,
-	                                                                                                 DelimitadorInvalidoException,
-	                                                                                                 EscritaNaoPermitidaException {
+	public void loadFile(final String path, final String delimiter, final String disposition,
+	                     final String outputPath) throws IOException,
+	                                                     ArquivoNaoEncontradoException,
+	                                                     DelimitadorInvalidoException,
+	                                                     EscritaNaoPermitidaException {
 		
 	}
 	

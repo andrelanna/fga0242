@@ -50,28 +50,34 @@ public class FileReader {
 		BufferedReader br = new BufferedReader(new java.io.FileReader(file));
 		BufferedWriter writer = new BufferedWriter(new FileWriter(outputPath, false));
 		
-		while ((st = br.readLine()) != null) {
-			if (!st.contains("-")) {
-				writer.append(";");
-				writer.append(st);
-			} else {
-				final String pattern = "[^0-9]";
-				final String emptyReplacement = "";
+		if ("linhas".equalsIgnoreCase(disposition)) {
+			while ((st = br.readLine()) != null) {
 				
-				if (counter > 1 && st.contains("-")) {
-					writer.append(System.lineSeparator());
-					evolution = st.replaceAll(pattern, emptyReplacement);
-					writer.append(evolution);
-					counter++;
-				} else if (counter == 1) {
-					evolution = st.replaceAll(pattern, emptyReplacement);
-					writer.append(evolution);
-					counter++;
+				if (!st.contains("-")) {
+					writer.append(delimiter);
+					writer.append(st);
+				} else {
+					final String pattern = "[^0-9]";
+					final String emptyReplacement = "";
+					
+					if (counter > 1 && st.contains("-")) {
+						writer.append(System.lineSeparator());
+						evolution = st.replaceAll(pattern, emptyReplacement);
+						writer.append(evolution);
+						counter++;
+					} else if (counter == 1) {
+						evolution = st.replaceAll(pattern, emptyReplacement);
+						writer.append(evolution);
+						counter++;
+					}
 				}
 			}
+			writer.close();
+			
+		} else {
+			System.out.println("\nDesculpe, mas no momento só estamos processando diposição por linhas!");
 		}
 		
-		writer.close();
 	}
 	
 }

@@ -31,11 +31,11 @@ public class Main {
         System.out.println("\n4) Caminho do arquivo para ser escrito: ");
         String outputPath = scan.nextLine();
 
-        FileReader fileReader = new FileReader();
+        Persistencia persistencia = new Persistencia();
 
         try {
             System.out.println("\nProcessando arquivo...");
-            fileReader.loadFile(path, delimiter, disposition, outputPath);
+            persistencia.loadFile(path, delimiter, disposition, outputPath);
             System.out.println("\nArquivo processado com sucesso!");
         } catch (IOException e) {
             System.out.println("\nDesculpe! Erro ao processar arquivo.");

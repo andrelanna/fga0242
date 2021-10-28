@@ -1,6 +1,6 @@
 package test;
 
-import main.java.app.FileReader;
+import main.java.app.Persistencia;
 import main.java.app.exception.ArquivoNaoEncontradoException;
 import main.java.app.exception.DelimitadorInvalidoException;
 import main.java.app.exception.DisposicaoInvalidaException;
@@ -11,25 +11,25 @@ import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
 
-public class FileReaderTest {
+public class PersistenciaTest {
 	
-	private final FileReader fileReader = new FileReader();
-	
+	private final Persistencia persistence = new Persistencia();
+
+	private static final String EXISTING_PATH = System.getProperty("user.dir") +
+			"/tdd_pre_analysis_tool/src/main/resources/analysisTime.out";
+	private static final String OUTPUT_PATH = System.getProperty("user.dir") +
+			"/tdd_pre_analysis_tool/src/main/resources/analysisTimeTab.out";
+	private static final String OUTPUT_READONLY_PATH = System.getProperty("user.dir") +
+			"/tdd_pre_analysis_tool/src/main/resources/readOnly.out";
 	private static final String NOT_EXISTING_PATH = "C:/Users/NotExistingPath/file.txt";
 	private static final String DELIMITER = ";";
 	private static final String INVALID_DELIMITER = "--";
-	private static final String EXISTING_PATH = System.getProperty("user.dir") +
-	                                            "/tdd_pre_analysis_tool/src/main/resources/analysisTime.out";
-	private static String OUTPUT_PATH = System.getProperty("user.dir") +
-	                                    "/tdd_pre_analysis_tool/src/main/resources/analysisTimeTab.out";
-	private static String OUTPUT_READONLY_PATH = System.getProperty("user.dir") +
-	                                    "/tdd_pre_analysis_tool/src/main/resources/readOnly.out";
-	
+
 	@Test(expected = ArquivoNaoEncontradoException.class)
 	public void fileNotFoundShouldThrowException() throws IOException, ArquivoNaoEncontradoException,
 	                                                      DelimitadorInvalidoException, EscritaNaoPermitidaException,
 	                                                      DisposicaoInvalidaException {
-		fileReader.loadFile(NOT_EXISTING_PATH, DELIMITER, "colunas", OUTPUT_PATH);
+		persistence.loadFile(NOT_EXISTING_PATH, DELIMITER, "colunas", OUTPUT_PATH);
 	}
 	
 	@Test(expected = DisposicaoInvalidaException.class)
@@ -37,7 +37,7 @@ public class FileReaderTest {
 	                                                 DelimitadorInvalidoException, EscritaNaoPermitidaException,
 	                                                 DisposicaoInvalidaException {
 		
-		fileReader.loadFile(EXISTING_PATH,
+		persistence.loadFile(EXISTING_PATH,
 		                    DELIMITER, "qualquercoisa", OUTPUT_PATH);
 	}
 	
@@ -51,7 +51,7 @@ public class FileReaderTest {
 		readOnlyFile.createNewFile();
 		
 		readOnlyFile.setReadOnly();
-		fileReader.loadFile(EXISTING_PATH, DELIMITER, "linhas", OUTPUT_READONLY_PATH);
+		persistence.loadFile(EXISTING_PATH, DELIMITER, "linhas", OUTPUT_READONLY_PATH);
 		readOnlyFile.delete();
 	}
 	
@@ -60,14 +60,14 @@ public class FileReaderTest {
 	                                                          DelimitadorInvalidoException, EscritaNaoPermitidaException,
 	                                                          DisposicaoInvalidaException {
 		
-		fileReader.loadFile(EXISTING_PATH, INVALID_DELIMITER, "colunas", OUTPUT_PATH);
+		persistence.loadFile(EXISTING_PATH, INVALID_DELIMITER, "colunas", OUTPUT_PATH);
 	}
 	
 	@Test
 	public void processSuccessFile() throws ArquivoNaoEncontradoException, EscritaNaoPermitidaException,
 	                                 DelimitadorInvalidoException, IOException, DisposicaoInvalidaException {
 		
-		fileReader.loadFile(EXISTING_PATH, DELIMITER, "colunas", OUTPUT_PATH);
+		persistence.loadFile(EXISTING_PATH, DELIMITER, "colunas", OUTPUT_PATH);
 		
 		File file = new File(OUTPUT_PATH);
 		Assert.assertNotNull(file);

@@ -7,10 +7,9 @@ import main.java.app.exception.EscritaNaoPermitidaException;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class FileReader {
+public class Persistencia {
 	
 	public void loadFile(final String path, final String delimiter, final String disposition,
 	                     final String outputPath) throws IOException,
@@ -44,17 +43,17 @@ public class FileReader {
 
 		final String COLUMN_DELIMITER_NAME = "colunas";
 
-		BufferedReader bufferedReader = new BufferedReader(new java.io.FileReader(file));
+		BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputPath, false));
 
-		readAndWriteInLineDirection(delimiter, bufferedReader, bufferedWriter, counter); //TODO change name of this method
+		readAndWriteInLineDirection(delimiter, bufferedReader, bufferedWriter, counter);
 
 		if (COLUMN_DELIMITER_NAME.equals(disposition)) {
-			readAndWriteColumnDirection(path, delimiter, outputPath);
+			readAndWriteColumnDirection(delimiter, outputPath);
 		}
 	}
 
-	private void readAndWriteColumnDirection(String path, String delimiter, String outputPath) throws IOException {
+	private void readAndWriteColumnDirection(String delimiter, String outputPath) throws IOException {
 
 		Scanner scanner = new Scanner(new File(outputPath));
 		ArrayList<String> linesArray = new ArrayList<>();

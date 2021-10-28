@@ -18,18 +18,16 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Olá!\n Sr(a) usuário, informe os seguintes parâmetros: \n1) Delimitador: ");
 
-        String delimiter = scan.nextLine();
+        final String delimiter = scan.nextLine();
 
         System.out.println("\n2) Disposição: ");
-
-        String disposition = scan.nextLine();
+        final String disposition = scan.nextLine();
 
         System.out.println("\n3) Caminho do arquivo para ser lido: ");
-
-        String path = scan.nextLine();
+        final String path = scan.nextLine();
 
         System.out.println("\n4) Caminho do arquivo para ser escrito: ");
-        String outputPath = scan.nextLine();
+        final String outputPath = scan.nextLine();
 
         Persistencia persistencia = new Persistencia();
 

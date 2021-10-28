@@ -20,31 +20,17 @@ public class FileReader {
 		File file = new File(path);
 		
 		//verify if file exists
-		if (!file.exists()) {
-			throw new ArquivoNaoEncontradoException("File not found on path: " + path);
-		}
-		
+		existentFileVerifier(path, file);
+
 		//verify delimiter length
-		if (delimiter.length() > 1) {
-			throw new DelimitadorInvalidoException("Delimiter should not have more than 1 character: " + delimiter);
-		}
-		
-		if (disposition.isEmpty()
-		    || (!disposition.equalsIgnoreCase("colunas")
-		        && !disposition.equalsIgnoreCase("linhas"))) {
-			
-			throw new DisposicaoInvalidaException(
-							"Invalid disposition: " + disposition + ". It should be 'linhas' or 'colunas'");
-		}
-		
+		verifyInvalidDelimiterLength(delimiter);
+
+		//verify input disposition - 'linhas' or 'colunas'
+		verifyInputDisposition(disposition);
+
 		//verify if file is writable
-		File outputFile = new File(outputPath);
-		outputFile.createNewFile();
-		
-		if (!outputFile.canWrite()) {
-			throw new EscritaNaoPermitidaException("File not writable on path: " + path);
-		}
-		
+		verifyIsWritableFile(path, outputPath);
+
 		String st;
 		String evolution;
 		
@@ -127,5 +113,42 @@ public class FileReader {
 
 		
 	}
-	
+
+	private void verifyIsWritableFile(final String path, final String outputPath) throws IOException,
+																				   		 EscritaNaoPermitidaException {
+
+		File outputFile = new File(outputPath);
+		Boolean isNewFileCreated = outputFile.createNewFile(); //TODO test this
+
+		if (!outputFile.canWrite()) {
+			throw new EscritaNaoPermitidaException("File not writable on path: " + path);
+		}
+	}
+
+	private void verifyInputDisposition(final String disposition) throws DisposicaoInvalidaException {
+
+		final String ROW_DISPOSITION_NAME = "linhas";
+		final String COLUMN_DISPOSITION_NAME = "colunas";
+
+		final boolean isValidDisposition = disposition.equalsIgnoreCase(COLUMN_DISPOSITION_NAME)
+				|| disposition.equalsIgnoreCase(ROW_DISPOSITION_NAME);
+
+		if (disposition.isEmpty() || !isValidDisposition) {
+			throw new DisposicaoInvalidaException(
+							"Invalid disposition: " + disposition + ". It should be 'linhas' or 'colunas'");
+		}
+	}
+
+	private void verifyInvalidDelimiterLength(final String delimiter) throws DelimitadorInvalidoException {
+		if (delimiter.length() > 1) {
+			throw new DelimitadorInvalidoException("Delimiter should not have more than 1 character: " + delimiter);
+		}
+	}
+
+	private void existentFileVerifier(final String path, final File file) throws ArquivoNaoEncontradoException {
+		if (!file.exists()) {
+			throw new ArquivoNaoEncontradoException("File not found on path: " + path);
+		}
+	}
+
 }

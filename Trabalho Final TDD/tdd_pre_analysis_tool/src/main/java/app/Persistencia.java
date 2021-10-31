@@ -30,25 +30,24 @@ public class Persistencia {
 		//verify if file is writable
 		verifyIsWritableFile(path, outputPath);
 
-		writeOnFile(path, delimiter, disposition, outputPath, file);
+		writeOnFile(delimiter, disposition, outputPath, file);
 	}
 
-	private void writeOnFile(final String path,
-							 final String delimiter,
+	private void writeOnFile(final String delimiter,
 							 final String disposition,
 							 final String outputPath,
 							 File file) throws IOException {
 
 		int counter = 1;
 
-		final String COLUMN_DELIMITER_NAME = "colunas";
+		final String COLUMN_DISPOSITION_NAME = "colunas";
 
 		BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputPath, false));
 
 		readAndWriteInLineDirection(delimiter, bufferedReader, bufferedWriter, counter);
 
-		if (COLUMN_DELIMITER_NAME.equals(disposition)) {
+		if (COLUMN_DISPOSITION_NAME.equals(disposition)) {
 			readAndWriteColumnDirection(delimiter, outputPath);
 		}
 	}
@@ -63,26 +62,26 @@ public class Persistencia {
 		}
 		scanner.close();
 
-		int i = 0; //TODO refactor this variable name
-		int j = 0; //TODO refactor this variable name
+		int lineIndex = 0;
+		int columnIndex = 0;
 
 		String[][] newArray = new String[100][100];
 
-		for (String linha: linesArray) {
-			for (String palavra: linha.split(delimiter)) {
-				newArray[i][j] = palavra;
-				j++;
+		for (String line: linesArray) {
+			for (String word: line.split(delimiter)) {
+				newArray[lineIndex][columnIndex] = word;
+				columnIndex++;
 			}
-			i++;
-			j = 0;
+			lineIndex++;
+			columnIndex = 0;
 		}
 
 		BufferedWriter writer = new BufferedWriter(new FileWriter(outputPath, false));
 
-		for (j = 0; j < 100; j++) {
-			for (i = 0; i < 100; i++) {
-				if ((newArray[i][j] != null)) {
-					writer.append(newArray[i][j]);
+		for (columnIndex = 0; columnIndex < 100; columnIndex++) {
+			for (lineIndex = 0; lineIndex < 100; lineIndex++) {
+				if ((newArray[lineIndex][columnIndex] != null)) {
+					writer.append(newArray[lineIndex][columnIndex]);
 					writer.append(delimiter);
 				} else {
 					writer.append("");
@@ -133,7 +132,6 @@ public class Persistencia {
 																				   		 EscritaNaoPermitidaException {
 
 		File outputFile = new File(outputPath);
-		Boolean isNewFileCreated = outputFile.createNewFile(); //TODO test this
 
 		if (!outputFile.canWrite()) {
 			throw new EscritaNaoPermitidaException("File not writable on path: " + path);

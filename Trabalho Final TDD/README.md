@@ -11,3 +11,15 @@ Execução do Trabalho:
 * Entre na pasta raiz do projeto
    * Usando Ubuntu, rode: ./run-ubuntu
 ```
+
+Caso obtenha o seguinte resultado:
+
+```
+bash: ./run-ubuntu.sh: Permissão negada
+```
+
+Execute:
+
+```
+chmod +x run-ubuntu.sh
+```

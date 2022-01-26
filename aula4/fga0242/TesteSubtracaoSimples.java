@@ -1,4 +1,5 @@
-package projetoTesteParametrizado;
+
+package fga0242;
 
 import static org.junit.Assert.*;
 

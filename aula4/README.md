@@ -45,7 +45,7 @@ final pelo capital inicial, multiplicar o valor encontrado por 100 e, na
 sequência, subtrair 100. Exemplos de cálculos de rentabilidade líquida estão
 descritos na tabela abaixo.
 
-Dias (n)  |  Apl. inicial (p)  |  Tx. juros (i)  |  Rend. bruto  |  IR       |  Rend liq (%)
+Dias (n)  |  Apl. inicial (p)  |  Tx. juros (i)  |  Aliquota     |  IR       |  Rend liq (%)
 ---------:|-------------------:|----------------:|--------------:|----------:|-------------:
   60      | R$  1.000,00       |           8,5 % |        22,5 % | R$   3,14 |  1,0829       
  120      | R$    500,00       |           8,0 % |        22,5 % | R$   2,96 |  2,0384       
@@ -62,7 +62,7 @@ Dias (n)  |  Apl. inicial (p)  |  Tx. juros (i)  |  Rend. bruto  |  IR       |  
 **Enunciado**: crie um teste parametrizado para cada resposta a ser calculada e,
 posteriormente, unifique todos os testes parametrizados em uma suíte de testes
 chamada ```SteTestesInvestimentos```. Os testes parametrizados deverão chamar
-```TstRendBruto```, ```TstIR``` e ```TstRendLiq```. 
+```TstIR``` e ```TstRendLiq```. 
 
 :star: Sugestão: crie uma hierarquia de casos de teste para evitar código
 duplicado. :wink:

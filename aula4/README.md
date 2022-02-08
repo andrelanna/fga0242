@@ -17,6 +17,10 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 **Slides da aula**
 * [Slides](https://docs.google.com/presentation/d/1H9Dy6ZHJVIBqr5gnEaEHmZ_Lvm8RYqD-5D6icMNvIx0/edit?usp=sharing)
 
+**Video da aula**  
+
+* [Video](https://youtu.be/CFGCDrVld5I)
+
 **Exercicios de fixacao**
 
 Você foi chamado para desenvolver uma calculadora de rentabilidade líquida anual

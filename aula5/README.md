@@ -5,13 +5,16 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 5 - _Test-Driven Development_
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- TDD 
+- Técnicas de TDD: falsificação, duplicação e triangulação
 
-**Slides da aula**
-* [Slides](link para os slides)
+**Vídeos da aula**
+- [Vídeo 1](https://youtu.be/flx-uW7U8mc) 
+- [Vídeo 2](https://youtu.be/qVCZUg68Rls)
 
-**Exercicios de fixacao**
+**Exercicios de fixação:**
+
+

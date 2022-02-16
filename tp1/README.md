@@ -18,8 +18,8 @@ Seja o seguinte cenário descrito a seguir:
 > cada qual com sua alíquota (definida em \%) a ser aplicada sobre o valor que a
 > base de cálculo ocupou da faixa. O valor do imposto final é a soma dos valores
 > de impostos a serem pagos para cada faixa e a alíquota efetiva total (em \%) é
-> o resultado do valor do imposto dividido pela base de cálculo. Cada um desses
-> passos está detalhado a seguir.
+> o resultado do valor do imposto dividido pelo total de rendimentos. Cada um
+> desses passos está detalhado a seguir.
 >
 > Como rendimentos tributáveis entende-se todos aqueles valores recebidos pelo
 > contribuinte tais como salários, aluguéis, participação em lucros e
@@ -27,9 +27,9 @@ Seja o seguinte cenário descrito a seguir:
 > outros. O valor total desses rendimentos deve ser utilizado para efeitos do
 > cálculo do IRPF. 
 >
-> O contribuinte tem direito legal a vários deduções no mês corrente. Como
-> deduções integrais entende-se aquelas cujos valores totais serão abatidos do
-> valor total de dividendos. São exemplos de deduções integrais: 
+> O contribuinte tem direito a vários deduções no mês corrente. Como deduções
+> integrais entende-se aquelas cujos valores totais serão abatidos do valor
+> total de rendimentos. São exemplos de deduções integrais: 
 > * Contribuição previdenciária oficial (podendo ser mais de uma contribuição,
 >   por exemplo, no contracheque + contribuição via carnê INSS);
 > * Pensão alimentícia;
@@ -53,14 +53,16 @@ Seja o seguinte cenário descrito a seguir:
 > | 2a.   | 7,5%        |
 > | 3a.   | 15%         |
 > | 4a.   | 22,5%       |
-> | 5a.   | 25%         |
+> | 5a.   | 27,5%       |
+>
+>
 > Portanto, baseado na tabela acima, os valores da base de cálculo que atingiram
 > as faixas serão multiplicados pelas respectivas alíquotas para cálculo do
 > valor do imposto de cada uma das faixas. O valor total do imposto a ser pago
 > naquele mês é a soma dos valores dos impostos de todas as faixas. 
 > 
 > Por fim, a alíquota efetiva é calculada como sendo a taxa (%) do valor total
-> do imposto pelo valor da base de cálculo. 
+> do imposto pelo valor total de rendimentos. 
 >
 > Todo esses cálculos podem ser realizados através do [Simulador de IRPF da
 > Receita Federal Brasileira (RFB)](https://www27.receita.fazenda.gov.br/simulador-irpf/). 
@@ -124,16 +126,36 @@ _commits_:
 * triangulação.
 
 
-:exclamation::exclamation::exclamation:**ATENÇÃO:** todos os testes triangulados deverão estar triangulados por
-parametrização!
+:exclamation::exclamation::exclamation:**ATENÇÃO:** todos os testes finais
+deverão estar triangulados por parametrização, com exceção dos testes de
+exceções.
 
 ---
 
 **Grupos de alunos**
 
+Os trabalhos deverão ser executados por grupos de até 6 alunos. O grupo deverá
+criar um repositório público no GitHub, cujo arquivo README.md deverá conter os
+nomes e matrículas dos componentes. 
+
 **Entrega do trabalho**
+
+Os trabalhos deverão ser entregues através de repositório no GitHub, até as
+23:59:59hs do dia 25 de fevereiro de 2022, impreterivelmente. 
+
+Os grupos deverão informar ao professor o endereço do repositório do projeto
+antes da data final de entrega. 
 
 **Valor do trabalho**
 
+30 pontos. 
+
 **Forma de avaliação**
 
+Os trabalhos serão avaliados através:
+
+- da corretude dos cálculos realizados pelo simulador;
+- da utilização de testes parametrizados em todos os testes funcionais; 
+- da utilização de testes de exceção e, por fim, 
+- das seqüências de _commits_ para os casos em que o emprego das técnicas de
+  falsificação, duplicação e triangulação é obrigatório.

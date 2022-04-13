@@ -55,39 +55,39 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1uDTIRgDQ4Lg-apSzUI7ILPOm
 |      1      | Extrair método                 | Simulador_IRPF.cadastrar      |
 |             |Substituir método p/ met. objeto| Simulador_IRPF.calcular5aFaixa|
 |             | Extrair constante              | Em todos os métodos de Simulador_IRPF|
-|
+|             |                                |                               |
 |      2      | Extrair método                 | IRPF.addDeducao               |
 |             |Substituir método p/ met. objeto| IRPF.calculateTax             |
 |             | Extrair constante              | IRPF.calculateTax             |
-|
+|             |                                |                               |
 |      3      | Extrair método                 | SimuladorIRPF.getTotalTodasDeducoes |
 |             |Substituir método p/ met. objeto| SimuladorIRPF.getValorImposto |
 |             | Extrair constante              | Metodo-objeto extraido acima  |
-|
+|             |                                |                               |
 |      4      | Extrair método                 | Deducao.deducao               |
 |             |Substituir método p/ met. objeto| AliquotaP.calculoAliquota     |
 |             | Extrair constante              | Metodo-objeto extraido acima  |
-|
+|             |                                |                               |
 |      5      | Extrair método                 | Simulador.cadastrarPrevidenciaOficial|
 |             |Substituir método p/ met. objeto| Simulador.apuracaoImposto     |
 |             | Extrair constante              | Método-objeto extraído acima  |
-|
+|             |                                |                               |
 |      6      | Extrair método                 | CalculoIRPF.cadastrarRendimento|
 |             |Substituir método p/ met. objeto| Imposto.calculaImposto        |
 |             | Extrair constante              | Método-objeto extraído acima  |
-|
+|             |                                |                               |
 |      7      | Extrair método                 | Deducoes.cadastrarPrevidenciaOficial|
 |             |Substituir método p/ met. objeto| Imposto.calcularImposto       |
 |             | Extrair constante              | Método-objeto extraído acima  |
-|
+|             |                                |                               |
 |      8      | Extrair método                 | IRPF.cadastrarRendimento      |
 |             |Substituir método p/ met. objeto| IRPF.calcularImposto()        |
 |             | Extrair constante              | Método-objeto extraído acima. |
-|
+|             |                                |                               |
 |      9      | Extrair método                 | IRRF.register_deduction       |
 |             |Substituir método p/ met. objeto| IRRF.calculate_tax            |
 |             | Extrair constante              | Método-objeto extraido acima  |
-|
+|             |                                |                               |
 |     10      | Extrair método                 | Aliquota_efetiva.normal_round |
 |             |Substituir método p/ met. objeto| Faixas_de_imposto.calcular_imposto|
 |             | Extrair constante              | Faixas_de_imposto.\_\_post_init\_\_|

@@ -46,6 +46,8 @@ conforme a tabela apresentada na seção Grupo de Alunos. O número do grupo
 corresponde ao número apresentado na tabela de notas da disciplina publicada no
 seguinte [link](https://docs.google.com/spreadsheets/d/1uDTIRgDQ4Lg-apSzUI7ILPOmlXXpYqQkzsbTA5vX1HU/edit?usp=sharing).
 
+[Catálogo Refactoring - Compondo métodos](https://github.com/andrelanna/andrelanna.github.io/blob/master/lectures/das/Catalogo_Refatoracao_Compondo_metodos.pdf)
+
 ---
 
 **Grupos de alunos**

@@ -48,3 +48,4 @@ Tecnicas de Programação em Plataformas Emergentes
  
 * [Trabalho prático 1 - _Test-Driven Development - TDD_](tp1)
 * [Trabalho prático 2 - _Refactoring_](tp2)
+* [Trabalho prático 3 - _Projeto de código_](tp3)

@@ -57,5 +57,6 @@ public class CadastroDeRendimentosTest {
 		int totalRendimentos = irpf.cadastrarRendimento(nomeRendimento, valorRendimento);
 		assertEquals(valorRendimento, totalRendimentos);
 		assertTrue(irpf.getNomeRendimento().equalsIgnoreCase(nomeRendimento));
+		assertEquals(valorRendimento, irpf.getTotalRendimentos());
 	}
 }

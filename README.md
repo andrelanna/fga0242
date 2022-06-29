@@ -11,12 +11,12 @@ FGA - Faculdade do Gama
 |------------------:|:--------:|---------------------------------------------------------|
 |   [Aula 1](aula1) |  06/06/22 |Apresentação da disciplina, tópicos, cronograma, avaliações |
 |   [Aula 2](aula2) |  08/06/22 |Revisão de testes unitários e frameworks xUnit; propriedades, independência e atomicidade de testes|
-|   [Aula 3](aula3) |  13/06/22 |Estrutura do framework xUnit, testes unitários, asserções e casos de testes|
-|   [Aula 4](aula4) |  15/06/22 |                                                         |
-|   [Aula 5](aula5) |  20/06/22 |                                                         |
-|   [Aula 6](aula6) |  22/06/22 |                                                         |
-|   [Aula 7](aula7) |  27/06/22 |                                                         |
-|   [Aula 8](aula8) |  29/06/22 |                                                         |
+|   [Aula 3](aula3) |  13/06/22 |Estrutura do framework xUnit, testes unitários, asserções e casos de testes, suite de testes|
+|   [Aula 4](aula4) |  15/06/22 |Testes parametrizados, categorias de testes, testes de exceções|
+|   [Aula 5](aula5) |  20/06/22 |Atividade extra-classe - (_motivo de saúde_)             |
+|   [Aula 6](aula6) |  22/06/22 |Atividade extra-classe - (_motivo de saúde_)             |
+|   [Aula 7](aula7) |  27/06/22 |Desenvolvimento Orientado a Testes (TDD)                 |
+|   [Aula 8](aula8) |  29/06/22 |Atividade prática de TDD                                 |
 |   [Aula 9](aula9) |  04/07/22 |                                                         |
 | [Aula 10](aula10) |  06/07/22 |                                                         |
 | [Aula 11](aula11) |  11/07/22 |                                                         |

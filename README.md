@@ -17,8 +17,8 @@ FGA - Faculdade do Gama
 |   [Aula 6](aula6) |  22/06/22 |Atividade extra-classe - (_motivo de saúde_)             |
 |   [Aula 7](aula7) |  27/06/22 |Desenvolvimento Orientado a Testes (TDD)                 |
 |   [Aula 8](aula8) |  29/06/22 |Atividade prática de TDD                                 |
-|   [Aula 9](aula9) |  04/07/22 |                                                         |
-| [Aula 10](aula10) |  06/07/22 |                                                         |
+|   [Aula 9](aula9) |  04/07/22 |Apresentação do enunciado do TP1, atividade prática TDD  |
+| [Aula 10](aula10) |  06/07/22 |Atividade prática de TDD                                 |
 | [Aula 11](aula11) |  11/07/22 |                                                         |
 | [Aula 12](aula12) |  13/07/22 |                                                         |
 | [Aula 13](aula13) |  18/07/22 |                                                         |

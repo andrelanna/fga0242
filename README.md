@@ -19,16 +19,16 @@ FGA - Faculdade do Gama
 |   [Aula 8](aula8) |  29/06/22 |Atividade prática de TDD                                 |
 |   [Aula 9](aula9) |  04/07/22 |Apresentação do enunciado do TP1, atividade prática TDD  |
 | [Aula 10](aula10) |  06/07/22 |Atividade prática de TDD                                 |
-| [Aula 11](aula11) |  11/07/22 |                                                         |
-| [Aula 12](aula12) |  13/07/22 |                                                         |
-| [Aula 13](aula13) |  18/07/22 |                                                         |
-| [Aula 14](aula14) |  20/07/22 |                                                         |
-| [Aula 15](aula15) |  25/07/22 |                                                         |
-| [Aula 16](aula16) |  27/07/22 |                                                         |
-| [Aula 17](aula17) |  01/08/22 |                                                         |
-| [Aula 18](aula18) |  03/08/22 |                                                         |
-| [Aula 19](aula19) |  08/08/22 |                                                         |
-| [Aula 20](aula20) |  10/08/22 |                                                         |
+| [Aula 11](aula11) |  11/07/22 |Desenvolvimento de aplicação utilizando TDD (exemplo)    |
+| [Aula 12](aula12) |  13/07/22 |Desenvolvimento de aplicação utilizando TDD (exemplo)    |
+| [Aula 13](aula13) |  18/07/22 |Atividade extra-classe / entrega to TP1                  |
+| [Aula 14](aula14) |  20/07/22 |Introdução a Refatoração                                 |
+| [Aula 15](aula15) |  25/07/22 |~~Maus cheiros de código~~ SBPC                          |
+| [Aula 16](aula16) |  27/07/22 |~~Refatorações básicas~~ SBPC                            |
+| [Aula 17](aula17) |  01/08/22 | Maus cheiros de código                                  |
+| [Aula 18](aula18) |  03/08/22 |Refatorações básicas: extrair, constante, extrair método, extrair classe, renomear método/classe, operações de inline|
+| [Aula 19](aula19) |  08/08/22 |Refatorações básicas: extrair, constante, extrair método, extrair classe, renomear método/classe, operações de inline                                     |
+| [Aula 20](aula20) |  10/08/22 |Outras refatorações: substituir método por objeto-método, refatorações para padrões.|
 | [Aula 20](aula20) |  15/08/22 |                                                         |
 | [Aula 21](aula21) |  17/08/22 |                                                         |
 | [Aula 22](aula22) |  22/08/22 |                                                         |

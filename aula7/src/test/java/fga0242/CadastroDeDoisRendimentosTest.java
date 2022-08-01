@@ -77,7 +77,7 @@ public class CadastroDeDoisRendimentosTest {
 		}
 		
 		
-		assertEquals(this.totalRendimentos, irpf.getTotalRendimentos());
+		assertEquals(this.totalRendimentos, irpf.getTotalRendimentos(), 0f);
 	}
 	
 }

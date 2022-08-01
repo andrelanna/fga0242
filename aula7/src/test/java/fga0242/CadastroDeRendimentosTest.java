@@ -54,9 +54,9 @@ public class CadastroDeRendimentosTest {
 	
 	@Test
 	public void testCadastroDeUmRendimento() {
-		int totalRendimentos = irpf.cadastrarRendimento(nomeRendimento, valorRendimento);
-		assertEquals(valorRendimento, totalRendimentos);
+		float totalRendimentos = irpf.cadastrarRendimento(nomeRendimento, valorRendimento);
+		assertEquals(valorRendimento, totalRendimentos, 0f);
 		assertTrue(irpf.getNomeRendimento().equalsIgnoreCase(nomeRendimento));
-		assertEquals(valorRendimento, irpf.getTotalRendimentos());
+		assertEquals(valorRendimento, irpf.getTotalRendimentos(), 0f);
 	}
 }

@@ -238,6 +238,22 @@ public class IRPF {
 		return 0.275f * getOcupacao5aFaixa();
 	}
 
+	public float getTotalFaixaBaseDeCalculo() {
+		return getOcupacao1aFaixa() + 
+				getOcupacao2aFaixa() + 
+				getOcupacao3aFaixa() + 
+				getOcupacao4aFaixa() + 
+				getOcupacao5aFaixa();
+	}
+
+	public float getTotalImposto() {
+		return getImposto1aFaixa() + 
+				getImposto2aFaixa() + 
+				getImposto3aFaixa() + 
+				getImposto4aFaixa() + 
+				getImposto5aFaixa(); 
+	}
+
 }
 
 

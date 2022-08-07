@@ -210,6 +210,34 @@ public class IRPF {
 		return 0.15f * getOcupacao3aFaixa();
 	}
 
+	public float getOcupacao4aFaixa() {
+		float ocupacao4aFaixa = 0; 
+		if (getBaseDeCalculo() > 1903.98f + 922.67f + 924.40f + 913.63f) { //ocupou a 4a faixa inteira
+			ocupacao4aFaixa = 913.63f;
+		} else {
+			if (getBaseDeCalculo() > 1903.98f + 922.67f + 924.40f) { //ocupou parte da 4a faixa
+				ocupacao4aFaixa = getBaseDeCalculo() - (1903.98f + 922.67f + 924.40f);
+			}
+		}
+		return ocupacao4aFaixa;
+	}
+
+	public float getImposto4aFaixa() {
+		return 0.225f * getOcupacao4aFaixa();
+	}
+
+	public float getOcupacao5aFaixa() {
+		float ocupacao5aFaixa = 0;
+		if (getBaseDeCalculo() > 1903.98f + 922.67f + 924.40f + 913.63f) { //avancou pela 5a faixa
+			ocupacao5aFaixa = getBaseDeCalculo() - (1903.98f + 922.67f + 924.40f + 913.63f);
+		}
+		return ocupacao5aFaixa;
+	}
+
+	public float getImposto5aFaixa() {
+		return 0.275f * getOcupacao5aFaixa();
+	}
+
 }
 
 

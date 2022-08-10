@@ -20,50 +20,50 @@ public class IRPF {
 		valorOutraDeducao = new int[0];
 	}
 
-	public float cadastrarRendimento(String nomeRendimento, float valor) {
+	public float cadastrarRendimento(String nome, float v) {
 		
-		String[] tempRendimento = new String[this.nomeRendimento.length + 1];
-		float[] tempValorRendimento = new float[this.valor.length + 1];
+		String[] tempRendimento = new String[nomeRendimento.length + 1];
+		float[] tempValorRendimento = new float[valor.length + 1];
 		
-		for (int i=0; i<this.nomeRendimento.length; i++) {
-			tempRendimento[i] = this.nomeRendimento[i];
-			tempValorRendimento[i] = this.valor[i];
+		for (int i=0; i<nomeRendimento.length; i++) {
+			tempRendimento[i] = nomeRendimento[i];
+			tempValorRendimento[i] = valor[i];
 		}
-		tempRendimento[this.nomeRendimento.length] = nomeRendimento;
-		tempValorRendimento[this.valor.length] = valor;
+		tempRendimento[nomeRendimento.length] = nome;
+		tempValorRendimento[valor.length] = v;
 		
-		this.nomeRendimento = tempRendimento;
-		this.valor = tempValorRendimento;
+		nomeRendimento = tempRendimento;
+		valor = tempValorRendimento;
 		
 		
-		this.valorTotalRendimentos += valor; 
-		return this.valorTotalRendimentos;
+		valorTotalRendimentos += v; 
+		return valorTotalRendimentos;
 	}
 	
 	public String getNomeRendimento() {
-		return this.nomeRendimento[this.nomeRendimento.length-1];
+		return nomeRendimento[nomeRendimento.length-1];
 	}
 
 	public float getTotalRendimentos() {
-		return this.valorTotalRendimentos;
+		return valorTotalRendimentos;
 	}
 
-	public boolean containsRendimento(String nomeRendimento) {
+	public boolean containsRendimento(String rendimento) {
 		boolean resposta = false; 
-		for (String r:this.nomeRendimento) {
-			if (r.equalsIgnoreCase(nomeRendimento))
+		for (String r:nomeRendimento) {
+			if (r.equalsIgnoreCase(rendimento))
 				return true;
 		}
 		
 		return resposta;
 	}
 
-	public int  cadastrarPrevidenciaOficial(int previdenciaOficial) throws ValorInvalidoException {
-		if (previdenciaOficial <= 0) {
-			throw new ValorInvalidoException(previdenciaOficial); 
+	public int  cadastrarPrevidenciaOficial(int previdencia) throws ValorInvalidoException {
+		if (previdencia <= 0) {
+			throw new ValorInvalidoException(previdencia); 
 		}
-		this.previdenciaOficial += previdenciaOficial; 
-		return this.previdenciaOficial;
+		previdenciaOficial += previdencia; 
+		return previdenciaOficial;
 	}
 
 	public boolean cadastrarDependente(String dependente) {
@@ -110,12 +110,12 @@ public class IRPF {
 	public int cadastrarPensaoAlimenticia(int pensao) throws ValorInvalidoException {
 		if (pensao <= 0) 
 			throw new ValorInvalidoException(pensao);
-		this.pensaoAlimenticia += pensao;
-		return this.pensaoAlimenticia;
+		pensaoAlimenticia += pensao;
+		return pensaoAlimenticia;
 	}
 
 	public int  getTotalPensaoAlimenticia() {
-		return this.pensaoAlimenticia;
+		return pensaoAlimenticia;
 	}
 
 	public void cadastrarOutraDeducao(String nome, int valor) {

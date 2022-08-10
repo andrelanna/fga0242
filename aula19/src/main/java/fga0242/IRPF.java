@@ -38,15 +38,15 @@ public class IRPF {
 
 	public float cadastrarRendimento(String nome, float v) {
 		
-		String[] tempRendimento = new String[nomeRendimento.length + 1];
-		float[] tempValorRendimento = new float[valor.length + 1];
+		String[] tempRendimento = new String[numeroRendimentos() + 1];
+		float[] tempValorRendimento = new float[numeroRendimentos() + 1];
 		
-		for (int i=0; i<nomeRendimento.length; i++) {
+		for (int i=0; i<numeroRendimentos(); i++) {
 			tempRendimento[i] = nomeRendimento[i];
 			tempValorRendimento[i] = valor[i];
 		}
-		tempRendimento[nomeRendimento.length] = nome;
-		tempValorRendimento[valor.length] = v;
+		tempRendimento[numeroRendimentos()] = nome;
+		tempValorRendimento[numeroRendimentos()] = v;
 		
 		nomeRendimento = tempRendimento;
 		valor = tempValorRendimento;
@@ -55,9 +55,24 @@ public class IRPF {
 		valorTotalRendimentos += v; 
 		return valorTotalRendimentos;
 	}
+
+	/*
+	 * Método criado à partir da extração da instrução nomeRendimento.length, 
+	 * através da operação de refatoração Extrair Metodo. 
+	 * 
+	 * Todas as ocorrências de nomeRendimento.length foram substituidas por 
+	 * uma chamada ao novo método. Não há mais esse código duplicado. 
+	 */
+	/**
+	 * Método que retorna o número de rendimentos já cadastrados.
+	 * @return numero de rendimentos cadastrados.
+	 */
+	private int numeroRendimentos() {
+		return nomeRendimento.length;
+	}
 	
 	public String getNomeRendimento() {
-		return nomeRendimento[nomeRendimento.length-1];
+		return nomeRendimento[numeroRendimentos()-1];
 	}
 
 	public float getTotalRendimentos() {

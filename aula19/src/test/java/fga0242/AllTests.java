@@ -23,6 +23,6 @@ import org.junit.runners.Suite.SuiteClasses;
 				Calculo4aFaixaTest.class,
 				Calculo5aFaixaTest.class
 				})
-public class SteCadastrosRendimentosTest {
+public class AllTests {
 
 }

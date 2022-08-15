@@ -15,21 +15,16 @@ public class IRPF {
 	private static final float DEDUCAODEPENDENTE = 189.59f;
 
 
-	private String[] nomeRendimento;
-	private float[] valor;
-	private float valorTotalRendimentos;
-	
+	private CadastroRendimentos rendimentos = new CadastroRendimentos();
 	private String[] dependentes;
 
 	private int previdenciaOficial;
 	private int pensaoAlimenticia;
 	
-	private String outraDeducao[];
-	private int valorOutraDeducao[];
+	String outraDeducao[];
+	int valorOutraDeducao[];
 	
 	public IRPF() {
-		nomeRendimento = new String[0];
-		valor = new float[0];
 		dependentes = new String[0];
 		pensaoAlimenticia = 0;
 		outraDeducao = new String[0];
@@ -38,22 +33,7 @@ public class IRPF {
 
 	public float cadastrarRendimento(String nome, float v) {
 		
-		String[] tempRendimento = new String[numeroRendimentos() + 1];
-		float[] tempValorRendimento = new float[numeroRendimentos() + 1];
-		
-		for (int i=0; i<numeroRendimentos(); i++) {
-			tempRendimento[i] = nomeRendimento[i];
-			tempValorRendimento[i] = valor[i];
-		}
-		tempRendimento[numeroRendimentos()] = nome;
-		tempValorRendimento[numeroRendimentos()] = v;
-		
-		nomeRendimento = tempRendimento;
-		valor = tempValorRendimento;
-		
-		
-		valorTotalRendimentos += v; 
-		return valorTotalRendimentos;
+		return rendimentos.cadastrarRendimento(nome, v);
 	}
 
 	/*
@@ -67,21 +47,21 @@ public class IRPF {
 	 * Método que retorna o número de rendimentos já cadastrados.
 	 * @return numero de rendimentos cadastrados.
 	 */
-	private int numeroRendimentos() {
-		return nomeRendimento.length;
+	int numeroRendimentos() {
+		return rendimentos.getNomeRendimento().length;
 	}
 	
 	public String getNomeRendimento() {
-		return nomeRendimento[numeroRendimentos()-1];
+		return rendimentos.getNomeRendimento()[numeroRendimentos()-1];
 	}
 
 	public float getTotalRendimentos() {
-		return valorTotalRendimentos;
+		return rendimentos.getValorTotalRendimentos();
 	}
 
 	public boolean containsRendimento(String rendimento) {
 		boolean resposta = false; 
-		for (String r:nomeRendimento) {
+		for (String r:rendimentos.getNomeRendimento()) {
 			if (r.equalsIgnoreCase(rendimento))
 				return true;
 		}
@@ -150,22 +130,8 @@ public class IRPF {
 	}
 
 	public void cadastrarOutraDeducao(String nome, int valor) {
-		//Adicionar uma posicao nova nos vetores de nome e valor
-		String[] tempOutraDeducao = new String[outraDeducao.length + 1];
-		int[] tempValorOutraDeducao = new int[valorOutraDeducao.length + 1];
-		
-		//copiar um vetor para o outro;
-		for (int i=0; i<outraDeducao.length; i++) {
-			tempOutraDeducao[i] = outraDeducao[i];
-			tempValorOutraDeducao[i] = valorOutraDeducao[i];
-		}
-		//adicionar cadastro nos vetores temporarios
-		tempOutraDeducao[outraDeducao.length] = nome;
-		tempValorOutraDeducao[valorOutraDeducao.length] = valor;
-		
-		//atualizar as referencias
-		outraDeducao = tempOutraDeducao;
-		valorOutraDeducao = tempValorOutraDeducao;
+		new CadastrarOutraDeducao(this, nome, valor).computar();
+		return;
 	}
 
 	public int getTotalOutrasDeducoes() {

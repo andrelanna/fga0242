@@ -2,33 +2,20 @@ package main.java.fga0242;
 
 public class IRPF {
 
-	/* Constantes extraídas a partir do código, através da 
-	 * operação de refatoração "Extrair Constante". 
-	 * 
-	 * Todas as ocorrências dos valores foram alteradas para 
-	 * utilização das novas constantes. 
-	 */
-	private static final float TAMANHO1AFAIXA = 1903.98f;
-	private static final float TAMANHO2AFAIXA = 922.67f;
-	private static final float TAMANHO3AFAIXA = 924.40f;
-	private static final float TAMANHO4AFAIXA = 913.63f;
-	private static final float DEDUCAODEPENDENTE = 189.59f;
-
-
 	private CadastroRendimentos rendimentos = new CadastroRendimentos();
-	private String[] dependentes;
-
+	private CadastroDependentes dependentes = new CadastroDependentes();
 	private int previdenciaOficial;
 	private int pensaoAlimenticia;
+	private Imposto imposto;
 	
 	String outraDeducao[];
 	int valorOutraDeducao[];
 	
 	public IRPF() {
-		dependentes = new String[0];
 		pensaoAlimenticia = 0;
 		outraDeducao = new String[0];
 		valorOutraDeducao = new int[0];
+		imposto = new Imposto();
 	}
 
 	public float cadastrarRendimento(String nome, float v) {
@@ -78,40 +65,15 @@ public class IRPF {
 	}
 
 	public boolean cadastrarDependente(String dependente) {
-		//Criar um vetor com uma posicao adicional
-		String tempDependentes[] = new String[dependentes.length + 1];
-		
-		//Copiar vetor
-		for (int i=0; i<dependentes.length; i++) {
-			tempDependentes[i] = dependentes[i];
-		}
-		
-		//Adicionar dependente
-		for (String d : dependentes) {
-			if (d.equalsIgnoreCase(dependente)) {
-				return false;
-			}
-		}
-		
-		tempDependentes[dependentes.length] = dependente;
-		
-		//atualizar referencia
-		dependentes = tempDependentes;
-		return true;
+		return dependentes.cadastrarDependente(dependente);
 	}
 
 	public boolean possuiDependente(String dependente) {
-		for (String d: dependentes) {
-			if (d.equalsIgnoreCase(dependente)) {
-				return true;
-			}
-		}
-		return false;
+		return dependentes.possuiDependente(dependente);
 	}
 
 	public float getDeducaoDependentes() {
-		int numeroDependentes = dependentes.length;
-		return numeroDependentes * DEDUCAODEPENDENTE;
+		return dependentes.getDeducaoDependentes();
 	}
 
 	public int  getTotalContribuicoes() {
@@ -153,7 +115,7 @@ public class IRPF {
 	public float getTotalDeducoes() {
 		float resposta = 0; 
 		resposta += getTotalContribuicoes();
-		resposta += DEDUCAODEPENDENTE * dependentes.length;
+		resposta += dependentes.getDeducaoDependentes();
 		resposta += getTotalPensaoAlimenticia();
 		resposta += getTotalOutrasDeducoes();
 		
@@ -161,14 +123,11 @@ public class IRPF {
 	}
 
 	public float getBaseDeCalculo() {
-		return getTotalRendimentos() - getTotalDeducoes();
+		return imposto.getBaseDeCalculo(this);
 	}
 
 	public float getOcupacao1aFaixa() {
-		if (getBaseDeCalculo() <= TAMANHO1AFAIXA) {
-			return getBaseDeCalculo();
-		}
-		return TAMANHO1AFAIXA; //por falsificacao
+		return imposto.getOcupacao1aFaixa(this);
 	}
 
 	public float getImposto1aFaixa() {
@@ -176,15 +135,7 @@ public class IRPF {
 	}
 
 	public float getOcupacao2aFaixa() {
-		float ocupacao2aFaixa = 0;
-		if (getBaseDeCalculo() > TAMANHO1AFAIXA + TAMANHO2AFAIXA) { //ocupou 2a faixa inteira 
-			ocupacao2aFaixa = TAMANHO2AFAIXA;
-		} else {
-			if (getBaseDeCalculo() > TAMANHO1AFAIXA) { //ocupou parte da 2a faixa; 
-				ocupacao2aFaixa = getBaseDeCalculo() - TAMANHO1AFAIXA;
-			}
-		}
-		return ocupacao2aFaixa;
+		return imposto.getOcupacao2aFaixa(this);
 	}
 
 	public float getImposto2aFaixa() {
@@ -192,15 +143,7 @@ public class IRPF {
 	}
 
 	public float getOcupacao3aFaixa() {
-		float ocupacao3afaixa = 0 ;
-		if (getBaseDeCalculo() > TAMANHO1AFAIXA + TAMANHO2AFAIXA + TAMANHO3AFAIXA) { //ocupou a 3a faixa inteira
-			ocupacao3afaixa = TAMANHO3AFAIXA;
-		} else {
-			if (getBaseDeCalculo() > TAMANHO1AFAIXA + TAMANHO2AFAIXA) { //ocupou parte da 3a faixa
-				ocupacao3afaixa = getBaseDeCalculo() - (TAMANHO1AFAIXA + TAMANHO2AFAIXA);
-			}
-		}
-		return ocupacao3afaixa;
+		return imposto.getOcupacao3aFaixa(this);
 	}
 
 	public float getImposto3aFaixa() {
@@ -208,15 +151,7 @@ public class IRPF {
 	}
 
 	public float getOcupacao4aFaixa() {
-		float ocupacao4aFaixa = 0; 
-		if (getBaseDeCalculo() > TAMANHO1AFAIXA + TAMANHO2AFAIXA + TAMANHO3AFAIXA + TAMANHO4AFAIXA) { //ocupou a 4a faixa inteira
-			ocupacao4aFaixa = TAMANHO4AFAIXA;
-		} else {
-			if (getBaseDeCalculo() > TAMANHO1AFAIXA + TAMANHO2AFAIXA + TAMANHO3AFAIXA) { //ocupou parte da 4a faixa
-				ocupacao4aFaixa = getBaseDeCalculo() - (TAMANHO1AFAIXA + TAMANHO2AFAIXA + TAMANHO3AFAIXA);
-			}
-		}
-		return ocupacao4aFaixa;
+		return imposto.getOcupacao4aFaixa(this);
 	}
 
 	public float getImposto4aFaixa() {
@@ -224,11 +159,7 @@ public class IRPF {
 	}
 
 	public float getOcupacao5aFaixa() {
-		float ocupacao5aFaixa = 0;
-		if (getBaseDeCalculo() > TAMANHO1AFAIXA + TAMANHO2AFAIXA + TAMANHO3AFAIXA + TAMANHO4AFAIXA) { //avancou pela 5a faixa
-			ocupacao5aFaixa = getBaseDeCalculo() - (TAMANHO1AFAIXA + TAMANHO2AFAIXA + TAMANHO3AFAIXA + TAMANHO4AFAIXA);
-		}
-		return ocupacao5aFaixa;
+		return imposto.getOcupacao5aFaixa(this);
 	}
 
 	public float getImposto5aFaixa() {
@@ -236,19 +167,11 @@ public class IRPF {
 	}
 
 	public float getTotalFaixaBaseDeCalculo() {
-		return getOcupacao1aFaixa() + 
-				getOcupacao2aFaixa() + 
-				getOcupacao3aFaixa() + 
-				getOcupacao4aFaixa() + 
-				getOcupacao5aFaixa();
+		return imposto.getTotalFaixaBaseDeCalculo(this);
 	}
 
 	public float getTotalImposto() {
-		return getImposto1aFaixa() + 
-				getImposto2aFaixa() + 
-				getImposto3aFaixa() + 
-				getImposto4aFaixa() + 
-				getImposto5aFaixa(); 
+		return imposto.getTotalImposto(this);
 	}
 
 }

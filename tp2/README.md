@@ -13,10 +13,10 @@ O trabalho prático 2 tem como intuito exercitar o conteúdo de _Refactoring_
 através da aplicações de algumas de suas operações no projeto apresentado no
 trabalho prático 1. Espera-se ao final desse trabalho que os componentes do
 grupo sejam capazes de identificar os maus cheiros de código e aplicar a
-operação de refatoração para a eliminar (ou pelo menos diminuir) o mau cheiro.
+operação de refatoração para eliminar (ou pelo menos diminuir) o mau cheiro.
 
 Cada grupo deverá realizar três operações de refatoração no projeto, a citar a)
-Extrair método, b) Substituir método por método objeto e c) Extrair constante.
+[operRefact1], b) Substituir método por método objeto e c) Extrair constante.
 As operações de refatoração deverão ser aplicadas na ordem apresentada
 anteriormente e cada operação deverá ser apresentada em um _commit_ específico.
 
@@ -121,3 +121,8 @@ Os trabalhos serão avaliados através:
 - da corretude dos refatorações aplicadas avaliadas se : 
     - as alterações no projeto são condizentes com os passos da refatoração;
     - o(s) mau(s) cheiro(s) foram eliminados ou diminuidos.
+
+
+
+
+[operRefact1]: Extrair método

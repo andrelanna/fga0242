@@ -53,41 +53,41 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1NzYy8VntAAnhbXChcWw-9Adu
 
 |  **GRUPO**  |   **Operação de Refatoração**  |   **Local a ser refatorado**  |
 |:-----------:|:-------------------------------|:------------------------------|
-|      1      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      1      | Extrair método                 |Menu.menu()                    |
+|             |Substituir método p/ met. objeto|Acesso.calculaAcesso()         |
+|             | Extrair constante              |Método obj. extraído refat. acima|
 |             |                                |                               |
-|      2      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      2      | Extrair método                 |definir_tipo_acesso()          |
+|             |Substituir método p/ met. objeto|cadastrar_acesso()             |
+|             | Extrair constante              |Classe Estacionamento          |
 |             |                                |                               |
-|      3      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      3      | Extrair método                 |Estacionamento.getValorAcesso()|
+|             |Substituir método p/ met. objeto|Estacionamento.getPermanencia()|
+|             | Extrair constante              |Classe Estacionamento          |
 |             |                                |                               |
-|      4      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      4      | Extrair método                 |AppMain.main()                 |
+|             |Substituir método p/ met. objeto|Acesso.getDiarias()            |
+|             | Extrair constante              |Classes Acesso e Estacionamento|
 |             |                                |                               |
-|      5      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      5      | Extrair método                 |Métodos construtores classe Acesso|
+|             |Substituir método p/ met. objeto|Acesso.calculaAcesso()         |
+|             | Extrair constante              |Método obj. extraído refat. acima|
 |             |                                |                               |
-|      6      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      6      | Extrair método                 |ParkingLot.register_parking_access()|
+|             |Substituir método p/ met. objeto|ParkingLot.get_parking_access_price_by_time()|
+|             | Extrair constante              |Método obj. extraído refat. acima|
 |             |                                |                               |
-|      7      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      7      | Extrair método                 |Acesso.useDiariaNoturna()      |
+|             |Substituir método p/ met. objeto|Acesso.calculaAcesso()         |
+|             | Extrair constante              |Classe Acesso                  |
 |             |                                |                               |
-|      8      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      8      | Extrair método                 |Estacionamento.saida()         |
+|             |Substituir método p/ met. objeto|Estacionamento.novoAcesso()    |
+|             | Extrair constante              |Método obj. extraído refat. acima|
 |             |                                |                               |
-|      9      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      9      | Extrair método                 |Estacionamento.calculaPreco()  |
+|             |Substituir método p/ met. objeto|Estacionamento.calculaPreco(), após extração de métodos.|
+|             | Extrair constante              |Classe Estacionamento          |
 |             |                                |                               |
 |     10      | Extrair método                 |                               |
 |             |Substituir método p/ met. objeto|                               |

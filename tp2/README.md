@@ -89,9 +89,9 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1NzYy8VntAAnhbXChcWw-9Adu
 |             |Substituir método p/ met. objeto|Estacionamento.calculaPreco(), após extração de métodos.|
 |             | Extrair constante              |Classe Estacionamento          |
 |             |                                |                               |
-|     10      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     10      | Extrair método                 |Estacionamento.cadastrarAcesso()|
+|             |Substituir método p/ met. objeto|Estacionamento.cadastrarAcesso, após refat. Extrair método ter sido aplicada.|
+|             | Extrair constante              |Método-objeto extraido da refatoração acima|
 
 
 **Entrega do trabalho**

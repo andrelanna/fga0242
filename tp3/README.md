@@ -81,6 +81,6 @@ uma delas, apresentar:
 
 Valor do trabalho: 25 pontos, 0.5 ponto cada característica. 
 
-Prazo de entrega: 02 de maio de 2022, 23:59:59hs. Entrega através do repositório
-do grupo de alunos. 
+Prazo de entrega: 21 de setembro de 2022, 23:59:59hs. Entrega através do
+repositório do grupo de alunos. 
 

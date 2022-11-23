@@ -18,6 +18,10 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
     - Triangulação
 
 
+**Vídeos da aula**
+- [TDD - parte 1](https://youtu.be/flx-uW7U8mc)
+- [TDD - parte 2](https://youtu.be/qVCZUg68Rls)
+
 **Exercicios de fixacao**
 
 Implementação da calculadora de [IRPF](https://www27.receita.fazenda.gov.br/simulador-irpf/)

@@ -10,141 +10,114 @@ TPPE - Técnicas de Programação para Plataformas Emergentes
 
 Seja o seguinte cenário descrito a seguir:
 
-> Você foi contratado por uma empresa que explora o gerenciamento de
-> estacionamentos particulares (prédios comerciais, shoppings, etc) e de
-> instalações públicas (aeroportos, estádios, ginásios, etc). De um modo geral,
-> o gerenciamento de um estacionamento se dá pela liberação das catracas
-> eletrônicas sempre que houver pelo menos uma vaga disponível em todo o
-> estacionamento. Os estacionamentos explorados por essa empresa possuem,
-> obviamente, uma ocupação máxima que ao ser atingida impede que novos acessos
-> sejam realizados pelas catracas eletrônicas de entrada. 
+> De um modo bastante resumido, o Imposto de Renda de Pessoa Física (IRPF) de
+> todo contribuinte é calculado mensalmente considerando os rendimentos
+> tributáveis recebidos no mês corrente e as deduções legais. Da subtração
+> desses valores (rendimentos - deduções) obtem-se a *base de cálculo*, sobre o
+> qual será calculado o valor do imposto. Há 5 faixas de cálculo de imposto,
+> cada qual com sua alíquota (definida em \%) a ser aplicada sobre o valor que a
+> base de cálculo ocupou da faixa. O valor do imposto final é a soma dos valores
+> de impostos a serem pagos para cada faixa e a alíquota efetiva total (em \%) é
+> o resultado do valor do imposto dividido pelo total de rendimentos. Cada um
+> desses passos está detalhado a seguir.
 >
-> Essa empresa realiza o gerenciamento de diversas formas de acesso aos
-> estacionamentos. Essas formas de acesso estão descritas a seguir: 
-> * Acesso por frações de quinze minutos: a cada quinze minutos contados a
->   partir do momento da passagem do veículo pela catraca eletrônica,
->   contabiliza-se o valor da fração; 
-> * Acesso por horas cheias: a cada hora cheia (4 frações de 15 minutos
->   completas) o valor da hora pode ter um desconto estipulado em um valor
->   percentual; 
-> * Acesso por diárias diurnas: sempre que o acesso do veículo durar mais de 9
->   horas, cobra-se um único valor relativo à diária do estacionamento. O valor
->   da diária é estabelecido como um valor fixo em Reais (R$). 
-> * Acesso por diária noturna: a diária noturna caracteriza-se pelo acesso de um
->   veículo após um determinado horário e sua retirada anterior ao a um
->   determinado horário do dia seguinte. O valor da diária noturna é determinado
->   como um valor percentual aplicado sobre o valor da diária diurna.
-> * Acesso mensalista: o valor do acesso mensalista é um valor fixo em Reais
->   (R$) e permite o acesso irrestrito do veículo nos horários em que o
->   estacionamento está em funcionamento. 
-> * Acesso por evento: o acesso por evento é determinado por um valor fixo a ser
->   aplicado para os acessos realizados dentro de um determinado período do dia. 
-ra
-> 
-> Os valores dos tipos de acessos apresentados acima vão variar de acordo com
-> cada estacionamento que contrata a empresa gerenciadora de estacionamentos.
-> Estacionamentos localizados em locais de maior movimentação (aeroportos,
-> shoppings) geralmente possuem valores de acesso mais elevados do que em locais
-> de menor movimentação (prédios comerciais). Cada local que contrata a empresa
-> gerenciadora de estacioamento recebe uma parte do valor de cada acesso,
-> definida em acordo com a empresa de gerenciamento do estacionamento. 
+> Como rendimentos tributáveis entende-se todos aqueles valores recebidos pelo
+> contribuinte tais como salários, aluguéis, participação em lucros e
+> rendimentos de empresas, dividendos, lucros de aplicações financeiras, dentre
+> outros. O valor total desses rendimentos deve ser utilizado para efeitos do
+> cálculo do IRPF. 
 >
-> Essa empresa trabalha em parceria com seguradoras de veículo para oferecer
-> descontos sobre o valor total do estacionamento, em todos os estacionamentos
-> que ela opera (o desconto não depende de cada estacionamento gerenciado). 
+> O contribuinte tem direito a vários deduções no mês corrente. Como deduções
+> integrais entende-se aquelas cujos valores totais serão abatidos do valor
+> total de rendimentos. São exemplos de deduções integrais: 
+> * Contribuição previdenciária oficial (podendo ser mais de uma contribuição,
+>   por exemplo, no contracheque + contribuição via carnê INSS);
+> * Pensão alimentícia;
+> * Previdência privada ou Fundo de Previdência dos Servidores públicos
+>   (Funpresp); 
+> * Valores pagos via carnê-leão, dentre outros.  
 >
-> Com base na descrição do cenário de gerenciamento de estacionamentos
-> apresentado acima, pode-se pensar nos seguintes estacionamentos gerenciados pela
-> empresa que te contratou. 
+> O contribuinte poderá ainda deduzir para cada dependente legal o valor de
+> R$189,59 por mês.  
+> Todas essas deduções deverão ser somadas para efeitos de cálculo do total de
+> deduções a que o contribuinte tem direito.  
 > 
-> | Estacionamento | Valor fração | Valor hora cheia | Valor diária diurna | Valor diária noturna                               |
-> |----------------|--------------|------------------|---------------------|----------------------------------------------------|
-> | Estac. 1       | R$ 30,00     | 15 %             |  R$ 120,00          | 45 % (entrada após 19:00hs, retirada antes 8:00hs) |
-> | Estac. 2       | R$ 20,00     | 10 %             |  R$  70,00          | 30 % (entrada após 21:00hs, retirada antes 7:00hs) |
-> | Estac. 3       | R$ 10,00     |  0 %             |  R$  50,00          | 40 % (entrada após 20:00hs, retirada antes 8:00hs) |
+> A base de cálculo do IRPF é dada pela subtração do total de rendimentos pelo
+> total de deduções. 
 > 
-> | Estacionamento | Valor acesso mensalista | Valor acesso evento | Horario Funcionamento | Capacidade |
-> |----------------|-------------------------|---------------------|-----------------------|------------| 
-> | Estac. 1       |  R$ 600,00              |  R$ 50,00           |  6:00 às 22:00hs      | 300 carros | 
-> | Estac. 2       |  R$ 455,00              |  R$ 60,00           |  24 horas             | 120 carros | 
-> | Estac. 3       |  R$ 350,00              |  R$ 40,00           |  6:00 às 22:00hs      | 600 carros | 
+> Para o valor da base de cálculo, é calculado o valor de cada uma das 5 faixas
+> de imposto. As faixas possuem as seguintes alíquotas:   
+> | Faixa | Alíquota    |
+> |:-----:|:-----------:|
+> | 1a.   | 0% (isenta) |
+> | 2a.   | 7,5%        |
+> | 3a.   | 15%         |
+> | 4a.   | 22,5%       |
+> | 5a.   | 27,5%       |
+>
+>
+> Portanto, baseado na tabela acima, os valores da base de cálculo que atingiram
+> as faixas serão multiplicados pelas respectivas alíquotas para cálculo do
+> valor do imposto de cada uma das faixas. O valor total do imposto a ser pago
+> naquele mês é a soma dos valores dos impostos de todas as faixas. 
 > 
-> | Estacionamento | % retorno contratante |
-> |----------------|-----------------------|
-> | Estac. 1       | 50 %                  |
-> | Estac. 2       | 60 %                  |
-> | Estac. 3       | 70 %                  |
+> Por fim, a alíquota efetiva é calculada como sendo a taxa (%) do valor total
+> do imposto pelo valor total de rendimentos. 
+>
+> Todo esses cálculos podem ser realizados através do [Simulador de IRPF da
+> Receita Federal Brasileira (RFB)](https://www27.receita.fazenda.gov.br/simulador-irpf/). 
 
-Com base nos valores hipotéticos apresentados nas tabelas acima, pode-se simular
-os seguintes valores para o gerenciamento dos estacionamentos: 
 
-* Estacionamento 1:  
-  Acessos: 
-  | Placa | Hora entrada; hora saida | Tipo do acesso | Valor do acesso | Valor do contrante | 
-  |-------|--------------------------|----------------|-----------------|--------------------|
-  | HI139 | 8:30 ; 8:56              |                | R$ 60,00        | R$ 30,00           |
-  | G49NG |                          | Mensalista     | R$ 600,00 (mes) | R$ 300,00          |
-  | AC50M | 8:00 ; 18:00             |                | R$ 120,00       | R$ 60,00           |
-  | RM3A9 |                          | Noturno        | R$ 54,00        | R$ 27,00           |
-  | AM31J |                          | Evento         | R$ 50,00        | R$ 25,00           |
+Com base na descrição do cálculo do IRPF acima, o trabalho a ser realizado pelo
+grupo consiste na criação de um simulador similar ao simulador disponibilizado
+pela RFB. Esse simulador deverá ser construído através do método de TDD
+utilizando, **obrigatoriamente**, as técnicas de falsificação, duplicação e
+triangulação de testes. 
 
-  Total apurado pelo contratante: R$ 442,00
+O projeto resultante do desenvolvimento através de TDD deverá ser capaz de:  
 
-* Estacionamento 2:  
-  Acessos:  
-  | Placa | Hora entrada; hora saida | Tipo do acesso | Valor do acesso | Valor do contrante | 
-  |-------|--------------------------|----------------|-----------------|--------------------|
-  | HI139 | 8:30 ; 9:30              |                | R$ 72,00        | R$ 43,20           |
-  | G49NG | 15:12; 16:00             |                | R$ 72,00        | R$ 43,20           |
-  | AC50M | 8:00 ; 18:00             |                | R$ 70,00        | R$ 42,00           |
-  | RM3A9 | 21:36; 6:12              | Noturno        | R$ 21,00        | R$ 12,60           |
-  | AM31J |                          | Evento         | R$ 60,00        | R$ 36,00           |
+* Cadastro de rendimentos: 
+  * Cadastrar rendimentos com a descrição (salario, aluguel, etc...) e valor
+  * Não permitir descrição em branco (nesse caso lançar uma exceção do tipo
+    ```DescricaoEmBrancoException```
+  * Não permitir informar valores de rendimentos em branco ou inválidos
+    (negativos por exemplo). Nesses casos lançar exceção do tipo
+```ValorRendimentoInvalidoException``` 
 
-  Total apurado pelo contratante: R$ 177,00
+* Cadastro de deduções: 
+  * Cadastrar deduções através de sua descrição (Previdencia privada, Funpresp,
+    etc...) e valor: 
+    * Não permitir cadastro de deduções com descrição em branco. Nesse caso
+      lançar ```DescricaoEmBrancoException```.
+    * Não permitir cadastro de valores em branco ou inválidos para as deduções.
+      Nesses casos lançar uma exceção do tipo ```ValorDeducaoInvalidoException``` 
+  * Cadastrar uma ou mais contribuição previdenciária oficial, informando
+    descrição e valores. 
+    * As restrições apresentadas no caso acima se aplicam integralmente para
+      contribuições previdenciárias.
+  * Cadastrar uma ou mais pensão alimentícia, informando valores. 
+    * As restrições apresentadas no caso acima se aplicam integralmente para
+      contribuições previdenciárias.
+  * Cadastrar dependentes (zero ou mais), informando o nome e a data de
+    nascimento de cada dependente. 
+    * Não permitir o cadastro de um dependente com o nome em branco. Nesse caso
+      deverá lançar uma exceção do tipo ```NomeEmBrancoException```.
 
-Com base nas descrições dos cálculos acima **e em outras simulações de cálculo a
-serem realizadas pelo grupo**, o trabalho a ser realizado consiste na criação de
-uma ferramenta que seja capaz de realizar tais cálculos para essa empresa de
-gerenciamento de estacionamentos. Essa ferramenta deverá ser construído através
-do método de TDD utilizando, **obrigatoriamente**, as técnicas de falsificação,
-duplicação e triangulação de testes. 
+* Calculo dos impostos das faixas de impostos: 
+  * Calcular o valor de faixa de base de cálculo de cada uma das faixas e o
+    valor do imposto para cada uma das faixas. 
+  * Calcular o valor total das faixas de base de cálculo e o valor total do
+    imposto de todas as faixas. 
 
-O projeto resultante do desenvolvimento através de TDD deverá ser capaz de, para
-cada estacionamento gerenciado: 
-
-* Cadastrar os acessos (placa, hora de entrada, hora de saída) 
-* Com base nos dados do estacionamento (horário de funcionamento, horários de
-    período noturno) e nos dados de acesso (hora de entrada e saída), o programa
-    deverá **inferir** qual o tipo de cálculo a ser aplicado. **ATENÇÃO:** o
-    único tipo de acesso que pode ser informado previamente pelo usuário é o
-    acesso por eventos, os demais tipos de acessos e seus cálculos e seus
-    cálculos deverão ser identificados pela própria aplicação. 
-* Não permitir descrições em branco para os dados de acesso (placa, hora de
-    entrada e saída) e para os dados do estacionamento que está sendo gerenciado
-    (horário de funcionamento, valores de acessos - todos os tipos, valores de
-    participação da contratane, capacidade do estacionamento). Nesse caso lançar
-    uma exceção do tipo ``DescricaoEmBrancoException`` informando qual campo
-    está em branco.
-* Não permitir informar valores de acesso inválidos (negativos por exemplo).
-Nesses casos lançar exceção do tipo ``ValorAcessoInvalidoException``.
-* Calcular os valores a serem repassados pela gerenciadora de estacionamentos ao
-    contratante, ao final da apuração dos valores de todos os acessos
-    realizados. 
-* Todas as exceções apresentadas acima deverão ser testadas por meio de testes
-    unitários. 
-* Utilizem os rótulos ``Teste Funcional`` e ``TesteExcecao`` para testes de
-    funcionalidades e testes de lançamentos de exceções criados para cada teste
-    unitário criado. Ao final crie uma suíte de testes capaz de executar todas
-    as categorias de testes. 
+* Calcular a alíquota efetiva. 
 
 
 O trabalho deverá apresentar o emprego das três técnicas de TDD (falsificação,
 duplicação e triangulação) em, pelo menos, nas três seguintes situações: 
 
-* Calculo do valor de acesso para acesso de hora cheia; 
-* Cálculo do valor de acesso para acesso noturno; 
-* Calculo do valor apurado pela contratante com, no mínimo, um acesso por
-    evento, um acesso de diária diurna e um acesso de 3 frações de 15 minutos. 
+* Calculo do total de deduções; 
+* Cálculos da base de calculo e do valor de imposto da faixa 1; 
+* Cálculo da aliquota efetiva. 
 
 Nesses três casos deverá, para efeito de evidência, ter a seguinte sequencia de
 _commits_:
@@ -161,17 +134,14 @@ exceções.
 
 **Grupos de alunos**
 
-Os trabalhos deverão ser executados por grupos de até 5 alunos. O grupo deverá
+Os trabalhos deverão ser executados por grupos de até 6 alunos. O grupo deverá
 criar um repositório público no GitHub, cujo arquivo README.md deverá conter os
-nomes e matrículas dos componentes, bem como as instruções de execução dos
-testes unitários (a depender do framework de testes unitários adotado pelo
-grupo). Os grupos de trabalho e o endereço do repositório deverão ser enviados
-por email para o professor.
+nomes e matrículas dos componentes. 
 
 **Entrega do trabalho**
 
 Os trabalhos deverão ser entregues através de repositório no GitHub, até as
-23:59:59hs do dia 18 de julho de 2022, impreterivelmente. 
+23:59:59hs do dia 21 de dezembro de 2022, impreterivelmente. 
 
 Os grupos deverão informar ao professor o endereço do repositório do projeto
 antes da data final de entrega. 
@@ -184,9 +154,8 @@ antes da data final de entrega.
 
 Os trabalhos serão avaliados através:
 
-- da corretude dos cálculos realizados pela aplicação ;
+- da corretude dos cálculos realizados pelo simulador;
 - da utilização de testes parametrizados em todos os testes funcionais; 
 - da utilização de testes de exceção e, por fim, 
 - das seqüências de _commits_ para os casos em que o emprego das técnicas de
-falsificação, duplicação e triangulação é obrigatório.
-
+  falsificação, duplicação e triangulação é obrigatório.

@@ -5,13 +5,18 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 12 - Operações de Refatoração
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- Extrair método<sup>* </sup> / introduzir método<sup>* </sup>
+- Mover método<sup>* </sup>
+- Mover atributo<sup>* </sup>
+- Extrair classe<sup>* </sup> / introduzir classe
+
+\* Essas operações estão automatizadas no Eclipse
+
 
 **Slides da aula**
-* [Slides](link para os slides)
+* [Slides](https://docs.google.com/presentation/d/1JizqaH0YcI1BA5uwBof1u3_gMe9BUwrB8vbht0iLUP0/edit?usp=sharing)
 
 **Exercicios de fixacao**

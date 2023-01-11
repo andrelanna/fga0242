@@ -101,17 +101,17 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|                               |
 |             | Extrair constante              |                               |
 |             |                                |                               |
-|     13      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     13      | Extrair método                 |SimuladorIRPF.calcula_faixas() |
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
-|     14      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     14      | Extrair método                 |SimuladorIRFP.calculaImposto() |
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
-|     15      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     15      | Extrair método                 |SimuladorIRPF.calculaIRPF()    |
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
 |     16      | Extrair método                 |                               |
 |             |Substituir método p/ met. objeto|                               |

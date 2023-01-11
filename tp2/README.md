@@ -81,9 +81,9 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|                               |
 |             | Extrair constante              |                               |
 |             |                                |                               |
-|      8      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      8      | Extrair método                 |Todas ocorrências de ```descricao == None or descricao == ""``` e ```valor <= 0 or valor == None```
+|             |Substituir método p/ met. objeto|Deducao.calculoValorTotalDeducoes()|
+|             | Extrair constante              |Objeto método resultante da operação anterior|
 |             |                                |                               |
 |      9      | Extrair método                 |                               |
 |             |Substituir método p/ met. objeto|                               |

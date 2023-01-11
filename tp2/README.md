@@ -69,9 +69,9 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|get totalDeducoes()            |
 |             | Extrair constante              |get imposto(), todos métodos getImpostoFaixaX()|
 |             |                                |                               |
-|      5      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      5      | Extrair método                 |CalculadoraIRPF.calculoImposto()|
+|             |Substituir método p/ met. objeto|Método calculoImposto() resultante da refatoração acima|
+|             | Extrair constante              |Todas as constantes presentes nos métodos refatorados à partir de calculoImposto() original|
 |             |                                |                               |
 |      6      | Extrair método                 |                               |
 |             |Substituir método p/ met. objeto|                               |

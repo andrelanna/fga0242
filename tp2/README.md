@@ -43,7 +43,7 @@ Classes/métodos/atributos afetados:
 As operações de refatoração e os locais a serem aplicadas estão definidas
 conforme a tabela apresentada na seção Grupo de Alunos. O número do grupo
 corresponde ao número apresentado na tabela de notas da disciplina publicada no
-seguinte [link](https://docs.google.com/spreadsheets/d/1NzYy8VntAAnhbXChcWw-9AduNwpJm0JhbZPHSXGrF68/edit?usp=sharing).
+seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8s7oWJicMwrppxvZEyXE/edit?usp=sharing).
 
 [Catálogo Refactoring - Compondo métodos](https://github.com/andrelanna/andrelanna.github.io/blob/master/lectures/das/Catalogo_Refatoracao_Compondo_metodos.pdf)
 
@@ -53,52 +53,92 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1NzYy8VntAAnhbXChcWw-9Adu
 
 |  **GRUPO**  |   **Operação de Refatoração**  |   **Local a ser refatorado**  |
 |:-----------:|:-------------------------------|:------------------------------|
-|      1      | Extrair método                 |Menu.menu()                    |
-|             |Substituir método p/ met. objeto|Acesso.calculaAcesso()         |
-|             | Extrair constante              |Método obj. extraído refat. acima|
+|      1      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|      2      | Extrair método                 |definir_tipo_acesso()          |
-|             |Substituir método p/ met. objeto|cadastrar_acesso()             |
-|             | Extrair constante              |Classe Estacionamento          |
+|      2      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|      3      | Extrair método                 |Estacionamento.getValorAcesso()|
-|             |Substituir método p/ met. objeto|Estacionamento.getPermanencia()|
-|             | Extrair constante              |Classe Estacionamento          |
+|      3      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|      4      | Extrair método                 |AppMain.main()                 |
-|             |Substituir método p/ met. objeto|Acesso.getDiarias()            |
-|             | Extrair constante              |Classes Acesso e Estacionamento|
+|      4      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|      5      | Extrair método                 |Métodos construtores classe Acesso|
-|             |Substituir método p/ met. objeto|Acesso.calculaAcesso()         |
-|             | Extrair constante              |Método obj. extraído refat. acima|
+|      5      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|      6      | Extrair método                 |ParkingLot.register_parking_access()|
-|             |Substituir método p/ met. objeto|ParkingLot.get_parking_access_price_by_time()|
-|             | Extrair constante              |Método obj. extraído refat. acima|
+|      6      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|      7      | Extrair método                 |Acesso.useDiariaNoturna()      |
-|             |Substituir método p/ met. objeto|Acesso.calculaAcesso()         |
-|             | Extrair constante              |Classe Acesso                  |
+|      7      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|      8      | Extrair método                 |Estacionamento.saida()         |
-|             |Substituir método p/ met. objeto|Estacionamento.novoAcesso()    |
-|             | Extrair constante              |Método obj. extraído refat. acima|
+|      8      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|      9      | Extrair método                 |Estacionamento.calculaPreco()  |
-|             |Substituir método p/ met. objeto|Estacionamento.calculaPreco(), após extração de métodos.|
-|             | Extrair constante              |Classe Estacionamento          |
+|      9      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 |             |                                |                               |
-|     10      | Extrair método                 |Estacionamento.cadastrarAcesso()|
-|             |Substituir método p/ met. objeto|Estacionamento.cadastrarAcesso, após refat. Extrair método ter sido aplicada.|
-|             | Extrair constante              |Método-objeto extraido da refatoração acima|
+|     10      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     11      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     12      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     13      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     14      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     15      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     16      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     17      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     18      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     19      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
+|             |                                |                               |
+|     20      | Extrair método                 |                               |
+|             |Substituir método p/ met. objeto|                               |
+|             | Extrair constante              |                               |
 
 
 **Entrega do trabalho**
 
 Os trabalhos deverão ser entregues através dos repositórios do GitHub utilizados
-na primeira entrega do trabalho, até as 23:59:59hs do dia 5 de setembro de 2022,
-impreterivelmente. 
+na primeira entrega do trabalho, **até as 23:59:59hs do dia 1 de fevereiro de
+2023, impreterivelmente**. 
 
 Recomenda-se utilizar uma branch específica para realizar as operações de
 refatoração, criada a partir da última versão do código (aquela utilizada para

@@ -89,9 +89,9 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|                               |
 |             | Extrair constante              |                               |
 |             |                                |                               |
-|     10      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     10      | Extrair método                 |Calculo.calculaImposto()       |
+|             |Substituir método p/ met. objeto|Método calculaImposto resultante da refatoração anterior|
+|             | Extrair constante              |Objeto-método resultante da refatoração anterior|
 |             |                                |                               |
 |     11      | Extrair método                 |                               |
 |             |Substituir método p/ met. objeto|                               |

@@ -65,9 +65,9 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|                               |
 |             | Extrair constante              |                               |
 |             |                                |                               |
-|      4      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      4      | Extrair método                 |value == null || value < 0     |
+|             |Substituir método p/ met. objeto|get totalDeducoes()            |
+|             | Extrair constante              |get imposto(), todos métodos getImpostoFaixaX()|
 |             |                                |                               |
 |      5      | Extrair método                 |                               |
 |             |Substituir método p/ met. objeto|                               |

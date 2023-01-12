@@ -57,13 +57,13 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|CadastrarContribuicao.add()    |
 |             | Extrair constante              |ContribuicaoPrevidenciaria, Deducao, Pensao, Rendimento.|
 |             |                                |                               |
-|      2      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      2      | Extrair método                 |IRPF.calculateBasis()          |
+|             |Substituir método p/ met. objeto|IRPF.registerIncome()          |
+|             | Extrair constante              |Não há como aplicar essa refatoração|
 |             |                                |                               |
-|      3      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      3      | Extrair método                 |IRPF.calculaTaxas              |
+|             |Substituir método p/ met. objeto|No método resultante da refatoração acima|
+|             | Extrair constante              |Em toda a classe IRPF classe objeto-método extraída|
 |             |                                |                               |
 |      4      | Extrair método                 |value == null || value < 0     |
 |             |Substituir método p/ met. objeto|get totalDeducoes()            |
@@ -73,33 +73,33 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|Método calculoImposto() resultante da refatoração acima|
 |             | Extrair constante              |Todas as constantes presentes nos métodos refatorados à partir de calculoImposto() original|
 |             |                                |                               |
-|      6      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      6      | Extrair método                 |functions.calcula_valor_importo|
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
-|      7      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      7      | Extrair método                 |calc.calculateBaseValuePerRange|
+|             |Substituir método p/ met. objeto|deductionsRegister.createDeduction|
+|             | Extrair constante              |calc.ts                        |
 |             |                                |                               |
 |      8      | Extrair método                 |Todas ocorrências de ```descricao == None or descricao == ""``` e ```valor <= 0 or valor == None```
 |             |Substituir método p/ met. objeto|Deducao.calculoValorTotalDeducoes()|
 |             | Extrair constante              |Objeto método resultante da operação anterior|
 |             |                                |                               |
-|      9      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|      9      | Extrair método                 |CalculadoraIRPF.getValorImposto|
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
 |     10      | Extrair método                 |Calculo.calculaImposto()       |
 |             |Substituir método p/ met. objeto|Método calculaImposto resultante da refatoração anterior|
 |             | Extrair constante              |Objeto-método resultante da refatoração anterior|
 |             |                                |                               |
-|     11      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     11      | Extrair método                 |SimuladorIRPF.getImposto       |
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
-|     12      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     12      | Extrair método                 | SimuladorIRPF.calcularValorBaseFaixa|
+|             |Substituir método p/ met. objeto|SimuladorIRPF.cadastrarDeducao |
+|             | Extrair constante              |SimuladorIRPF.calcularValorBaseFaixa|
 |             |                                |                               |
 |     13      | Extrair método                 |SimuladorIRPF.calcula_faixas() |
 |             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
@@ -113,21 +113,21 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
 |             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
-|     16      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     16      | Extrair método                 |Simulacao.get_valor_imposto()  |
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |main.py                        |
 |             |                                |                               |
-|     17      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     17      | Extrair método                 |CalculadoraIRPF.getTotalImposto|
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
-|     18      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     18      | Extrair método                 |Faixa.calcular_imposto()       |
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
-|     19      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     19      | Extrair método                 |IncomeTaxCalculator.getEffectiveRate()
+|             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
+|             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
 |     20      | Extrair método                 |                               |
 |             |Substituir método p/ met. objeto|                               |

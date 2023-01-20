@@ -129,9 +129,9 @@ seguinte [link](https://docs.google.com/spreadsheets/d/1CyAeaEKlNzQ4SsSnTw0rYcr8
 |             |Substituir método p/ met. objeto|Método resultante da refatoração anterior|
 |             | Extrair constante              |Métodos refatorados pelas refatorações anteriores|
 |             |                                |                               |
-|     20      | Extrair método                 |                               |
-|             |Substituir método p/ met. objeto|                               |
-|             | Extrair constante              |                               |
+|     20      | Extrair método                 |Nas expressoes aritmeticas que realizam calculos da base de calculo considerando os valores de cada faixa|
+|             |Substituir método p/ met.  objeto|SimuladorIRPF.calcula_total_imposto()|
+|             | Extrair constante              |Em toda classe SimuladorIRPF   |
 
 
 **Entrega do trabalho**

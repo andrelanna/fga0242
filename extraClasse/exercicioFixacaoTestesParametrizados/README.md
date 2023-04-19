@@ -12,7 +12,7 @@ Exercícios de fixação do conteúdo de testes parametrizados.
    
    |  a0  |  r  |  n  |  n-esimo termo  |  soma  |
    |:----:|:---:|:---:|:---------------:|:------:|
-   |   2  |  3  |  5  |        14       |    10  |
+   |   2  |  3  |  5  |        14       |    40  |
    |   3  |  4  |  5  |        19       |    55  |
    |   5  | -3  |  6  |       -10       |   -15  |
    

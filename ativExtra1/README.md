@@ -16,11 +16,11 @@ subsequencia de comprimento máximo entre duas ou mais strings.
 Exemplos: 
 
 As sequencias "1234" e "1224533324" possuem a LCS "1234":   
-><u>1234</u>  
-><u>12</u>245<u>3</u>332<u>4</u>
+ ***1234***  
+ ***12***245***3***332***4***
 
-><u>t</u>hi<u>si</u>sa<u>test</u>  
-><u>t</u>e<u>s</u>t<u>i</u>ng123<u>test</u>ing
+ ***t***hi***si***sa***test***  
+ ***t***e***s***t***i***ng123***test***ing
 
 Fonte: rosettacode.org
 

@@ -45,6 +45,9 @@ FGA - Faculdade do Gama
 | [33](aula33) |  24/07/23 | Aula extra                                                                                                                       |
 | [34](aula34) |           | Aula extra                                                                                                                       |
 
+Atividades extra-classe:   
+- [Atividade extra-classe 1 - em substituição à aula no. 9.](/ativExtra1)
+
 --- 
 
 **Metodologia:** 

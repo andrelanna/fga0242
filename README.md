@@ -58,8 +58,7 @@ Atividades extra-classe:
 
 **Avaliação do aprendizado**  
 * [Trabalho prático sobre TDD e Refatoração - 30 pontos](/tp1)
-* Trabalho prático sobre programação defensiva e tratamento de erros / depuração
-  de código (30 pontos)
+* [Trabalho prático sobre atributos de código - 30 pontos](/tp2)
 * Trabalho prático sobre componentes e frameworks - 40 pontos
 
 --- 

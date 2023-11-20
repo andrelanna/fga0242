@@ -119,6 +119,7 @@ descrições dos testes estão listados a seguir:
 * Consulta de Estoque: 
   -  Garantir que o produto seja recuperado toda vez que ele for recuperado em
      buscas pelo seu nome ou pelo seu código de barras.  
+<<<<<<< HEAD
 
 * Gestão de Transações:
   - Garantir que os seguintes tipos de transações sejam realizadas e os estoques
@@ -144,13 +145,30 @@ descrições dos testes estão listados a seguir:
     cada lote para um determinado produto; 
   - Garantir que o sistema emita um alerta de lotes próximos à data de validade
     e atualize o preço de venda daqueles produtos em -20%. 
+=======
+  
+>>>>>>> 65a4fa4d73c969eff175f4534a587fce88a38138
 
+* Gestão de Transações:
+  - Garantir que os seguintes tipos de transações sejam realizadas e os estoques dos produtos sejam atualizados: recebimento de mercadoria, vendas, transferências entre filiais, devoluções, ajustes de estoque. 
+  - Garantir que não serão informadas quantidades negativas para as transações,
+    exceto para ajustes de estoque. Nos outros casos, lançar exceções do tipo
+`ValorInvalidoException`. 
+
+* Alertas de Estoque Baixo: Configuração de alertas automáticos que notificam os usuários quando os níveis de estoque de um produto atingem um limite mínimo predefinido, indicando a necessidade de reabastecimento.
+
+Rastreamento de Lotes e Validade: Permite o rastreamento detalhado de lotes de produtos, especialmente útil para itens com data de validade. O sistema pode alertar sobre produtos próximos ao vencimento.
 
 O trabalho deverá apresentar o emprego das três técnicas de TDD (falsificação,
 duplicação e triangulação) em, pelo menos, nas três seguintes situações: 
 
+<<<<<<< HEAD
 * Transferência entre filiais
 * Emissão de alerta de produtos próximos à data de validade
+=======
+* Situação X
+* Situação X
+>>>>>>> 65a4fa4d73c969eff175f4534a587fce88a38138
 
 Nesses dois casos deverá, para efeito de evidência, ter a seguinte sequencia de
 _commits_:

@@ -32,9 +32,23 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
       - Operações de refatoração
 	  - Extrair método
 	  - Extrair classe
-	  - Mover método / campo
+	  - Mover método / atributo
+          - Encapsular atributo
+          - Extrair sub-classe
+          - Extrair super-classe
 	  - Extrair constante
 	  - Substituir método por objeto-método
+  - Programação defensiva
+      - Conceitualização e importância
+      - Técnicas de programação defensiva
+  - Documentação de código
+      - Técnicas para escrever código legível e auto-explicativo
+      - Técnicas para documentar código
+  - Tratamento de erros e depuração de código
+      - Erros versus exceções
+      - Técnicas para prevenir o código de erros inevitáveis
+      - Técnicas para teste de código
+      - Técnicas de depuração de código 
   - Técnicas de programação
       - Simplicidade
       - Elegância
@@ -49,16 +63,23 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
       - Frameworks caixa-preta
       - Modelo de componente
 
-- Lista de presenças
+---
+- Lista de presenças  
+      - Todas as aulas, haverá lista de chamadas.  
+      - Faltas não serão abonadas.  
+
 
 - Atividades avaliativas
-  - Trabalho prático TDD
-  - Trabalho prático Refactoring
-  - Trabalho sobre técnicas de programação / componentes e frameworks
+  - Avaliação prática TDD (20 pontos)
+  - Trabalho prático TDD, Refactoring, depuração de código
+      - Desenvolvimento de aplicação utilizando TDD (20 pontos)
+      - Refatoração da aplicação (20 pontos)
+      - Depuração de código e tratamento de erros (20 pontos) 
+  - Trabalho sobre técnicas de programação / componentes e frameworks (20 pontos)
 
 
 
-**Slides da aula**
-* [Slides](link para os slides)
-
-**Exercicios de fixacao**
+<!--- **Slides da aula** -->
+<!--- * [Slides](link para os slides) -->
+<!---  -->
+<!--- **Exercicios de fixacao** -->

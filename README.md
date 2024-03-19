@@ -9,44 +9,41 @@ FGA - Faculdade do Gama
 
 |     Aula no. |  **Data** |Descrição                                                                                                                         |
 |-------------:|:---------:|----------------------------------------------------------------------------------------------------------------------------------|
-|   [1](aula1) |  29/03/23 | Apresentação da disciplina, tópicos, cronograma, avaliações                                                                      |
-|   [2](aula2) |  03/04/23 | Testes unitários - Revisão de testes unitários e frameworks xUnit; propriedades, independência e atomicidade de testes           |
-|   [3](aula3) |  05/04/23 | Testes unitários - Estrutura do framework xUnit, testes unitários, asserções e casos de testes, suite de testes                  |
-|   [4](aula4) |  10/04/23 | Testes unitários - prática sobre testes unitários, asserções, casos de testes, suíte de testes, independência de testes.         |
-|   [5](aula5) |  12/04/23 | Testes unitários - Testes parametrizados, categorias de testes, testes de exceções                                               |
-|   [6](aula6) |  17/04/23 | Testes unitários - Testes parametrizados, categorias de testes, testes de exceções [Atividade extra-classe: avaliação MEC](extraClasse/exercicioFixacaoTestesParametrizados) |
-|   [7](aula7) |  19/04/23 | Desenvolvimento Orientado a Testes (TDD): red-green patterns, técnicas de falsificação, duplicação e triangulação.               |
-|   [8](aula8) |  24/04/23 | Atividade prática de TDD: red-green patterns, técnicas de falsificação, duplicação e triangulação                                |
-|   [9](aula9) |  26/04/23 | Desenvolvimento de aplicação utilizando TDD (exemplo)                                                                            |
-| [10](aula10) |  01/05/23 | Prática de desenvolvimento de aplicação usando TDD                                                                               |
-| [11](aula11) |  03/05/23 | Introdução a refatoração, princípios de refatoração, maus cheiros de código                                                      |
-| [12](aula12) |  08/05/23 | Refatorações básicas: extrair constante, extrair método, operações de _inline_, renomear método/classe                           |
-| [13](aula13) |  10/05/23 | Outras refatorações: substituir objeto por método-objeto, ...                                                                    |
-| [14](aula14) |  15/05/23 | Práticas de outras refatorações: substituir método por objeto-método, ...                                                        |
-| [15](aula15) |  17/05/23 | Refatorações para padrões                                                                                                        |
-| [16](aula16) |  22/05/23 | Prática sobre refatorações para padrões.                                                                                         |
-| [17](aula17) |  24/05/23 | Prática sobre refatorações para padrões                                                                                          |
-| [18](aula18) |  29/05/23 | Programação defensiva: principais técnicas                                                                                       |
-| [19](aula19) |  31/05/23 | Assertivas e programação por contratos: pré/pós-condições, invariantes                                                           |
-| [20](aula20) |  05/06/23 | Prática sobre assertivas e programação por contratos                                                                             | 
-| [20](aula20) |  07/06/23 | Tratamento de Erros e Depuração de Código: erros vs. exceções, introdução a técnicas de prevenção, teste e depuração.            |
-| [21](aula21) |  12/06/23 | Tratamento de Erros e Depuração de código: técnicas de prevenção, técnicas de testes de código e técnicas de depuração de código |
-| [22](aula22) |  14/06/23 | Boas práticas de programação e projeto                                                                                           |
-| [23](aula23) |  19/06/23 | Boas práticas de programação e projeto                                                                                           |
-| [24](aula24) |  21/06/23 | Frameworks - definição, FWs caixa branca, FWs caixa preta e FWs caixa cinza                                                      |
-| [25](aula25) |  26/06/23 | Frameworks - modelo de componentes.                                                                                              |
-| [26](aula26) |  28/06/23 | Frameworks - implementação de frameworks                                                                                         |
-| [27](aula27) |  03/07/23 | Frameworks - implementação de FWs e exemplo de carregamento de código dinâmico                                                   | 
-| [28](aula28) |  05/07/23 | Linhas de Produto de Software                                                                                                    |
-| [29](aula29) |  10/07/23 | Entrega de notas - Revisão de menções                                                                                            |
-| [30](aula30) |  12/07/23 | Aula extra                                                                                                                       |
-| [31](aula31) |  17/07/23 | Aula extra                                                                                                                       |
-| [32](aula32) |  19/07/23 | Aula extra                                                                                                                       |
-| [33](aula33) |  24/07/23 | Aula extra                                                                                                                       |
-| [34](aula34) |           | Aula extra                                                                                                                       |
-
-Atividades extra-classe:   
-- [Atividade extra-classe 1 - em substituição à aula no. 9.](/ativExtra1)
+|   [1](aula1) |  18/03/24 | Apresentação da disciplina, tópicos, cronograma, avaliações.                                                                     |
+|   [2](aula2) |  20/03/24 | Testes unitários - Revisão de testes unitários e frameworks xUnit; propriedades, independência e atomicidade de testes           |
+|   [3](aula3) |  25/03/24 | Testes unitários - Estrutura do framework xUnit, testes unitários, asserções e casos de testes, suite de testes                  |
+|   [4](aula4) |  27/03/24 | Testes unitários - Prática sobre testes unitários, asserções, casos de testes, suíte de testes, independência de testes.         |
+|   [5](aula5) |  01/04/24 | Testes unitários - Testes parametrizados, categorias de testes, testes de exceções                                               |
+|   [6](aula6) |  03/04/24 | Testes unitários - Prática de testes parametrizados, categorias de testes, testes de exceções                                    |
+|   [7](aula7) |  08/04/24 | Desenvolvimento Orientado a Testes (TDD): red-green patterns, técnicas de falsificação, duplicação e triangulação.               |
+|   [8](aula8) |  10/04/24 | Atividade prática de TDD: red-green patterns, técnicas de falsificação, duplicação e triangulação                                |
+|   [9](aula9) |  15/04/24 | Desenvolvimento de aplicação utilizando TDD (exemplo)                                                                            |
+| [10](aula10) |  17/04/24 | Prática de desenvolvimento de aplicação usando TDD                                                                               |
+| [11](aula11) |  22/04/24 | Introdução a refatoração, princípios de refatoração, maus cheiros de código                                                      |
+| [12](aula12) |  24/04/24 | Refatorações básicas: extrair constante, extrair método, operações de _inline_, renomear método/classe                           |
+| [13](aula13) |  29/04/24 | Outras refatorações: substituir objeto por método-objeto, ...                                                                    |
+| [14](aula14) |  01/05/24 | Práticas de outras refatorações: substituir método por objeto-método, ...                                                        | 
+| [15](aula15) |  06/05/24 | Feriado                                                                                                                          |
+| [16](aula16) |  08/05/24 | Refatorações para padrões                                                                                                        |
+| [17](aula17) |  13/05/24 | Prática sobre refatorações para padrões.                                                                                         |
+| [18](aula18) |  15/05/24 | Prática sobre refatorações para padrões                                                                                          |
+| [19](aula19) |  20/05/24 | Programação defensiva: principais técnicas                                                                                       |
+| [20](aula20) |  22/05/24 | Assertivas e programação por contratos: pré/pós-condições, invariantes                                                           |
+| [20](aula20) |  27/05/24 | Prática sobre assertivas e programação por contratos                                                                             | 
+| [21](aula21) |  29/05/24 | Tratamento de Erros e Depuração de Código: erros vs. exceções, introdução a técnicas de prevenção, teste e depuração.            |
+| [22](aula22) |  03/06/24 | Tratamento de Erros e Depuração de código: técnicas de prevenção, técnicas de testes de código e técnicas de depuração de código |
+| [23](aula23) |  05/06/24 | Boas práticas de programação e projeto                                                                                           |
+| [24](aula24) |  10/06/24 | Boas práticas de programação e projeto                                                                                           |
+| [25](aula25) |  12/06/24 | Frameworks - definição, FWs caixa branca, FWs caixa preta e FWs caixa cinza                                                      |
+| [26](aula26) |  17/06/24 | Frameworks - modelo de componentes.                                                                                              |
+| [27](aula27) |  19/06/24 | Frameworks - implementação de frameworks                                                                                         |
+| [28](aula28) |  24/06/24 | Frameworks - implementação de FWs e exemplo de carregamento de código dinâmico                                                   | 
+| [29](aula29) |  26/06/24 | Linhas de Produto de Software                                                                                                    |
+| [30](aula30) |  01/07/24 | Entrega de notas - Revisão de menções                                                                                            |
+| [31](aula31) |  03/07/24 | Aula extra                                                                                                                       |
+| [32](aula32) |  08/07/24 | Aula extra                                                                                                                       |
+| [33](aula33) |  10/07/24 | Aula extra                                                                                                                       |
+| [34](aula34) |  15/07/24 | Aula extra                                                                                                                       |
 
 --- 
 
@@ -56,12 +53,19 @@ Atividades extra-classe:
 
 ---
 
-**Avaliação do aprendizado**  
-* [Trabalho prático sobre TDD e Refatoração - 30 pontos](/tp1)
-* [Trabalho prático sobre atributos de código - 30 pontos](/tp2)
-* Trabalho prático sobre componentes e frameworks - 40 pontos
+**Avaliação do aprendizado:**  
+- Avaliação prática TDD (20 pontos)
+- Trabalho prático TDD, Refactoring, depuração de código
+    - Desenvolvimento de aplicação utilizando TDD (20 pontos)
+    - Refatoração da aplicação (20 pontos)
+    - Depuração de código e tratamento de erros (20 pontos) 
+- Trabalho sobre técnicas de programação / componentes e frameworks (20 pontos)
+
+<!--- * [Trabalho prático sobre TDD e Refatoração - 30 pontos](/tp1)  -->
+<!--- * [Trabalho prático sobre atributos de código - 30 pontos](/tp2)  -->
+<!--- * Trabalho prático sobre componentes e frameworks - 40 pontos  -->
 
 --- 
 **Horário de atendimento:**  
-Segundas e quartas, de 13:00 às 14:00hs e 18:00 às 19:00hs.  
-Sala 14 - UED ou CEDIS (container #12)
+Terças e Quintas, de 13:00 às 14:00hs e 18:00 às 19:00hs.  
+UED (Sala 14) ou CEDIS (container #12)

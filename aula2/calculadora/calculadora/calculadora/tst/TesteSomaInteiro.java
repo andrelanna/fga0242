@@ -1,11 +1,11 @@
-package tst;
+package calculadora.tst;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import app.Calculadora;
+import calculadora.app.Calculadora;
 
 /**
  * TestCase é um caso de teste, uma classe composta por vários testes. Em JUnit4

@@ -1,4 +1,4 @@
-Seja o seguinte cenário de uma aplicação a ser desenvolvida utilizando a técnica
+hheja o seguinte cenário de uma aplicação a ser desenvolvida utilizando a técnica
 de Desenvolvimento Guiado por Testes. 
 
 > [Cenário]
@@ -84,7 +84,134 @@ uma suíte de testes.
 
 ### Trabalho 2: Refatoração
 
-A ser definido. 
+A segunda parte do trabalho consiste na aplicação de operações de Refatoração no
+código entregue pelos grupos na primeira parte. Todos os grupos aplicarão as
+mesmas operações de Refatoração em seus trabalhos. As operações serão aplicadas
+nas classes / métodos indicados pelo professor para cada grupo. Ao final das
+operações de Refatoração, os grupos deverão apresentar como comentários no
+código uma descrição detalhada dos efeitos da operação de refatoração no código. 
+
+##### Lista de refatorações por grupos e seus locais de aplicação: 
+
+| Grupo | Operação de Refatoração             | Classe / Método         |
+|:-----:|:------------------------------------|:------------------------|
+|   1   | Extrair método                      |(Repositorio privado)    |
+|       | Extrair classe                      |(Repositorio privado)    |
+|       | Substituir método por objeto-método |(Repositorio privado)    |
+|-------|-------------------------------------|-------------------------|
+|   2   | Extrair método                      | NotaFiscal::gerarNotaFiscal()|
+|       | Extrair classe                      | Venda                   |
+|       | Substituir método por objeto-método | Venda::calcularFrete()  |
+|-------|-------------------------------------|-------------------------|
+|   3   | Extrair método                      | Não entregue            |
+|       | Extrair classe                      | Não entregue            |
+|       | Substituir método por objeto-método | Não entregue            |
+|-------|-------------------------------------|-------------------------|
+|   4   | Extrair método                      |(Repositorio privado)    |
+|       | Extrair classe                      |(Repositorio privado)    |
+|       | Substituir método por objeto-método |(Repositorio privado)    |
+|-------|-------------------------------------|-------------------------|
+|   5   | Extrair método                      |(Repositorio inexistente)|
+|       | Extrair classe                      |(Repositorio inexistente)|
+|       | Substituir método por objeto-método |(Repositorio inexistente)|
+|-------|-------------------------------------|-------------------------|
+|   6   | Extrair método                      |RelatorioVenda::calculaVendasUltimoMes()|
+|       | Extrair classe                      |Cliente                  |
+|       | Substituir método por objeto-método |Venda::calculaTotalNota()|
+|-------|-------------------------------------|-------------------------|
+|   7   | Extrair método                      | SaleController::createSale() |
+|       | Extrair classe                      | Sale                    |
+|       | Substituir método por objeto-método | ProductController::createProduct() |
+|-------|-------------------------------------|-------------------------|
+|   8   | Extrair método                      | VendaModel::VendaModel()|
+|       | Extrair classe                      | ClienteModel            |
+|       | Substituir método por objeto-método | VendaModel::calculaCashback() |
+|-------|-------------------------------------|-------------------------|
+|   9   | Extrair método                      | Venda::realizarVenda()  |
+|       | Extrair classe                      | Produto                 |
+|       | Substituir método por objeto-método | Método realizarVenda(), resultante da refatoração Extrair Método |
+|-------|-------------------------------------|-------------------------|
+|  10   | Extrair método                      | Cliente::verificarEligibilidadeEspecial() |
+|       | Extrair classe                      | Produto                  |
+|       | Substituir método por objeto-método | Venda::calcularTotal()  |
+|-------|-------------------------------------|-------------------------|
+|  11   | Extrair método                      |(Repositorio privado)    |
+|       | Extrair classe                      |(Repositorio privado)    |
+|       | Substituir método por objeto-método |(Repositorio privado)    |
+|-------|-------------------------------------|-------------------------|
+|  12   | Extrair método                      | Compra::clienteElegivelParaEspecial() |
+|       | Extrair classe                      | Imposto                 |
+|       | Substituir método por objeto-método | Compra::valorTotalCompra() |
+|-------|-------------------------------------|-------------------------|
+|  13   | Extrair método                      | Venda::calcularValores()|
+|       | Extrair classe                      | Produto                 |
+|       | Substituir método por objeto-método | Venda::calcularImpostos() |
+|-------|-------------------------------------|-------------------------|
+|  14   | Extrair método                      | Venda::calcularValorFinal() |
+|       | Extrair classe                      | Venda                   |
+|       | Substituir método por objeto-método | Método calcularValorFinal, resultante da refatoração Extrair Método |
+|-------|-------------------------------------|-------------------------|
+|  15   | Extrair método                      | NotaFiscal::emiteNotaFiscal() |
+|       | Extrair classe                      | NotaFiscal              |
+|       | Substituir método por objeto-método | NotaFiscal::calcularValores() |
+|-------|-------------------------------------|-------------------------|
+|  16   | Extrair método                      | Sale::getCashback()     |
+|       | Extrair classe                      | Product                 |
+|       | Substituir método por objeto-método | Sale::checkout()        |
+|-------|-------------------------------------|-------------------------|
+|  17   | Extrair método                      | Venda::calcularTotal()  |
+|       | Extrair classe                      | Cliente                 |
+|       | Substituir método por objeto-método | Método calcularTotal, resultante da refatoração Extrair Método  |
+|-------|-------------------------------------|-------------------------|
+|  18   | Extrair método                      | Sale::calculateFreight()|
+|       | Extrair classe                      | Taxes                   |
+|       | Substituir método por objeto-método | Sale::finish()          |
+|-------|-------------------------------------|-------------------------|
+|  19   | Extrair método                      | Venda::calcularValorTotal() |
+|       | Extrair classe                      | Produto                 |
+|       | Substituir método por objeto-método | Método calcularValorTotal, resultante da refatoração Extrair Método |
+|-------|-------------------------------------|-------------------------|
+|  20   | Extrair método                      |(Repositorio privado)    |
+|       | Extrair classe                      |(Repositorio privado)    |
+|       | Substituir método por objeto-método |(Repositorio privado)    |
+|-------|-------------------------------------|-------------------------|
+|  21   | Extrair método                      |(Repositorio inexistente)|
+|       | Extrair classe                      |(Repositorio inexistente)|
+|       | Substituir método por objeto-método |(Repositorio inexistente)|
+|-------|-------------------------------------|-------------------------|
+|  22   | Extrair método                      | Cliente::definirValorFrete() |
+|       | Extrair classe                      | Cliente                 |
+|       | Substituir método por objeto-método | Venda::calcularValorDescontos() |
+|-------|-------------------------------------|-------------------------|
+|  23   | Extrair método                      |                         |
+|       | Extrair classe                      |                         |
+|       | Substituir método por objeto-método |                         |
+|-------|-------------------------------------|-------------------------|
+|  24   | Extrair método                      |                         |
+|       | Extrair classe                      |                         |
+|       | Substituir método por objeto-método |                         |
+|-------|-------------------------------------|-------------------------|
+|  25   | Extrair método                      |                         |
+|       | Extrair classe                      |                         |
+|       | Substituir método por objeto-método |                         |
+|-------|-------------------------------------|-------------------------|
+|  26   | Extrair método                      |                         |
+|       | Extrair classe                      |                         |
+|       | Substituir método por objeto-método |                         |
+|-------|-------------------------------------|-------------------------|
+|  27   | Extrair método                      |                         |
+|       | Extrair classe                      |                         |
+|       | Substituir método por objeto-método |                         |
+|-------|-------------------------------------|-------------------------|
+|  28   | Extrair método                      |                         |
+|       | Extrair classe                      |                         |
+|       | Substituir método por objeto-método |                         |
+|-------|-------------------------------------|-------------------------|
+|  29   | Extrair método                      |(Repositorio privado)    |
+|       | Extrair classe                      |(Repositorio privado)    |
+|       | Substituir método por objeto-método |(Repositorio privado)    |
+
+
 
 ## Critérios 
 
@@ -95,6 +222,9 @@ A ser definido.
 - Todos os testes rodam sem erros?  
 
 ### Trabalho 2: Refatoração
+- Extrair método (25 pontos): 
+- Extrair superclasse (25 pontos): 
+- Substituir método por objeto-método (50 pontos):
 
 ## Datas de entrega
 

@@ -111,9 +111,9 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 |       | Extrair classe                      |(Repositorio privado)    |
 |       | Substituir método por objeto-método |(Repositorio privado)    |
 |-------|-------------------------------------|-------------------------|
-|   5   | Extrair método                      |(Repositorio inexistente)|
-|       | Extrair classe                      |(Repositorio inexistente)|
-|       | Substituir método por objeto-método |(Repositorio inexistente)|
+|   5   | Extrair método                      |Buy::calculateTotalDiscount()|
+|       | Extrair classe                      |Product                  |
+|       | Substituir método por objeto-método |Buy::calculateFreight()  |
 |-------|-------------------------------------|-------------------------|
 |   6   | Extrair método                      |RelatorioVenda::calculaVendasUltimoMes()|
 |       | Extrair classe                      |Cliente                  |
@@ -175,41 +175,41 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 |       | Extrair classe                      |(Repositorio privado)    |
 |       | Substituir método por objeto-método |(Repositorio privado)    |
 |-------|-------------------------------------|-------------------------|
-|  21   | Extrair método                      |(Repositorio inexistente)|
-|       | Extrair classe                      |(Repositorio inexistente)|
-|       | Substituir método por objeto-método |(Repositorio inexistente)|
+|  21   | Extrair método                      |Toda a implementação do trabalho está no método main e não é testada.|
+|       | Extrair classe                      |O grupo deve procurar o professor para discutir o trabalho.| 
+|       | Substituir método por objeto-método |                         |
 |-------|-------------------------------------|-------------------------|
 |  22   | Extrair método                      | Cliente::definirValorFrete() |
 |       | Extrair classe                      | Cliente                 |
 |       | Substituir método por objeto-método | Venda::calcularValorDescontos() |
 |-------|-------------------------------------|-------------------------|
-|  23   | Extrair método                      |                         |
-|       | Extrair classe                      |                         |
+|  23   | Extrair método                      | Venda::calcularValorTotal() |
+|       | Extrair classe                      | Cliente                 |
+|       | Substituir método por objeto-método | Venda::calcularDesconto() |
+|-------|-------------------------------------|-------------------------|
+|  24   | Extrair método                      | Toda a implementação do trabalho está no método main e não é testada.|
+|       | Extrair classe                      | O grupo deve procurar o professor para discutir o trabalho.|
 |       | Substituir método por objeto-método |                         |
 |-------|-------------------------------------|-------------------------|
-|  24   | Extrair método                      |                         |
-|       | Extrair classe                      |                         |
+|  25   | Extrair método                      | Venda::calcularFrete()  |
+|       | Extrair classe                      | Cliente                 |
+|       | Substituir método por objeto-método | Venda::aplicarCashback()|
+|-------|-------------------------------------|-------------------------|
+|  26   | Extrair método                      | Todas as associações entre objetos e cálculos são realizados nos casos de teste, ao invés da aplicação. |
+|       | Extrair classe                      | O grupo deve procurar o professor para discutir o trabalho. |
 |       | Substituir método por objeto-método |                         |
 |-------|-------------------------------------|-------------------------|
-|  25   | Extrair método                      |                         |
-|       | Extrair classe                      |                         |
-|       | Substituir método por objeto-método |                         |
+|  27   | Extrair método                      | Venda::calcularFrete()  |
+|       | Extrair classe                      | Cliente                 |
+|       | Substituir método por objeto-método | Venda::calcularTotal()  |
 |-------|-------------------------------------|-------------------------|
-|  26   | Extrair método                      |                         |
-|       | Extrair classe                      |                         |
-|       | Substituir método por objeto-método |                         |
+|  28   | Extrair método                      | Cart::calculateDiscount() |
+|       | Extrair classe                      | Client                  |
+|       | Substituir método por objeto-método | Cart::calculateTotalAmount() |
 |-------|-------------------------------------|-------------------------|
-|  27   | Extrair método                      |                         |
-|       | Extrair classe                      |                         |
-|       | Substituir método por objeto-método |                         |
-|-------|-------------------------------------|-------------------------|
-|  28   | Extrair método                      |                         |
-|       | Extrair classe                      |                         |
-|       | Substituir método por objeto-método |                         |
-|-------|-------------------------------------|-------------------------|
-|  29   | Extrair método                      |(Repositorio privado)    |
-|       | Extrair classe                      |(Repositorio privado)    |
-|       | Substituir método por objeto-método |(Repositorio privado)    |
+|  29   | Extrair método                      | Cart::calculateDiscount() |
+|       | Extrair classe                      | Client                  |
+|       | Substituir método por objeto-método | Cart::calculateTotalAmount() |
 
 
 

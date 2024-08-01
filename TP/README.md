@@ -107,9 +107,9 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 |       | Extrair classe                      | Não entregue            |
 |       | Substituir método por objeto-método | Não entregue            |
 |-------|-------------------------------------|-------------------------|
-|   4   | Extrair método                      |(Repositorio privado)    |
-|       | Extrair classe                      |(Repositorio privado)    |
-|       | Substituir método por objeto-método |(Repositorio privado)    |
+|   4   | Extrair método                      |Venda::calculaFrete()    |
+|       | Extrair classe                      |ProdutoVenda             |
+|       | Substituir método por objeto-método |Venda::calculaValorFinal() |
 |-------|-------------------------------------|-------------------------|
 |   5   | Extrair método                      |Buy::calculateTotalDiscount()|
 |       | Extrair classe                      |Product                  |

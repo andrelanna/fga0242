@@ -187,9 +187,9 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 |       | Extrair classe                      | Cliente                 |
 |       | Substituir método por objeto-método | Venda::calcularDesconto() |
 |-------|-------------------------------------|-------------------------|
-|  24   | Extrair método                      | Toda a implementação do trabalho está no método main e não é testada.|
-|       | Extrair classe                      | O grupo deve procurar o professor para discutir o trabalho.|
-|       | Substituir método por objeto-método |                         |
+|  24   | Extrair método                      | Venda::calcularFrete()  |
+|       | Extrair classe                      | Venda                   |
+|       | Substituir método por objeto-método | Venda::calcularValores()|
 |-------|-------------------------------------|-------------------------|
 |  25   | Extrair método                      | Venda::calcularFrete()  |
 |       | Extrair classe                      | Cliente                 |

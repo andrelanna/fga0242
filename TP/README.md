@@ -135,9 +135,9 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 |       | Extrair classe                      | Produto                  |
 |       | Substituir método por objeto-método | Venda::calcularTotal()  |
 |-------|-------------------------------------|-------------------------|
-|  11   | Extrair método                      |(Repositorio privado)    |
-|       | Extrair classe                      |(Repositorio privado)    |
-|       | Substituir método por objeto-método |(Repositorio privado)    |
+|  11   | Extrair método                      |SaleService::calculateDiscount()|
+|       | Extrair classe                      |Sale                     |
+|       | Substituir método por objeto-método |SaleService::processSale()|
 |-------|-------------------------------------|-------------------------|
 |  12   | Extrair método                      | Compra::clienteElegivelParaEspecial() |
 |       | Extrair classe                      | Imposto                 |

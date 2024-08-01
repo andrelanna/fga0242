@@ -171,9 +171,9 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 |       | Extrair classe                      | Produto                 |
 |       | Substituir método por objeto-método | Método calcularValorTotal, resultante da refatoração Extrair Método |
 |-------|-------------------------------------|-------------------------|
-|  20   | Extrair método                      |(Repositorio privado)    |
-|       | Extrair classe                      |(Repositorio privado)    |
-|       | Substituir método por objeto-método |(Repositorio privado)    |
+|  20   | Extrair método                      |Loja::atualizarTiposDeClientes()|
+|       | Extrair classe                      |Venda                    |
+|       | Substituir método por objeto-método |Loja::calcularImposto()  |
 |-------|-------------------------------------|-------------------------|
 |  21   | Extrair método                      |Toda a implementação do trabalho está no método main e não é testada.|
 |       | Extrair classe                      |O grupo deve procurar o professor para discutir o trabalho.| 

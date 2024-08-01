@@ -195,9 +195,9 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 |       | Extrair classe                      | Cliente                 |
 |       | Substituir método por objeto-método | Venda::aplicarCashback()|
 |-------|-------------------------------------|-------------------------|
-|  26   | Extrair método                      | Todas as associações entre objetos e cálculos são realizados nos casos de teste, ao invés da aplicação. |
-|       | Extrair classe                      | O grupo deve procurar o professor para discutir o trabalho. |
-|       | Substituir método por objeto-método |                         |
+|  26   | Extrair método                      | Venda::calcularCashback()|
+|       | Extrair classe                      | Venda                   |
+|       | Substituir método por objeto-método | Venda:: getValor()      |
 |-------|-------------------------------------|-------------------------|
 |  27   | Extrair método                      | Venda::calcularFrete()  |
 |       | Extrair classe                      | Cliente                 |

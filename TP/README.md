@@ -234,3 +234,6 @@ Data limite: 3/7/2024. Trabalhos entregues posteriormente serão penalizados com
 um desconto de 50% na nota.
 
 ### Trabalho 2: Refatoração
+Data limite: 14/8/2024. Trabalhos entregues posteriormente serão penalizados com
+um desconto de 50% na nota.
+

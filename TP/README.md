@@ -95,9 +95,9 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 
 | Grupo | Operação de Refatoração             | Classe / Método         |
 |:-----:|:------------------------------------|:------------------------|
-|   1   | Extrair método                      |(Repositorio privado)    |
-|       | Extrair classe                      |(Repositorio privado)    |
-|       | Substituir método por objeto-método |(Repositorio privado)    |
+|   1   | Extrair método                      |Venda::calculaTaxa()     |
+|       | Extrair classe                      |Cliente                  |
+|       | Substituir método por objeto-método |Venda::calcularTotal()   |
 |-------|-------------------------------------|-------------------------|
 |   2   | Extrair método                      | NotaFiscal::gerarNotaFiscal()|
 |       | Extrair classe                      | Venda                   |

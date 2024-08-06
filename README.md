@@ -54,16 +54,11 @@ FGA - Faculdade do Gama
 ---
 
 **Avaliação do aprendizado:**  
-- Avaliação prática TDD (20 pontos)
-- Trabalho prático TDD, Refactoring, depuração de código
-    - Desenvolvimento de aplicação utilizando TDD (20 pontos)
-    - Refatoração da aplicação (20 pontos)
-    - Depuração de código e tratamento de erros (20 pontos) 
-- Trabalho sobre técnicas de programação / componentes e frameworks (20 pontos)
-
-<!--- * [Trabalho prático sobre TDD e Refatoração - 30 pontos](/tp1)  -->
-<!--- * [Trabalho prático sobre atributos de código - 30 pontos](/tp2)  -->
-<!--- * Trabalho prático sobre componentes e frameworks - 40 pontos  -->
+~~- Avaliação prática TDD (20 pontos)~~
+- [Trabalho prático TDD, Refactoring, depuração de código](tps/tp1)
+    - Desenvolvimento de aplicação utilizando TDD (~~20~~ 30 pontos)
+    - Refatoração da aplicação (~~20~~ 30 pontos)
+- Depuração de código e tratamento de erros (~~20~~ 40 pontos) 
 
 --- 
 **Horário de atendimento:**  

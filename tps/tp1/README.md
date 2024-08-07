@@ -1,4 +1,4 @@
-hheja o seguinte cenário de uma aplicação a ser desenvolvida utilizando a técnica
+Seja o seguinte cenário de uma aplicação a ser desenvolvida utilizando a técnica
 de Desenvolvimento Guiado por Testes. 
 
 > [Cenário]

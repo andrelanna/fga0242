@@ -58,7 +58,7 @@ FGA - Faculdade do Gama
 - [Trabalho prático TDD, Refactoring, depuração de código](tps/tp1)
     - Desenvolvimento de aplicação utilizando TDD (~~20~~ 30 pontos)
     - Refatoração da aplicação (~~20~~ 30 pontos)
-- Depuração de código e tratamento de erros (~~20~~ 40 pontos) 
+- [Depuração de código e tratamento de erros](tps/tp2) (~~20~~ 40 pontos) 
 
 --- 
 **Horário de atendimento:**  

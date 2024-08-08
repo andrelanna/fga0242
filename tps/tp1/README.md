@@ -175,9 +175,9 @@ código uma descrição detalhada dos efeitos da operação de refatoração no 
 |       | Extrair classe                      |Venda                    |
 |       | Substituir método por objeto-método |Loja::calcularImposto()  |
 |-------|-------------------------------------|-------------------------|
-|  21   | Extrair método                      |Toda a implementação do trabalho está no método main e não é testada.|
-|       | Extrair classe                      |O grupo deve procurar o professor para discutir o trabalho.| 
-|       | Substituir método por objeto-método |                         |
+|  21   | Extrair método                      |Venda::realizarVenda()   |
+|       | Extrair classe                      |Cliente                  | 
+|       | Substituir método por objeto-método |Método Venda::realizarVenda() resultante da refatoração Extrair Método|
 |-------|-------------------------------------|-------------------------|
 |  22   | Extrair método                      | Cliente::definirValorFrete() |
 |       | Extrair classe                      | Cliente                 |

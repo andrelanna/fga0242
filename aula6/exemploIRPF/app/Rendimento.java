@@ -1,4 +1,4 @@
-package exemplo.app;
+package exemploIRPF.app;
 
 public class Rendimento {
 

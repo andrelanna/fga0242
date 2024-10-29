@@ -1,4 +1,4 @@
-package exemplo.tst;
+package exemploIRPF.tst;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import exemplo.app.SimuladorIRPF;
+import exemploIRPF.app.SimuladorIRPF;
 
 @RunWith(Parameterized.class)
 public class CadastroRendimentos {

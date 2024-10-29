@@ -1,4 +1,4 @@
-package exemplo.tst;
+package exemploIRPF.tst;
 
 import static org.junit.Assert.*;
 
@@ -9,9 +9,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized.Parameters;
-import org.junit.runners.Parameterized;
 
-import exemplo.app.SimuladorIRPF;
+import exemploIRPF.app.SimuladorIRPF;
+
+import org.junit.runners.Parameterized;
 
 @RunWith(Parameterized.class)
 public class DeducaoPrevidenciaOficial {

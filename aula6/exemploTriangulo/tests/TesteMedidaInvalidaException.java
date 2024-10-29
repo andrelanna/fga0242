@@ -1,12 +1,12 @@
-package tests;
+package exemploTriangulo.tests;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
-import app.Triangulo;
-import exception.MedidaInvalidaException;
+import exemploTriangulo.app.Triangulo;
+import exemploTriangulo.exception.MedidaInvalidaException;
 
 public class TesteMedidaInvalidaException {
 

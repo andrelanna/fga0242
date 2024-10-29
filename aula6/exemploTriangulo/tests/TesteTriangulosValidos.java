@@ -1,4 +1,4 @@
-package tests;
+package exemploTriangulo.tests;
 
 import static org.junit.Assert.assertTrue;
 
@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import app.Triangulo;
-import exception.MedidaInvalidaException;
-import exception.TrianguloInvalidoException;
+import exemploTriangulo.app.Triangulo;
+import exemploTriangulo.exception.MedidaInvalidaException;
+import exemploTriangulo.exception.TrianguloInvalidoException;
 
 @RunWith(Parameterized.class)
 public class TesteTriangulosValidos {

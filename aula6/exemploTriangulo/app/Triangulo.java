@@ -1,7 +1,7 @@
-package app;
+package exemploTriangulo.app;
 
-import exception.MedidaInvalidaException;
-import exception.TrianguloInvalidoException;
+import exemploTriangulo.exception.MedidaInvalidaException;
+import exemploTriangulo.exception.TrianguloInvalidoException;
 
 public class Triangulo {
 

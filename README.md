@@ -47,17 +47,27 @@ FGA - Faculdade do Gama
 
 
 --- 
+**Frequência:**  
+* Haverá lista de chamadas em todas as aulas.  
+* Faltas não serão abonadas.  
 
+
+--- 
+**Avaliação do aprendizado:**  
+  - Avaliação prática TDD (20 pontos)
+  - Trabalho prático TDD, Refactoring, depuração de código:
+      - Desenvolvimento de aplicação utilizando TDD (20 pontos)
+      - Refatoração da aplicação (20 pontos)
+      - Depuração de código e tratamento de erros (20 pontos) 
+  - Trabalho sobre técnicas de programação / componentes e frameworks (20 pontos)
+
+---
 **Metodologia:** 
 * Aulas expositivas
 * Aplicação de exercícios de fixação
 
----
-
-**Avaliação do aprendizado:**  
-- A serem definidas
 
 --- 
 **Horário de atendimento:**  
 Terças e Quintas, de 13:00 às 14:00hs e 18:00 às 19:00hs.  
-UED (Sala 14) ou CEDIS (container #12)
+UED (Sala 14) ou CEDIS (container #19)

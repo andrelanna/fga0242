@@ -13,17 +13,17 @@ O Imposto de Renda de Pessoas Físicas (IRPF) é um imposto federal calculado co
 
 ### Rendimentos  
 
-Os rendimentos são aqueles valores recebidos pelo cidadão ao longo de um mês. Os rendimentos são classificados como *tributáveis* quando há a incidência de imposto sobre eles, ou*não-tributáveis*, caso contrário. São exemplos de rendimentos tributáveis os salários, rendimentos de alguns tipos de investimentos, pro-labore, dentre outros. São exemplos de rendimentos não-tributáveis os ressarcimentos de despesas de trabalho, bolsas de estudos, dentre outros. Apenas os rendimentos tributáveis são considerados para efeito de cálculo do imposto de renda. 
+Os rendimentos são aqueles valores recebidos pelo cidadão ao longo de um mês.  Os rendimentos são classificados como *tributáveis* quando há a incidência de imposto sobre eles, ou *não-tributáveis*, caso contrário. São exemplos de rendimentos tributáveis os salários, rendimentos de alguns tipos de investimentos, pro-labore, dentre outros. São exemplos de rendimentos não-tributáveis os ressarcimentos de despesas de trabalho, bolsas de estudos, dentre outros. Apenas os rendimentos tributáveis são considerados para efeito de cálculo do imposto de renda. 
 
 Suponha que um cidadão possua os seguintes rendimentos: 
 
-| Descrição do Rendimento | Tributável? | Valor        |
-|:------------------------|:-----------:|-------------:|
-| Salário                 |  Sim        | R$ 8.000,00  |
-| Aluguel                 |  Sim        | R$ 2.000,00  |
-| Bolsa de estudos        |  Não        | R$ 1.500,00  |
-| **Total rendimentos:**  |             | R$ 11.500,00 |
-| **Total rend. tribut.:**|             | R$ 10.000,00 |
+| Descrição do Rendimento | Tributável? | Valor            |
+|:------------------------|:-----------:|-----------------:|
+| Salário                 |  Sim        |     R$ 8.000,00  |
+| Aluguel                 |  Sim        |     R$ 2.000,00  |
+| Bolsa de estudos        |  Não        |     R$ 1.500,00  |
+| **Total rendimentos:**  |             | **R$ 11.500,00** |
+| **Total rend. tribut.:**|             | **R$ 10.000,00** |
 
 ### Deduções
 
@@ -72,7 +72,7 @@ No caso do exemplo desse trabalho, a base de cálculo do IRPF é de R$ 6.810,41.
 | 3a.   | 15.0 %    | R$ 138,66      |
 | 4a.   | 22.5 %    | R$ 205,56      |
 | 5a.   | 27.5 %    | R$ 590,07      |
-|       | **Total** | R$ 987,88      |
+|       | **Total** | **R$ 987,88**  |
 
 A alíquota efetiva é dada pelo quociente entre o imposto pago e o total de rendimentos tributáveis. Embora o cidadão do exemplo se encontrar na quinta faixa (27,5%), a alíquota efetiva do imposto pago é de 9,87% ($\frac{R\$ 987,88}{R\$ 10.000,00}$).
 
@@ -80,10 +80,33 @@ A alíquota efetiva é dada pelo quociente entre o imposto pago e o total de ren
 
 # Enunciados dos trabalhos
 
+Três trabalhos serão realizados sobre o cenário descrito acima. Os temas para esses trabalhos são, na sequencia, TDD, Refatoração e Depuração de código. Os grupos dos trabalhos terão, no máximo, 5 componentes. Os componentes dos grupos deverão ser informados através do formulário presente [nesse link.](https://docs.google.com/forms/d/e/1FAIpQLSevIusyB-JxQe5uP1oPuWkIPXfQzdy9H6eIeuIWkVPgc1NJ2Q/viewform)
+
+Os trabalhos deverão ser realizados em Java e disponibilizados em repositórios do GitHub. As entregas serão feitas através dos repositórios, de modo que a data e o horário dos commits serão considerados como horário da entrega dos trabalhos. Os componentes do grupo deverão adicionar o professor como membro do repositório. 
+
+
 ## Entrega 1 - TDD
 
 **Valor:** 20 pontos  
-**Data de entrega:** 13/12/2024  
+**Data de entrega:** 13/12/2024, 23:59hs.  
+ 
+Junto desse enunciado encontra-se o código da calculadora de IRPF, iniciado em sala de aula. Esse código já contempla os testes para as seguintes funcionalidades (e suas respectivas unidades). 
+
+| Classe                                  | Funcionalidade                    |
+|:----------------------------------------|:----------------------------------|
+| TesteCadastrarDependente                | Cadastrar dependentes             |
+| TesteRendimentos                        | Cadastrar rendimentos             |
+| TesteCalculosDeducoesDependentes        | Calcular deduções por dependentes |
+| TesteCadastroContribuicaoPrevidenciaria | Calcular deducoes por previdencia |
+| TesteCadastroPensaoAlimenticia          | Calcular deducoes por pensoes     |
+| TesteCadastroOutrasDeducoes             | Calcular outros tipos de deducoes |
+ 
+Ainda não estão implementados os testes e as unidades para o calcula: 
+ - a base de cálculo do imposto, 
+ - os impostos por faixas e o total do imposto, 
+ - e a alíquota efetiva do imposto pago. 
+
+Para essa entrega os grupos deverão criar testes triangulados (parametrizados, preferencialmente) para cada uma das unidades mencionadas acima, e os testes têm que estar integrados à suíte de testes presente no arquivo ``AllTests.java``. 
 
 
 ## Entrega 2 - Refatoração

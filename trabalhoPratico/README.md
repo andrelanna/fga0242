@@ -68,13 +68,13 @@ No caso do exemplo desse trabalho, a base de cálculo do IRPF é de R$ 6.810,41.
 | Faixa | Alíquota  | Imposto devido |
 |:------|:---------:|---------------:|
 | 1a.   |  0.0 %    | R$   0,00      |
-| 2a.   |  7.5 %    | R$  53,59      |
+| 2a.   |  7.5 %    | R$  42,56      |
 | 3a.   | 15.0 %    | R$ 138,66      |
 | 4a.   | 22.5 %    | R$ 205,56      |
 | 5a.   | 27.5 %    | R$ 590,07      |
-|       | **Total** | **R$ 987,88**  |
+|       | **Total** | **R$ 976,85**  |
 
-A alíquota efetiva é dada pelo quociente entre o imposto pago e o total de rendimentos tributáveis. Embora o cidadão do exemplo se encontrar na quinta faixa (27,5%), a alíquota efetiva do imposto pago é de 9,87% ($\frac{R\$ 987,88}{R\$ 10.000,00}$).
+A alíquota efetiva é dada pelo quociente entre o imposto pago e o total de rendimentos tributáveis. Embora o cidadão do exemplo se encontrar na quinta faixa (27,5%), a alíquota efetiva do imposto pago é de 9,76% ($\frac{R\$ 976,85}{R\$ 10.000,00}$).
 
 --- 
 

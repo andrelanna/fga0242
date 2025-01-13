@@ -114,6 +114,89 @@ Para essa entrega os grupos deverão criar testes triangulados (parametrizados, 
 **Valor:** 20 pontos  
 **Data de entrega:** 23/12/2024  
 
+Com base nos artefatos entregues pelo grupo na primeira parte do trabalho, os componentes deverão refatorá-los nessa segunda etapa. Todos os grupos realizarão as mesmas operações de refatoração, variando apenas os locais onde elas serão aplicadas. As operações de refatoração a serem aplicadas são **Extrair método**, **Extrair classe** e **Substituir método por objeto-método**. As classes / métodos sujeitos às refatorações para cada grupo estão listados a seguir. 
+
+| **Grupo** | **Operação de refatoração**         | **Classe / método a ser aplicado**    |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 1   | Extrair Método                      | IRPF.criarRendimento()                |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularImposto()                |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 2   | Extrair Método                      | IRPF.cadastrarDependente()            |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularImposto()                |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 3   | Extrair Método                      | IRPF.cadastrarDeducaoIntegral()       |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.getImposto2aFaixa()              |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 4   | Extrair Método                      | IRPF.cadastrarDeducaoIntegral()       |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.getImpostoFaixa3()               |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 5   | Extrair Método                      | IRPF.cadastrarDependente()            |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.getImposto()                     |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 7   | Extrair Método                      | IRPF.cadastrarDependente()            |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularImposto()                |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 8   | Extrair Método                      | IRPF.criarRendimento()                |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularImposto()                |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 9   | Extrair Método                      | IRPF.cadastrarDependente()            |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.getImpostoPorFaixa()             |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 10  | Extrair Método                      | IRPF.cadastrarDeducaoIntegral()       |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularImposto()                |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 11  | Extrair Método                      | IRPF.criarRendimento()                |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.getImpostoDevidoPorFaixa() (metodo privado) |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 12  | Extrair Método                      | IRPF.calcularImposto()                |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | Metodo calcularImposto() resultante da refatoracao Extrair Método. |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 13  | Extrair Método                      | IRPF.cadastrarDeducaoIntegral()       |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.getImpostoPorFaixa()             |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 14  | Extrair Método                      | IRPF.cadastrarDeducaoIntegral()       |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularImposto()                |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 15  | Extrair Método                      | IRPF.calcularImpostoTotal()           |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularAliquotaEfetiva()        |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 16  | Extrair Método                      | IRPF.cadastrarDeducaoIntegral()       |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.cadastrarDependente()            |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 17  | Extrair Método                      | IRPF.cadastrarDependente()            |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularImpostosPorFaixa()       |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 18  | Extrair Método                      | IRPF.getPorcentagemFaixa()            |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calculaTotalImpostos()           |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 19  | Extrair Método                      | IRPF.calcularImposto()                |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.baseCalculo()                    |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 20  | Extrair Método                      | IRPF.cadastrarDependente()            |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.getTotalImposto()                |
+
+Para essa entrega os grupos deverão, obrigatoriamente, alterar as classes e os métodos listados acima e preferencialmente **não alterar as implementações dos testes** já entregues na etapa 1. A suíte de testes deverá continuar sendo implementada pela classe ```AllTests.java``` 
+
+Os grupos estão livres para decidir como aplicar a refatoração Extrair Classe mas deverão, **obrigatoriamente**, apresentar na mensagem do commit qual a justificativa para a divisão da classe em outra classe associada. Extração de classe sem a devida explicação não serão consideradas para efeitos da avaliação. 
 
 ## Entrega 3 - Depuração de código
 

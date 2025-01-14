@@ -87,7 +87,7 @@ Os trabalhos deverão ser realizados em Java e disponibilizados em repositórios
 
 ## Entrega 1 - TDD
 
-**Valor:** 20 pontos  
+**Valor:** 20 pontos   
 **Data de entrega:** 13/12/2024, 23:59hs.  
  
 Junto desse enunciado encontra-se o código da calculadora de IRPF, iniciado em sala de aula. Esse código já contempla os testes para as seguintes funcionalidades (e suas respectivas unidades). 

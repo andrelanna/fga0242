@@ -112,7 +112,8 @@ Para essa entrega os grupos deverão criar testes triangulados (parametrizados, 
 ## Entrega 2 - Refatoração
 
 **Valor:** 20 pontos  
-**Data de entrega:** 23/12/2024  
+**Data de entrega:** ~~23/12/2024~~ 24/01/2025, 23:59hs.
+**Entrega:** através de push para os repositórios dos grupos.
 
 Com base nos artefatos entregues pelo grupo na primeira parte do trabalho, os componentes deverão refatorá-los nessa segunda etapa. Todos os grupos realizarão as mesmas operações de refatoração, variando apenas os locais onde elas serão aplicadas. As operações de refatoração a serem aplicadas são **Extrair método**, **Extrair classe** e **Substituir método por objeto-método**. As classes / métodos sujeitos às refatorações para cada grupo estão listados a seguir. 
 

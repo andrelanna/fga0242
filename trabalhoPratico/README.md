@@ -194,6 +194,10 @@ Com base nos artefatos entregues pelo grupo na primeira parte do trabalho, os co
 | Grupo 20  | Extrair Método                      | IRPF.cadastrarDependente()            |
 |           | Extrair Classe                      | IRPF                                  |
 |           | Substituir método por objeto-método | IRPF.getTotalImposto()                |
+|-----------|-------------------------------------|---------------------------------------|
+| Grupo 21  | Extrair Método                      | IRPF.cadastrarDependente()            |
+|           | Extrair Classe                      | IRPF                                  |
+|           | Substituir método por objeto-método | IRPF.calcularImposto()                |
 
 Para essa entrega os grupos deverão, obrigatoriamente, alterar as classes e os métodos listados acima e preferencialmente **não alterar as implementações dos testes** já entregues na etapa 1. A suíte de testes deverá continuar sendo implementada pela classe ```AllTests.java``` 
 

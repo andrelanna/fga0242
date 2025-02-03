@@ -203,10 +203,10 @@ Para essa entrega os grupos deverão, obrigatoriamente, alterar as classes e os 
 
 Os grupos estão livres para decidir como aplicar a refatoração Extrair Classe mas deverão, **obrigatoriamente**, apresentar na mensagem do commit qual a justificativa para a divisão da classe em outra classe associada. Extração de classe sem a devida explicação não serão consideradas para efeitos da avaliação. 
 
-## Entrega 3 - Depuração de código
+## Entrega 3 - Projeto de código
 
 **Valor:** 20 pontos  
-**Data de entrega:** 14/08/2025, 23:59hs. 
+**Data de entrega:** 14/02/2025, 23:59hs. 
 
 Projeto de software é, muitas vezes, entendido como uma atividade dentro do
 processo de desenvolvimento em que uma equipe define as estruturas do software e
@@ -314,7 +314,7 @@ O trabalho deverá ser entregue na forma de um relatório em PDF, elaborado pelo
 grupo. O trabalho será enviado ao repositório já utilizado pelos TPs 1 e 2. As
 referências listadas abaixo devem ser consultadas em suas respostas. 
 
-A data-limite de entrega é dia 14/08/2024, 23:59hs. 
+A data-limite de entrega é dia 14/02/2025, 23:59hs. 
 
 
 

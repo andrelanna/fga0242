@@ -7,43 +7,44 @@ FGA - Faculdade do Gama
 
 **Programa da disciplina / Cronograma de aulas:**   
 
-|     Aula no. |  **Data**  |Descrição                                                                                                                         |
-|-------------:|:----------:|----------------------------------------------------------------------------------------------------------------------------------|
-| [1](aula1)   | 14/10/2024              | Apresentação da disciplina, tópicos, cronograma, avaliações. |
-| [2](aula2)   | 16/10/2024              | Testes unitários - Revisão de testes unitários e frameworks xUnit; propriedades, independência e atomicidade de testes |
-| [3](aula3)   | 21/10/2024              | Testes unitários - Estrutura do framework xUnit, testes unitários, asserções e casos de testes, suite de testes |
-| [4](aula4)   | 23/10/2024              | Testes unitários - Prática sobre testes unitários, asserções, casos de testes, suíte de testes, independência de testes. |
-| [5](aula5)   | 28/10/2024              | Testes unitários - Testes parametrizados, categorias de testes, testes de exceções |
-| [6](aula6)   | 30/10/2024              | Testes unitários - Prática de testes parametrizados, categorias de testes, testes de exceções |
-| [7](aula7)   |  4/11/2024              | Semana Universitária |
-| [8](aula8)   |  6/11/2024              | Semana Universitária |
-| [9](aula9)   | 11/11/2024              | Avaliação 1 - Testes Unitários |
-| [10](aula10) | 13/11/2024              | Desenvolvimento Orientado a Testes (TDD): red-green patterns, técnicas de falsificação, duplicação e triangulação. |
-| [11](aula11) | 18/11/2024              | Atividade prática de TDD: red-green patterns, técnicas de falsificação, duplicação e triangulação |
-| [12](aula12) | 20/11/2024              | Desenvolvimento de aplicação utilizando TDD (exemplo) |
-| [13](aula13) | 25/11/2024              | Prática de desenvolvimento de aplicação usando TDD |
-| [14](aula14) | 27/11/2024              | Exercícios de revisão - retomada das aulas após período de greve |
-| [15](aula15) |  2/12/2024              | Introdução a refatoração, princípios de refatoração, maus cheiros de código |
-| [16](aula16) |  4/12/2024              | Refatorações básicas: extrair constante, extrair método, operações de _inline_, renomear método/classe |
-| [17](aula17) |  9/12/2024              | Outras refatorações: substituir objeto por método-objeto, ... |
-| [18](aula18) | 11/12/2024              | Práticas de outras refatorações: substituir método por objeto-método, ... |
-| [19](aula19) | 16/12/2024              | Refatorações para padrões |
-| [20](aula20) | 18/12/2024              | Avaliação 2 - TDD  |
-|              | 23/12/2024 - 06/01/2025 | Recesso                                                                                                 |
-| [21](aula21) |   6/1/2025              | Programação defensiva: principais técnicas |
-| [22](aula22) |   8/1/2025              | Assertivas e programação por contratos: pré/pós-condições, invariantes |
-| [23](aula23) |  13/1/2025              | Prática sobre assertivas e programação por contratos |
-| [24](aula24) |  15/1/2025              | Tratamento de Erros e Depuração de Código: erros vs. exceções, introdução a técnicas de prevenção, teste e depuração. |
-| [25](aula25) |  20/1/2025              | Tratamento de Erros e Depuração de código: técnicas de prevenção, técnicas de testes de código e técnicas de depuração de código |
-| [26](aula26) |  22/1/2025              | Boas práticas de programação e projeto |
-| [27](aula27) |  27/1/2025              | Boas práticas de programação e projeto |
-| [28](aula28) |  29/1/2025              | Frameworks - definição, FWs caixa branca, FWs caixa preta e FWs caixa cinza |
-| [29](aula29) |   3/2/2025              | Frameworks - modelo de componentes. |
-| [30](aula30) |   5/2/2025              | Frameworks - implementação de frameworks |
-| [31](aula31) |  10/2/2025              | Frameworks - implementação de FWs e exemplo de carregamento de código dinâmico |
-| [32](aula32) |  12/2/2025              | Linhas de Produto de Software |
-| [33](aula33) |  17/2/2025              | Entrega de notas - Revisão de menções |
-| [34](aula34) |  19/2/2025              | Aula extra |
+|     Aula no. |  **Data**  | Descrição                                                                                                                         |
+|-------------:|:----------:|-------------------------------------------------------------------------------------------------------------------------|
+| 1            | 24/03/2025 | Apresentação do plano de ensino / Revisão de OO
+| 2            | 26/03/2025 | Revisão de OO e Design Patterns
+| 3            | 31/03/2025 | Testes unitários, testes, casos de testes, suíte de testes
+| 4            | 02/04/2025 | Testes unitários, runners de testes unitarios, rotulação de testes, testes de exceção, testes parametrizados
+| 5            | 07/04/2025 | Exercícios de testes unitários
+| 6            | 09/04/2025 | TDD, padrões barra verde e vermelha. 
+| 7            | 14/04/2025 | Prática de TDD
+| 8            | 16/04/2025 | 
+| 9            | 21/04/2025 | Feriado (Tiradentes)
+| 10           | 23/04/2025 | **Avaliação 1**
+| 11           | 28/04/2025 | Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código
+| 12           | 30/04/2025 | Refatoração: Extrair método, mover método, mover atributo
+| 13           | 05/05/2025 | Refatoração: Encapsular atributo, Extrair sub-classe, Extrair super-classe
+| 14           | 07/05/2025 | Refatoração: Substituir método por objeto-método, exercícios de refatoração
+| 15           | 12/05/2025 | Programação defensiva: Conceitualização e importância, introdução às técnicas de Programação Defensiva
+| 16           | 14/05/2025 | Programação defensiva: assertivas e programação por contrato, assertivas, pré-condições e pós-condições, invariantes.
+| 17           | 19/05/2025 | Programação defensiva: Exercícios
+| 18           | 21/05/2025 | Tratamento e depuração de código: Erros vs. Exceções, Técnicas de prevenção de erros inevitáveis
+| 19           | 26/05/2025 | Tratamento e depuração de código: Técnicas para teste de código, técnicas de depuração de código
+| 20           | 28/05/2025 | Tratamento e depuração de código: Exercícios
+| 21           | 02/06/2025 | Atividade extra-classe
+| 22           | 04/06/2025 | **Avaliação 2**
+| 23           | 09/06/2025 | Componentes e Frameworks: conceitos e definições, frameworks caixa branca, caixa preta e caixa cinza. 
+| 24           | 11/06/2025 | Componentes e Frameworks: conceitos e definições, frameworks de domínio horizonta, frameworks de domínio vertical
+| 25           | 16/06/2025 | Componentes e Frameworks: implementação de frameworks. 
+| 26           | 18/06/2025 | Componentes e Frameworks: Exercícios
+| 27           | 23/06/2025 | **Entrega do Trabalho Prático**
+| 28           | 25/06/2025 | **Entrega do Trabalho Prático**
+| 29           | 30/06/2025 | Desenvolvimento avançado de software: plataformas emergentes, implementação de produtos em plataformas emergentes.
+| 30           | 02/07/2025 | Desenvolvimento avançado de software: plataformas emergentes, implementação de produtos em plataformas emergentes.
+| 31           | 07/07/2025 | 
+| 32           | 09/07/2025 | **Avaliação 3**
+| 33           | 14/07/2025 | Aula extra / Revisão de menção
+| 34           | 16/07/2025 | Aula extra / Revisão de menção
+| 35           | 21/07/2025 | Aula extra / Revisão de menção
+| 36           | 23/07/2025 | Aula extra / Revisão de menção
 
 
 --- 
@@ -54,12 +55,10 @@ FGA - Faculdade do Gama
 
 --- 
 **Avaliação do aprendizado:**  
-  - Avaliação prática TDD (20 pontos)
-  - Trabalho prático TDD, Refactoring, depuração de código:
-      - Desenvolvimento de aplicação utilizando TDD (20 pontos)
-      - Refatoração da aplicação (20 pontos)
-      - Depuração de código e tratamento de erros (20 pontos) 
-  - Trabalho sobre técnicas de programação / componentes e frameworks (20 pontos)
+  - Avaliação 1: 20 pontos.
+  - Avaliação 2: 20 pontos.
+  - Avaliação 3: 20 pontos.
+  - Trabalho prático: 40 pontos.
 
 ---
 **Metodologia:** 
@@ -69,5 +68,5 @@ FGA - Faculdade do Gama
 
 --- 
 **Horário de atendimento:**  
-Terças e Quintas, de 13:00 às 14:00hs e 18:00 às 19:00hs.  
+Segundas e quartas, de 13:00 às 14:00 horas.  
 UED (Sala 14) ou CEDIS (container #19)

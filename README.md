@@ -9,8 +9,8 @@ FGA - Faculdade do Gama
 
 |     Aula no. |  **Data**  | Descrição                                                                                                                         |
 |-------------:|:----------:|-------------------------------------------------------------------------------------------------------------------------|
-| 1            | 24/03/2025 | Apresentação do plano de ensino / Revisão de OO
-| 2            | 26/03/2025 | Revisão de OO e Design Patterns
+| 1            | 24/03/2025 | [Apresentação do plano de ensino](/aula1) / Revisão de OO
+| 2            | 26/03/2025 | [Revisão de OO e Design Patterns](/aula2)
 | 3            | 31/03/2025 | Testes unitários, testes, casos de testes, suíte de testes
 | 4            | 02/04/2025 | Testes unitários, runners de testes unitarios, rotulação de testes, testes de exceção, testes parametrizados
 | 5            | 07/04/2025 | Exercícios de testes unitários

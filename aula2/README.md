@@ -5,50 +5,18 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula 2 - Revisão de testes unitários e frameworks xUnit
+## Aula 2 - Revisão de Orientação por Objetos 
 
 **Tópicos da aula**
-- Revisão de testes unitários e frameworks xUnit; 
-- propriedades de testes, 
-- independência e atomicidade de testes
+- Revisão de orientação por objetos. 
 
 **Slides da aula**
-* [Slides](https://docs.google.com/presentation/d/1cA1Sae4qgXidI7ZyVGhI-r9l5o0TMBrj5Yl0qyj2xfU/edit?usp=sharing)
+* [Classes, objetos, estados, métodos construtores e destrutores](https://docs.google.com/presentation/d/1cA1Sae4qgXidI7ZyVGhI-r9l5o0TMBrj5Yl0qyj2xfU/edit?usp=sharing)
+* [Tipos e referências, comunicação entre objetos, retenção de estado, coletor de lixo](https://docs.google.com/presentation/d/1rbcLtza79uKjhLKr0O3j3TOspWm5aaVBk2J47wL0xp8/edit?slide=id.g112d05f1625_0_236#slide=id.g112d05f1625_0_236)
+* [Modularidade e encapsulamento, pacotes, ocultação da informação, modificadores de acesso e de escopo](https://docs.google.com/presentation/d/11oY6Awv0HLV2qre82NJaxqZrQCo0_8RkUSr_qVKd28w/edit?slide=id.g26a6e2b0e9_0_93#slide=id.g26a6e2b0e9_0_93)
+* [Herança, Heranças _vs._ tipos, Herança _vs._ encapsulamento](https://docs.google.com/presentation/d/1WyVHU2jWJYvL3mtqZuCYZ2pF3FAS3UIS4YfStOJXAq8/edit?slide=id.ga9a3a09072_0_31#slide=id.ga9a3a09072_0_31)
+* [Polimorfismo, Polimorfismo por inclusão, Polimorfismo por coerção, Sobrescrita de métodos, Sobrecarga de métodos, Polimorfismo paramétrico](https://docs.google.com/presentation/d/1cably_sPYt902uqYmkgQXkuREIq-6NumyKF9Dly0FLw/edit?slide=id.g37dd9bfea0_0_128#slide=id.g37dd9bfea0_0_128)
+* [Exceções, Pilha de execução, Exceções checadas, Exceções não-checadas](https://docs.google.com/presentation/d/15RInYFW5FCW4fGvaC0vjyvn7QGlW86LD0cASOq9W0lQ/edit?slide=id.g5982c844c0_0_0#slide=id.g5982c844c0_0_0)
 
 ### Exercícios de fixação
 
-##### Exercício 1: Operações Matemáticas Simples:  
-
-Crie uma classe chamada `Calculadora` que possua dois métodos: `soma` e `multiplica`. O método soma deve receber dois inteiros como parâmetros e retornar a soma deles. O método multiplica também deve receber dois inteiros como parâmetros e retornar o produto deles. Escreva casos de teste utilizando JUnit 4 para verificar se os métodos soma e multiplica estão retornando os resultados corretos.
-
-##### Exercício 2: Verificação de Tipos e Valores Desenvolva três classes com métodos específicos:  
- - Uma classe `Condicional` com um método `ehMaior` que recebe dois inteiros e retorna um booleano indicando se o primeiro é maior que o segundo.  
- - Uma classe `Matematica` com um método `pi` que retorna o valor aproximado de pi como um float. Considere o erro máximo permitido de 0.001.  
- - Uma classe `StringUtil` com um método `unir` que concatena duas strings recebidas como parâmetros e retorna a string resultante.  
-
-Para cada um desses métodos, escreva casos de teste utilizando JUnit 4 que empreguem asserções para validar se os valores retornados estão corretos. 
-
-
-##### Exercício 3: Testando um Carrinho de Compras de E-commerce  
-
-Imagine que você está trabalhando no desenvolvimento de uma aplicação de e-commerce. Uma das funcionalidades cruciais do sistema é o carrinho de compras, que permite aos usuários adicionar produtos, remover produtos e calcular o total da compra. Sua tarefa é implementar e testar a classe `CarrinhoDeCompras`.
-
-A classe `CarrinhoDeCompras` deve ter os seguintes métodos:
-
- - `adicionarProduto(Produto p)`: adiciona um produto ao carrinho.
- - `removerProduto(Produto p)`: remove um produto do carrinho.
- - `calcularTotal()`: retorna o valor total dos produtos no carrinho como um float.
-
-A classe `Produto` deve ter um `id` do tipo `int`, um `nome` do tipo `String`, e um `preço` do tipo `float`.
-
-Escreva casos de teste utilizando JUnit 4 que verifiquem:
-
-  - Se um produto adicionado está realmente no carrinho.
-  - Se o produto removido não está mais no carrinho.
-  - Se o total calculado está correto após adicionar e remover produtos.
-
-Utilize asserções para verificar se os métodos estão funcionando conforme o
-esperado. Por exemplo, após adicionar um produto, use `assertTrue` para verificar
-se o `id` do produto está presente na lista de produtos do carrinho. Para o
-cálculo do total, use `assertEquals` com uma margem de erro para validar o valor
-retornado pelo método `calcularTotal()`.

@@ -9,6 +9,40 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 **Tópicos da aula**
 - Revisão de orientação por objetos. 
+  - Classes
+  - Objetos
+  - Retenção de estado
+  - Encapsulamento
+      - Modificadores de acesso (public, protected, private)
+      - Modificadores de escopo (static)
+  - Associação entre objetos
+  - Comunicação entre objetos
+  - Modularidade
+      - Interfaces
+      - Pacotes
+  - Herança
+      - Herança simples
+      - Herança múltipla
+      - Herança _vs._ modificadores de acesso
+  - Polimorfismo
+      - Inclusão
+      - Coerção
+      - Sobrescrita de métodos
+      - Sobrecarga de métodos
+      - Paramétrico
+
+- Revisão de Design Patterns.
+  - Padrões de projeto
+  - Padrões criacionais
+      - Singleton
+      - Factory Method
+  - Padrões estruturais
+      - Composite
+      - Adapter
+  - Padrões comportamentais
+      - Template method
+      - Strategy
+      - Iterator
 
 **Slides da aula**
 * [Classes, objetos, estados, métodos construtores e destrutores](https://docs.google.com/presentation/d/1cA1Sae4qgXidI7ZyVGhI-r9l5o0TMBrj5Yl0qyj2xfU/edit?usp=sharing)
@@ -17,6 +51,7 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 * [Herança, Heranças _vs._ tipos, Herança _vs._ encapsulamento](https://docs.google.com/presentation/d/1WyVHU2jWJYvL3mtqZuCYZ2pF3FAS3UIS4YfStOJXAq8/edit?slide=id.ga9a3a09072_0_31#slide=id.ga9a3a09072_0_31)
 * [Polimorfismo, Polimorfismo por inclusão, Polimorfismo por coerção, Sobrescrita de métodos, Sobrecarga de métodos, Polimorfismo paramétrico](https://docs.google.com/presentation/d/1cably_sPYt902uqYmkgQXkuREIq-6NumyKF9Dly0FLw/edit?slide=id.g37dd9bfea0_0_128#slide=id.g37dd9bfea0_0_128)
 * [Exceções, Pilha de execução, Exceções checadas, Exceções não-checadas](https://docs.google.com/presentation/d/15RInYFW5FCW4fGvaC0vjyvn7QGlW86LD0cASOq9W0lQ/edit?slide=id.g5982c844c0_0_0#slide=id.g5982c844c0_0_0)
+* [Design Patterns](https://docs.google.com/presentation/d/1fZJWc_xZaWiYHmEaVzD90e31ti6GGOik/edit?usp=sharing&ouid=112746484255766107555&rtpof=true&sd=true)
 
 ### Exercícios de fixação
 

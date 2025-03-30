@@ -1,0 +1,3 @@
+module calculadora {
+	requires junit;
+}

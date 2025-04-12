@@ -11,8 +11,8 @@ FGA - Faculdade do Gama
 |-------------:|:----------:|-------------------------------------------------------------------------------------------------------------------------|
 | 1            | 24/03/2025 | [Apresentação do plano de ensino](/aula1) / Revisão de OO
 | 2            | 26/03/2025 | [Revisão de OO e Design Patterns](/aula2)
-| 3            | 31/03/2025 | Testes unitários, testes, casos de testes, suíte de testes
-| 4            | 02/04/2025 | Testes unitários, runners de testes unitarios, rotulação de testes, testes de exceção, testes parametrizados
+| 3            | 31/03/2025 | [Testes unitários, testes, casos de testes, suíte de testes](/aula3)
+| 4            | 02/04/2025 | [Testes unitários, runners de testes unitarios, rotulação de testes, testes de exceção, testes parametrizados](/aula4)
 | 5            | 07/04/2025 | Exercícios de testes unitários
 | 6            | 09/04/2025 | TDD, padrões barra verde e vermelha. 
 | 7            | 14/04/2025 | Prática de TDD

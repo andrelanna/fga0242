@@ -36,13 +36,19 @@ Com base nesse cenário, faça o que se pede:
 
 2. Extenda o caso de teste parametrizado da questão acima para incluir a verificação da condição de existência do triângulo. Caso os lados informados formem um triângulo, a classe deverá retornar o valor lógico `true` para o teste. Rotule esse teste como `Funcional`. 
 
-    2.1 Para os casos em que os lados informados não formem um triângulo, uma exceção NaoEhTrianguloException deve ser disparada e capturada pelo teste. Rotule esse teste como `Excecao`. As medidas apresentadas abaixo são exemplos de lados que não formam um triângulo. Escreva um teste parametrizado capaz de capturar a exceção NaoEhTrianguloException.
-
 | a  | b  | c  |Área|Per.|Triang.?|
 |----|----|----|----|----|--------|
 | 3  | 4  | 5  | 6  | 12 |  True  |
 | 2  | 3  | 4  | 3  | 9  |  True  |
 | 5  | 6  | 7  | 15 | 18 |  True  |
+
+    2.1 Para os casos em que os lados informados não formem um triângulo, uma exceção NaoEhTrianguloException deve ser disparada e capturada pelo teste. Rotule esse teste como `Excecao`. As medidas apresentadas abaixo são exemplos de lados que não formam um triângulo. Escreva um teste parametrizado capaz de capturar a exceção NaoEhTrianguloException.
+
+| a  | b  | c  |
+|----|----|----|
+| 4  | 5  | 12 |
+| 2  | 3  | 6  |
+| 1  | 1  | 3  |
 
 3. Crie as seguintes suites de testes: 
    3.1 Suite de testes `SteFuncionais` que execute apenas os testes funcionais.

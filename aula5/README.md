@@ -42,7 +42,7 @@ Com base nesse cenário, faça o que se pede:
 | 2  | 3  | 4  | 3  | 9  |  True  |
 | 5  | 6  | 7  | 15 | 18 |  True  |
 
-    2.1 Para os casos em que os lados informados não formem um triângulo, uma exceção NaoEhTrianguloException deve ser disparada e capturada pelo teste. Rotule esse teste como `Excecao`. As medidas apresentadas abaixo são exemplos de lados que não formam um triângulo. Escreva um teste parametrizado capaz de capturar a exceção NaoEhTrianguloException.
+2.1 Para os casos em que os lados informados não formem um triângulo, uma exceção NaoEhTrianguloException deve ser disparada e capturada pelo teste. Rotule esse teste como `Excecao`. As medidas apresentadas abaixo são exemplos de lados que não formam um triângulo. Escreva um teste parametrizado capaz de capturar a exceção NaoEhTrianguloException.
 
 | a  | b  | c  |
 |----|----|----|

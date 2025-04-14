@@ -26,7 +26,7 @@ A condição de existência de um triângulo é que cada lado deve ser maior ou 
 
 Com base nesse cenário, faça o que se pede:
 
-1. Crie um caso de teste parametrizado que, para dados $a$, $b$ e $c$, sejam calculadas as áreas e perímetros dos triângulos apresentados abaixo. Rotule os testes como "Funcional". Considere $a$ como sendo a altura e $b$ como sendo a base do triângulo. 
+1. Crie um caso de teste parametrizado que, para dados $a$, $b$ e $c$, sejam calculadas as áreas e perímetros dos triângulos apresentados abaixo. Rotule os testes como `Funcional`. Considere $a$ como sendo a altura e $b$ como sendo a base do triângulo. 
 
 | a  | b  | c  |Área|Per.|
 |----|----|----|----|----|
@@ -34,9 +34,9 @@ Com base nesse cenário, faça o que se pede:
 | 2  | 3  | 4  | 3  | 9  |
 | 5  | 6  | 7  | 15 | 18 |
 
-2. Extenda o caso de teste parametrizado da questão acima para incluir a verificação da condição de existência do triângulo. Caso os lados informados formem um triângulo, a classe deverá retornar o valor lógico "true" para o teste. Rotule esse teste como "Funcional". 
+2. Extenda o caso de teste parametrizado da questão acima para incluir a verificação da condição de existência do triângulo. Caso os lados informados formem um triângulo, a classe deverá retornar o valor lógico `true` para o teste. Rotule esse teste como `Funcional`. 
 
-    2.1 Para os casos em que os lados informados não formem um triângulo, uma exceção NaoEhTrianguloException deve ser disparada e capturada pelo teste. Rotule esse teste como "Excecao". As medidas apresentadas abaixo são exemplos de lados que não formam um triângulo. Escreva um teste parametrizado capaz de capturar a exceção NaoEhTrianguloException.
+    2.1 Para os casos em que os lados informados não formem um triângulo, uma exceção NaoEhTrianguloException deve ser disparada e capturada pelo teste. Rotule esse teste como `Excecao`. As medidas apresentadas abaixo são exemplos de lados que não formam um triângulo. Escreva um teste parametrizado capaz de capturar a exceção NaoEhTrianguloException.
 
 | a  | b  | c  |Área|Per.|Triang.?|
 |----|----|----|----|----|--------|

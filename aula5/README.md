@@ -50,7 +50,7 @@ Com base nesse cenário, faça o que se pede:
 | 2  | 3  | 6  |
 | 1  | 1  | 3  |
 
-3. Crie as seguintes suites de testes: 
-   3.1 Suite de testes `SteFuncionais` que execute apenas os testes funcionais.
-   3.2 Suite de testes `SteExcecao` que execute apenas os testes de excecao. 
-   3.3 Suite de testes `AllTests` que agrupe as duas suites mencionadas acima. 
+3. Crie as seguintes suites de testes:    
+   3.1 Suite de testes `SteFuncionais` que execute apenas os testes funcionais.   
+   3.2 Suite de testes `SteExcecao` que execute apenas os testes de excecao.    
+   3.3 Suite de testes `AllTests` que agrupe as duas suites mencionadas acima.    

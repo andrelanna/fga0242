@@ -5,13 +5,14 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 9 - Aula Prática de TDD
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- Exercício sobre TDD, utilizando testes parametrizados.
 
-**Slides da aula**
-* [Slides](link para os slides)
+
+**Recursos da aula**
+- Junto a essa pasta está o arquivo `.zip` com o código desenvolvido em aula.
+
 
 **Exercicios de fixacao**

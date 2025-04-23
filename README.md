@@ -17,7 +17,7 @@ FGA - Faculdade do Gama
 | 6            | 09/04/2025 | TDD, padrões barra verde e vermelha. 
 | 7            | 14/04/2025 | Prática de TDD
 | 8            | 16/04/2025 | 
-| 9            | 21/04/2025 | Feriado (Tiradentes)
+| 9            | 21/04/2025 | Feriado (Tiradentes) / [Exercicio de fixação em TDD](/aula9)
 | 10           | 23/04/2025 | **Avaliação 1**
 | 11           | 28/04/2025 | Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código
 | 12           | 30/04/2025 | Refatoração: Extrair método, mover método, mover atributo

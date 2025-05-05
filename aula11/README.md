@@ -23,7 +23,7 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 **Exercicios de fixacao**
 
-- Refatorar o exercício de fixação da aula 10 para: 
+- Refatorar o exercício de fixação da [aula 9](../aula9) para: 
   - simplificar o código
   - aumentar a legibilidade
   - eliminar código duplicado

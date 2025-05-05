@@ -19,8 +19,8 @@ FGA - Faculdade do Gama
 | 8            | 16/04/2025 | 
 | 9            | 21/04/2025 | Feriado (Tiradentes) / [Exercicio de fixação em TDD](/aula9)
 | 10           | 23/04/2025 | **Avaliação 1**
-| 11           | 28/04/2025 | Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código
-| 12           | 30/04/2025 | Refatoração: Extrair método, mover método, mover atributo
+| 11           | 28/04/2025 | [Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código](/aula11)
+| 12           | 30/04/2025 | [Refatoração: Extrair método, mover método, mover atributo](/aula12)
 | 13           | 05/05/2025 | Refatoração: Encapsular atributo, Extrair sub-classe, Extrair super-classe
 | 14           | 07/05/2025 | Refatoração: Substituir método por objeto-método, exercícios de refatoração
 | 15           | 12/05/2025 | Programação defensiva: Conceitualização e importância, introdução às técnicas de Programação Defensiva

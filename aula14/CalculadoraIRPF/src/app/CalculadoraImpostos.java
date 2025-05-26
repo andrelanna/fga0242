@@ -20,12 +20,15 @@ class CalculadoraImpostos {
 		
 		//Calculo do imposto da 5a faixa
 		if (base > origem.PISO_5A_FAIXA) {
-			calculadora5aFaixa();
+			origem.base5aFaixa = calcularBaseFaixa(base, origem.PISO_5A_FAIXA);
+			origem.imposto5aFaixa = calcularImpostoPorFaixa(origem.base5aFaixa, origem.ALIQUOTA_5A_FAIXA);
+			base = atualizarBase(base, origem.base5aFaixa); 
+			impostoTotal = calcularImpostoFaixa(impostoTotal, origem.imposto5aFaixa);
 		}
 		
 		//Calculo do imposto da 4a faixa
 		if (base > origem.PISO_4A_FAIXA) {
-			origem.base4aFaixa = calcularBaseFaixa(base, origem.base4aFaixa);
+			origem.base4aFaixa = calcularBaseFaixa(base, origem.PISO_4A_FAIXA);
 			origem.imposto4aFaixa = calcularImpostoPorFaixa(origem.base4aFaixa, origem.ALIQUOTA_4A_FAIXA);
 			base = atualizarBase(base, origem.base4aFaixa); 
 			impostoTotal = calcularImpostoFaixa(impostoTotal, origem.imposto4aFaixa);
@@ -33,7 +36,7 @@ class CalculadoraImpostos {
 		
 		//Calculo do imposto da 3a faixa
 		if (base > origem.PISO_3A_FAIXA) {
-			origem.base3aFaixa = calcularBaseFaixa(base, origem.base3aFaixa);
+			origem.base3aFaixa = calcularBaseFaixa(base, origem.PISO_3A_FAIXA);
 			origem.imposto3aFaixa = calcularImpostoPorFaixa(origem.base3aFaixa, origem.ALIQUOTA_3A_FAIXA);
 			base = atualizarBase(base, origem.base3aFaixa); 
 			impostoTotal = calcularImpostoFaixa(impostoTotal, origem.imposto3aFaixa);
@@ -41,7 +44,7 @@ class CalculadoraImpostos {
 		
 		//Calculo do imposto da 2a faixa
 		if (base > origem.PISO_2A_FAIXA) {
-			origem.base2aFaixa = calcularBaseFaixa(base, origem.base2aFaixa);
+			origem.base2aFaixa = calcularBaseFaixa(base, origem.PISO_2A_FAIXA);
 			origem.imposto2aFaixa = calcularImpostoPorFaixa(origem.base2aFaixa, origem.ALIQUOTA_2A_FAIXA);
 			base = atualizarBase(base, origem.base2aFaixa); 
 			impostoTotal = calcularImpostoFaixa(impostoTotal, origem.imposto2aFaixa);
@@ -56,13 +59,6 @@ class CalculadoraImpostos {
 		}
 		
 		return impostoTotal;
-	}
-
-	private void calculadora5aFaixa() {
-		origem.base5aFaixa = calcularBaseFaixa(base, origem.base5aFaixa);
-		origem.imposto5aFaixa = calcularImpostoPorFaixa(origem.base5aFaixa, origem.ALIQUOTA_5A_FAIXA);
-		base = atualizarBase(base, origem.base5aFaixa); 
-		impostoTotal = calcularImpostoFaixa(impostoTotal, origem.imposto5aFaixa);
 	}
 
 	private float calcularImpostoFaixa(float impostoTotal, float impostoFaixa) {

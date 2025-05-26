@@ -15,3 +15,9 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 **Exercicios de fixacao**
 
+1. Aplicar "Extrair Método" em IRPF::criarRendimento(), de modo a fatorar o
+    método em etapas e/ou eliminar eventuais duplicidades de código. 
+
+2. Aplicar "Substituir método por objeto-método" em IRPF::cadastrarDependente().  
+   2.1 Fatorar o método computar no objeto-método, de modo a eliminar
+duplicidades de código. 

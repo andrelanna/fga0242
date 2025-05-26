@@ -5,13 +5,13 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 14 - Refatoração Substituir Método por objeto-método
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- Refatoração "Substituir Método por objeto-método"
 
 **Slides da aula**
-* [Slides](link para os slides)
+* [Grupo de refatorações - Compondo Métodos](Catalogo_Refatoracao_Compondo_metodos.pdf)
 
 **Exercicios de fixacao**
+

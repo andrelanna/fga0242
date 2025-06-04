@@ -5,13 +5,14 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 23 - Componentes e Frameworks
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- Conceitos e definições
+- Frameworks caixa-branca, caixa-preta e caixa-cinza
 
 **Slides da aula**
 * [Slides](link para os slides)
+  :warning: (será atualizado em breve)
 
 **Exercicios de fixacao**

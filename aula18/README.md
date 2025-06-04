@@ -5,13 +5,14 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 18 - Tratamento e depuração de código
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- Erros _vs._ exceções
+- Técnicas de prevenção de erros inevitáveis
 
 **Slides da aula**
-* [Slides](link para os slides)
+* [Slides]()  
+  :warning: (será atualizado em breve)
 
 **Exercicios de fixacao**

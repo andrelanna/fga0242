@@ -5,13 +5,14 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 15 - Programação defensiva
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- Conceitualização e importância
+- Introdução às técnicas de programação defensiva
 
 **Slides da aula**
-* [Slides](link para os slides)
+* [Slides]()  
+  :warning: (será atualizado em breve)
 
 **Exercicios de fixacao**

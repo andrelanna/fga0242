@@ -5,13 +5,15 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 13 - Operações de Refatoração
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- Encapsular atributo
+- Extrair sub-classe
+- Extrair super-classe
 
 **Slides da aula**
-* [Slides](link para os slides)
+* [Slides]()  
+  :warning: (será atualizado em breve)
 
 **Exercicios de fixacao**

@@ -5,13 +5,17 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 16 - Programação Defensiva
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- Assertivas
+- Programação por contratos
+- Pré-condições
+- Pós-condições
+- Invariantes
 
 **Slides da aula**
-* [Slides](link para os slides)
+* [Slides]()  
+  :warning: (será atualizado em breve)
 
 **Exercicios de fixacao**

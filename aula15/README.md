@@ -12,7 +12,6 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 - Introdução às técnicas de programação defensiva
 
 **Slides da aula**
-* [Slides]()  
-  :warning: (será atualizado em breve)
+* [Slides]()https://docs.google.com/presentation/d/14hBakH53Qge-WDn1U84rDebPkn7V3TkM/edit?usp=sharing&ouid=112746484255766107555&rtpof=true&sd=true  
 
 **Exercicios de fixacao**

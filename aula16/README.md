@@ -15,7 +15,6 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 - Invariantes
 
 **Slides da aula**
-* [Slides]()  
-  :warning: (será atualizado em breve)
+* [Slides]()https://docs.google.com/presentation/d/1Lb2U03PWaVXR37uUwfBRIXyZQXEkiAtK/edit?usp=sharing&ouid=112746484255766107555&rtpof=true&sd=true  
 
 **Exercicios de fixacao**

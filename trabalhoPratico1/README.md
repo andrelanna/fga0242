@@ -128,8 +128,8 @@ distribuída conforme tabela apresentada abaixo.
 | Invariante | Para os nós folhas, todos os valores estão em ordem crescente? | 5 pontos |
 | Pré | Chave a ser inserida não existe na árvore | 5 pontos |
 | Pré | Chave a ser removida existe na árvore | 5 pontos |
-| Pós | Para nó-raiz, $1 \leq \#\ chaves \leq 2 \cdot 1$, para nós internos, $t-1 \leq \#\ chaves \leq 2 \cdot 1$ | 5 pontos |
-| Pós | Para nó raiz, o número de filhos é $2 \leq \# filhos \leq 2\cdot t$, para nós internos, o número de filhos é $t \leq \# filhos \leq 2\cdot t$ | 5 pontos |
+| Pós | Para nó-raiz, $1 \leq numChaves \leq 2 \cdot 1$, para nós internos, $t-1 \leq numChaves \leq 2 \cdot 1$ | 5 pontos |
+| Pós | Para nó raiz, o número de filhos é $2 \leq numFilhos \leq 2\cdot t$, para nós internos, o número de filhos é $t \leq numFilhos \leq 2\cdot t$ | 5 pontos |
 | Pós | Para a raiz, após operação de divisão, nível da árvore aumenta em uma unidade, após operação de fusão, nível da árvore diminui em uma unidade. | 5 pontos |
 | **TOTAL:** | | 40 pontos |
 

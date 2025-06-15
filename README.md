@@ -55,10 +55,11 @@ FGA - Faculdade do Gama
 
 --- 
 **Avaliação do aprendizado:**  
-  - Avaliação 1: 20 pontos.
-  - Avaliação 2: 20 pontos.
-  - Avaliação 3: 20 pontos.
-  - Trabalho prático: 40 pontos.
+  - Avaliação 1: 20 pontos.  
+  ~~- Avaliação 2: 20 pontos.~~ (Unificadas, como TP1)  
+  ~~- Avaliação 3: 20 pontos.~~ (Unificadas, como TP1)  
+  - [Trabalho prático 1 (TP1)](/trabalhoPratico1): 40 pontos.
+  - [Trabalho prático 2 (TP2)](/trabalhoPratico2): 40 pontos.
 
 ---
 **Metodologia:** 

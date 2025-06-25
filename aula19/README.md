@@ -12,7 +12,7 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 - Técnicas para depuração de código
 
 **Slides da aula**
-* [Slides](link para os slides)
+* [Slides](link para os slides)   
   :warning: (será atualizado em breve)
 
 **Exercicios de fixacao**

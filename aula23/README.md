@@ -12,7 +12,7 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 - Frameworks caixa-branca, caixa-preta e caixa-cinza
 
 **Slides da aula**
-* [Slides](link para os slides)
+* [Slides](link)  
   :warning: (será atualizado em breve)
 
 **Exercicios de fixacao**

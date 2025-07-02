@@ -14,7 +14,7 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 ## Projeto de código
 
 **Valor:** 40 pontos  
-**Data de entrega:** 14/02/2025, 23:59hs. 
+**Data de entrega:** 09/07/2025, 23:59hs. 
 
 Projeto de software é, muitas vezes, entendido como uma atividade dentro do
 processo de desenvolvimento em que uma equipe define as estruturas do software e
@@ -122,7 +122,7 @@ O trabalho deverá ser entregue na forma de um relatório em PDF, elaborado pelo
 grupo. O trabalho será enviado na sala da disciplina, disponível no Moodle. As
 referências listadas abaixo devem ser consultadas em suas respostas. 
 
-A data-limite de entrega é dia 14/02/2025, 23:59hs. 
+A data-limite de entrega é dia 09/07/2025, 23:59hs. 
 
 
 

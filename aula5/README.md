@@ -92,3 +92,33 @@ uma exceção do tipo `CaractereInvalidoException`. Rotule esse teste como
 `Excecao`. 
 
 Agrupe os testes em uma suíte de testes chamada `AllTests`.
+
+
+## Exercício 2 - Conta-corrente
+
+Considere uma conta-corrente, com um saldo inicial de R$ 200,00, não há cheque
+especial (não tem como resultar em saldo negativo após qualquer operação de
+retirada). Operações de retirada são sempre transações de valores negativos,
+operações de entrada são sempre transações de valores positivos. Não pode,
+portanto, haver operação de entrada com valor negativo. 
+
+Implemente, como testes parametrizados e rotulados como `Processamento`, as
+seguintes operações. 
+
+| Operação | Valor | Operação processada? | Saldo Final |
+|----------|-------|----------------------|-------------|
+| Deposito | 200   |   true               |  400        | 
+| Saque    | -100  |   true               |  100        | 
+| Pix      | -100  |   true               |  100        | 
+| Pix      | 300   |   true               |  500        | 
+| Pix      | -300  |   false              |  200        | 
+
+Nos casos em que há erro entre o tipo da operação e seu valor, uma exceção do
+tipo `OperacaoInvalidaException` deve ser lançada. Exemplo: 
+
+- Deposito, -300,00
+- Saque, 200,00
+
+Rotule esses testes com `Excecao`. 
+
+Agrupe esses testes em uma suite de testes chamada `AllTests`.

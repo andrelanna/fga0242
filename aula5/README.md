@@ -54,3 +54,41 @@ Com base nesse cenário, faça o que se pede:
    3.1 Suite de testes `SteFuncionais` que execute apenas os testes funcionais.   
    3.2 Suite de testes `SteExcecao` que execute apenas os testes de excecao.    
    3.3 Suite de testes `AllTests` que agrupe as duas suites mencionadas acima.    
+
+---
+# Estudo Dirigido
+
+Conteúdo abordado: 
+  - Testes unitários, 
+  - Casos de teste, 
+  - Suítes de testes,
+  - Categorias de testes, 
+  - Testes de exceção, 
+  - Testes parametrizados
+
+
+## Exercício 1 - Jogo da Forca
+
+Considere a seguinte execução de um jogo da forca cuja palavra oculta é `arara`.
+Toda vez que o jogador tentar adivinhar uma palavra, o jogo informa quantos
+caracteres foram encontrados e os apresenta em suas respectivas posições. 
+
+Através de testes parametrizados, implemente os seguintes casos de testes:   
+| Caractere | # caracteres presentes | Palavra revelada |  
+|-----------|------------------------|------------------|
+|    a      |         3              |   `a*a*a`        |
+|    r      |         2              |   `*r*r*`        |
+|    b      |         0              |   `*****`        |
+
+Rotule seus testes parametrizados como sendo pertencentes à categoria
+`Funcional`.
+
+Dicas: Quem são as tuplas de seus testes? Em cada tupla, quem são os valores
+informados e os valores esperados para os testes? Quantos testes possuem seu
+caso de testes parametrizado? 
+
+No caso do usuário informar um caractere vazio ou nulo, o teste deverá capturar
+uma exceção do tipo `CaractereInvalidoException`. Rotule esse teste como
+`Excecao`. 
+
+Agrupe os testes em uma suíte de testes chamada `AllTests`.

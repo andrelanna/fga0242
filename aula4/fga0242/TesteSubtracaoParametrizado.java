@@ -1,74 +1,53 @@
 
 package fga0242;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.Arrays;
+import java.util.stream.Stream;
 
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
-@RunWith(Parameterized.class)
 public class TesteSubtracaoParametrizado {
 
-	//Atributos do objeto de teste: cada teste terá seu valor associado
-	private int op1;
-	private int op2;
-	private int rstEspSub;
-	private int rstEspSoma; 
-
+	// Passo 0: definição do objeto em teste
 	private Calculadora c;
 	
-	@Before
+	/* Passo 1: definição anterior a cada caso de teste, @BeforeEach substitui 
+	o antigo @Before e executa antes de cada execução parametrizada */
+	@BeforeEach
 	public void setup() {
 		c = new Calculadora();
 	}
 	
-	//1a. coisa a ser feita: metodo que retorna conjunto de parametros
-	@Parameters
-	public static Iterable<Object[]> getParameters() {
-		Object[][] parametros = new Object[][] {
-			{3, 2, 1, 5},
-			{2, 3, -1, 5}, 
-			{3, -2, 5, 1}, 
-			{2, -3, 5, -1}, 
-			{-3, -2, -1, -5},
-			{-2, -3, 1, -5}, 
-			{0, 3, -3, 3}
-		};
-		return Arrays.asList(parametros);
+	// Passo 2: definição de metodo que retorna conjunto de parametros, futuramente associados a @MethodSource nos testes
+	// Formato: op1, op2, resultadoEsperadoSub, resultadoEsperadoSoma
+	private static Stream<Arguments> parametros() {
+		return Stream.of(
+			Arguments.of( 3,  2,  1,  5),
+			Arguments.of( 2,  3, -1,  5),
+			Arguments.of( 3, -2,  5,  1),
+			Arguments.of( 2, -3,  5, -1),
+			Arguments.of(-3, -2, -1, -5),
+			Arguments.of(-2, -3,  1, -5),
+			Arguments.of( 0,  3, -3,  3)
+        	);
 	}
 
-	//2o passo: criar o construtor alternativo do objeto de teste
-	public TesteSubtracaoParametrizado(int op1, int op2, int rstEspSub, int rstEspSoma) {
-		this.op1 = op1; 
-		this.op2 = op2;
-		this.rstEspSub = rstEspSub;
-		this.rstEspSoma = rstEspSoma;
-	}
-	
-	
-	//3o passo: escrever o teste!
-	@Test
-	public void testSubtracao() {
-		assertEquals(rstEspSub, c.subtracao(op1, op2));
-	}
-	
-	
-	@Test
-	public void testSoma() {
-		assertEquals(rstEspSoma, c.soma(op1, op2));
+	// Passo 3: escrever os testes!
+	@ParameterizedTest(name = "#{index} => {0} - {1} = {2}") // #num_do_teste => op1 - op2 = resultadoEsperadoSub
+    	@MethodSource("parametros")
+	public void testSubtracao(int op1, int op2, int resultadoEsperadoSub, int resultadoEsperadoSoma) {
+		assertEquals(resultadoEsperadoSub, c.subtracao(op1, op2));
 	}
 
-	
-	
-	
-	
-	
-	
-	
+
+	@ParameterizedTest(name = "#{index} => {0} + {1} = {3}") // #num_do_teste => op1 + op2 = resultadoEsperadoSoma
+	@MethodSource("parametros")
+	void testSoma(int op1, int op2, int resultadoEsperadoSub, int resultadoEsperadoSoma) {
+		assertEquals(resultadoEsperadoSoma, c.soma(op1, op2));
+	}
 	
 }

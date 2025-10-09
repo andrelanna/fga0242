@@ -1,17 +1,16 @@
 
 package fga0242;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Before;
-import org.junit.Test;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class TesteSubtracaoSimples {
 
 	Calculadora c; 
 	
-	@Before
+	@BeforeEach
 	public void setup() {
 		c = new Calculadora();
 	}
@@ -41,7 +40,5 @@ public class TesteSubtracaoSimples {
 	public void test5() { //-3-(-2)
 		assertEquals(-1, c.subtracao(-3,-2));
 	}
-	
-
 
 }

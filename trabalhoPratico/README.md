@@ -14,7 +14,7 @@ Enunciado Geral
   - Etapa 3: Design by Contracts (DbC)
 
 * O trabalho deverá ser realizado em grupos de 3 a 5 alunos. 
-* Os grupos deverão ser informados através do formulário presente em [link](xxxx).
+* Os grupos deverão ser informados através do formulário presente em [link](https://forms.gle/A28odYrQxo7fv19J8).
 * A divisão dos pontos do trabalho será a seguinte: 
   - Etapa 1 (TDD): 10 pontos
   - Etapa 2 (Refactoring): 15 pontos
@@ -43,13 +43,9 @@ Assim, a pontuação, o número de vitórias, o saldo de gols e os gols marcados
 Considerando o cenário descrito acima, os grupos deverão desenvolver umaa
 aplicação que seja capaz de: 
 1)  realizar os sorteios de jogos de cada rodada; 
-2)  garantir que não existam dois jogos iguais ao longo de todas as rodadas (por
-  jogos iguais entenda jogos com os mesmos times como mandantes e visitantes). 
-3)  calcular a pontuação dos times e a classificação a cada rodada, conforme os
-  critérios de pontuação apresentados no enunciado (vitória - 3 pontos, empate -
-1 ponto, derrota - 0 pontos). 
-4)  calcular os números de  vitórias, gols marcados, gols sofridos, e saldos de
-gols com base nos resultados dos jogos de cada rodada. 
+2)  garantir que não existam dois jogos iguais ao longo de todas as rodadas (por jogos iguais entenda jogos com os mesmos times como mandantes e visitantes). 
+3)  calcular a pontuação dos times e a classificação a cada rodada, conforme os critérios de pontuação apresentados no enunciado (vitória - 3 pontos, empate - 1 ponto, derrota - 0 pontos). 
+4)  calcular os números de  vitórias, gols marcados, gols sofridos, e saldos de gols com base nos resultados dos jogos de cada rodada. 
 5)  aplicar o critério de desempate pelo número de vitórias. 
 
 Cada uma dessas funcionalidades deve ser desenvolvida em seu caso de teste
@@ -57,9 +53,15 @@ próprio. O conjunto final contendo todos os casos de testes deve ser executado
 de uma só vez, através da suíte de testes ``AllTests``.
 
 # Critérios de correção:
-
+- Os sorteios de cada rodada acontecem adequadamente? 
+  - Não há repetição de times na rodada?
+  - Todos os times estão sorteados na rodada?
+- Não há duplicidade de confrontos entre todas as rodadas do campeonato? 
+- A pontuação é calculada adequadamente a cada rodada, para cada time, com base nos resultados dos confrontos?
+- Os cálculos de vitórias, gols marcados e sofridos, saldo de gols são calculados adequadamente com base nos resultados dos confrontos?
+- Dois (ou mais) times de mesma pontuação estão classificados de acordo com o número de vitórias? 
 
 # Data de entrega: 
 
-- 22/10/2025, 23:59hs, via moodle da disciplina. 
+- ~~22/10/2025~~ 27/10/2025, 16:00hs, via moodle da disciplina. 
 

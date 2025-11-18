@@ -65,3 +65,64 @@ de uma só vez, através da suíte de testes ``AllTests``.
 
 - ~~22/10/2025~~ 27/10/2025, 16:00hs, via moodle da disciplina. 
 
+
+---
+# Enunciado do Trabalho Prático 2 - Refatoração
+
+O trabalho prático #2 consiste na aplicação de operações de refatoração e será
+realizado com base nos artefatos entregues pelos grupos no TP1. 
+
+Todos os grupos vão aplicar as mesmas operações de refatoração em seus
+trabalhos, a citar, `Extrair Método`, `Substituir Método por Objeto-Método`, e
+`Extrair Classe`. A tabela abaixo mostra para cada grupo, onde cada uma dessas
+operações de refatoração deverá ser aplicada. Identifique a qual grupo você
+pertence pelo número de matrícula. 
+
+
+
+| Grupo # | Matrículas dos componentes                            | Extrair Método                           | Substituir Método por Objeto Método                  | Extrair classe    | 
+|:-------:|:------------------------------------------------------|:-----------------------------------------|:-----------------------------------------------------|:---------------   |
+|    1    | 202016720, 221007798, 221008338, 221022355            | Rodada::gerarRodadasSorteio              | Ranking::recomputarAteRodada                         | Partida           |
+|    2    | 202045482, 211061529, 211062802                       | Campeonato::gerarTabelaRoundRobin        | Partida::registrarResultado                          | Time              |
+|    3    | 211031083, 211031118, 211031664                       | Time::compareTo                          | Time::registrarPartida                               | Time              |
+|    4    | 180075462, 180108875, 190088168, 202016168            | Time::registrar_resultado                | Rodada::gerar_rodadas                                | Time              |
+|    5    | 200024949, 202016382, 211063200, 211063265            | Campeonato::gerar_rodadas                | ProcessadorRodada::processar_rodada                  | Partida           |
+|    6    | 211062080, 221022088, 222006660, 222022000            | Competition::getClassification           | Competition::scheduleRounds                          | Team              |
+|    7    | 190091606, 211039617, 211039680, 211061350            | SorteioService::sotearJogosRodada        | ClassificacaoService::calcularClassificacaoAteRodada | Time              |
+|    8    | 211062230, 211062651, 221021901, 221022050            | Cronograma::calculaIdaEVolta             | DadosClassificacao::adicionarResultadoPartida        | Partida           |
+|    9    | 202023663, 221007706, 222031045, 222037737            | Campeonato::gerarRodadas                 | Time::adicionarPartidaJogada                         | Time              |
+|   10    | 200021222, 211030827, 211031860, 211063069            | Campeonato::getTabelaClassificacao       | Campeonato::sortearRodadas                           | Time              |
+|   11    | 211062437, 221021984, 221022041, 221022275, 221022570 | Campeonato::confrontosDiretos            | Campeonato::classificacao                            | Time              |
+|   12    | 190116498, 200058258, 221007591, 221008033            | services::calcular_classificacao_rodada  | services::gerar_calendario                           | Classificacao     |
+|   13    | 211030291, 211030925, 211063013, 221022720, 221034973 | Campeonato::sortear_jogos                | Equipe::atualizar_estatisticas                       | Equipe            |
+|   14    | 200020323, 200049020, 222006178, 222032810            | Classificacao::processa_rodada           | Jogo::gerar_rodadas                                  | Time              |
+|   15    | 190028963, 190036761, 211029540                       | Campeonato::calcularPontuacaoTime        | Campeonato::calcularPontuacaoTime                    | Time              |
+|   16    | 180098080, 202017263, 202023968                       | Campeonato::ordenarClassificacao         | Campeonato::atualizarClassificacao                   | ClassificacaoTime |
+|   17    | 200058258, 211061814, 211061832                       | TabelaClassificacao::exibirClassificacao | Campeonato::gerarTurno                               | Time              |
+|   18    | 202015868, 211039671, 222006178, 222015186, 222029243 | Campeonato::gerar_tabela_final           | Campeonato::criar_rodada                             | Time              |
+|   19    |                                                       | X                                        | X                                                    | X                 |
+|   20    |                                                       | X                                        | X                                                    | X                 |
+
+## Formato de entrega: 
+
+- Para cada operação de refatoração aplicada, o grupo deverá ao final realizar
+  um commit com a seguinte mensagem de título:  
+  `[Refact] <operação>, <Classe / Método alvo>`  
+  em que `<operação>` deve ser o nome da refatoração aplicada e `<Classe /
+Método alvo>` deve ser o nome do local onde ela foi aplicada. 
+- A entrega será feita pelo envio dos commits aos repositórios dos grupos.
+  Somente serão aceitos commits até a data limite da entrega, commits
+posteriores serão desconsiderados. 
+
+
+## Critérios de Correção: 
+- Para cada operação de refatoração: 
+  - A refatoração foi aplicada no lugar indicado?
+  - A operação de refatoração foi aplicada corretamente, em especial, aquelas
+    operações realizadas sem suporte ferramental? 
+  - O resultado da operação de refatoração é correto do ponto de vista da
+    estrutura do código gerado? 
+- Os testes continuam efetivos e passando? 
+
+## Data-limite para entrega: 
+- 27/11/2025, 23:59hs. 

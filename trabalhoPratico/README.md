@@ -95,7 +95,7 @@ pertence pelo número de matrícula.
 |   11    | 211062437, 221021984, 221022041, 221022275, 221022570 | Campeonato::confrontosDiretos            | Campeonato::classificacao                            | Time              |
 |   12    | 190116498, 200058258, 221007591, 221008033            | services::calcular_classificacao_rodada  | services::gerar_calendario                           | Classificacao     |
 |   13    | 211030291, 211030925, 211063013, 221022720, 221034973 | Campeonato::sortear_jogos                | Equipe::atualizar_estatisticas                       | Equipe            |
-|   14    | 200020323, 200049020, 222006178, 222032810            | Classificacao::processa_rodada           | Jogo::gerar_rodadas                                  | Time              |
+|   14    | 200020323, 200049020, 222032810                       | Classificacao::processa_rodada           | Jogo::gerar_rodadas                                  | Time              |
 |   15    | 190028963, 190036761, 211029540                       | Campeonato::calcularPontuacaoTime        | Campeonato::calcularPontuacaoTime                    | Time              |
 |   16    | 180098080, 202017263, 202023968                       | Campeonato::ordenarClassificacao         | Campeonato::atualizarClassificacao                   | ClassificacaoTime |
 |   17    | 200058258, 211061814, 211061832                       | TabelaClassificacao::exibirClassificacao | Campeonato::gerarTurno                               | Time              |

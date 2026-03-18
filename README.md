@@ -9,42 +9,42 @@ FGA - Faculdade do Gama
 
 | **Aula no.** |  **Data**  | Descrição                                                                                                                         |
 |-------------:|:----------:|-------------------------------------------------------------------------------------------------------------------------|
-| 1            | 18/08/2025 | [Apresentação do plano de ensino](/aula1) / Revisão de OO
-| 2            | 20/08/2025 | [Revisão de OO e Design Patterns](/aula2)
-| 3            | 25/08/2025 | [Testes unitários, testes, casos de testes, suíte de testes](/aula3)
-| 4            | 27/08/2025 | [Testes unitários, runners de testes unitarios, rotulação de testes, testes de exceção, testes parametrizados](/aula4)
-| 5            | 01/09/2025 | [Exercícios de testes unitários](/aula5)
-| 6            | 03/09/2025 | TDD, padrões barra verde e vermelha. 
-| 7            | 08/09/2025 | Prática de TDD
-| 8            | 10/09/2025 | 
-| 9            | 15/09/2025 | [Exercicio de fixação em TDD](/aula9)
-| 10           | 17/09/2025 | **Avaliação 1**
-| 11           | 22/09/2025 | [Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código](/aula11)
-| 12           | 24/09/2025 | [Refatoração: Extrair método, mover método, mover atributo](/aula12)
-| 13           | 29/09/2025 | Refatoração: Encapsular atributo, Extrair sub-classe, Extrair super-classe
-| 14           | 01/10/2025 | [Refatoração: Substituir método por objeto-método, exercícios de refatoração](/aula14)
-| 15           | 06/10/2025 | [Programação defensiva: Conceitualização e importância, introdução às técnicas de Programação Defensiva](/aula15)
-| 16           | 08/10/2025 | [Programação defensiva: assertivas e programação por contrato, assertivas, pré-condições e pós-condições, invariantes.](/aula16)
-| 17           | 13/10/2025 | [Programação defensiva: Exercícios](/aula17)
-| 18           | 15/10/2025 | [Tratamento e depuração de código: Erros vs. Exceções, Técnicas de prevenção de erros inevitáveis](/aula18)
-| 19           | 20/10/2025 | [Tratamento e depuração de código: Técnicas para teste de código, técnicas de depuração de código](/aula19)
-| 20           | 22/10/2025 | [Tratamento e depuração de código: Exercícios](/aula20)
-| 21           | 27/10/2025 | Atividade extra-classe
-| 22           | 29/10/2025 | Semana universitária 
-| 23           | 03/11/2025 | Semana universitária 
-| 24           | 05/11/2025 | [Componentes e Frameworks: conceitos e definições, frameworks caixa branca, caixa preta e caixa cinza.](/aula23)
-| 25           | 10/11/2025 | [Componentes e Frameworks: conceitos e definições, frameworks de domínio horizonta, frameworks de domínio vertical](/aula24)
-| 26           | 12/11/2025 | [Componentes e Frameworks: implementação de frameworks.](/aula25)
-| 27           | 17/11/2025 | [Componentes e Frameworks: Exercícios](/aula26)
-| 28           | 19/11/2025 | **Entrega do Trabalho Prático** 
-| 29           | 24/11/2025 | **Entrega do Trabalho Prático**
-| 30           | 26/11/2025 | Desenvolvimento avançado de software: plataformas emergentes, implementação de produtos em plataformas emergentes.
-| 31           | 01/12/2025 | Desenvolvimento avançado de software: plataformas emergentes, implementação de produtos em plataformas emergentes.
-| 32           | 03/12/2025 | **Avaliação 3**
-| 33           | 08/12/2025 | Aula extra / Revisão de menção
-| 34           | 10/12/2025 | Aula extra / Revisão de menção
-| 35           | 15/12/2025 | Aula extra / Revisão de menção
-| 36           | 17/12/2025 | Aula extra / Revisão de menção
+|  1	       | 16/03/2026	| [Apresentação do plano de ensino](/aula1) / Revisão de OO.
+|  2	       | 18/03/2026	| [Revisão de OO](/aula2) / Design Patterns.
+|  3	       | 23/03/2026	| Revisão de Design Patterns.
+|  4	       | 25/03/2026	| Exercícios OO / Design Patterns.
+|  5	       | 30/03/2026	| Testes Unitários: asserções, testes, casos de testes, independência de testes, testes de exceção.
+|  6	       | 01/04/2026	| Test Runners: suite de testes, rotulação de testes, testes parametrizados. 
+|  7	       | 06/04/2026	| Exercícios de testes unitários
+|  8	       | 08/04/2026	| TDD: conceitos, padrões barra verde e vermelha
+|  9	       | 13/04/2026	| Exercícios de TDD 
+| 10	       | 15/04/2026	| Avaliação 1 - TDD
+| 11	       | 20/04/2026	| Facultativo
+| 12	       | 22/04/2026	| Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código. 
+| 13	       | 27/04/2026	| Atividade extra-classe
+| 14	       | 29/04/2026	| Atividade extra-classe
+| 15	       | 04/05/2026	| Refatoração: grupos 1 e 2
+| 16	       | 06/05/2026	| Refatoração: grupos 3 e 4
+| 17	       | 11/05/2026	| Refatoração: grupos 5 e 6
+| 18	       | 13/05/2026	| Refatoração: grupos 7 e 8
+| 19	       | 18/05/2026	| Exercícios de Refatoração.
+| 20	       | 20/05/2026	| Avaliação 2 - Refatoração
+| 21	       | 25/05/2026	| Programação defensiva: conceitualização e importância, introdução às técnicas de Prog. Defens.
+| 22	       | 27/05/2026	| Programação defensiva: programação por assertivas, Design by Contracts, pré-condições, pós-condições, invariantes.
+| 23	       | 01/06/2026	| Programação defensiva: exercícios
+| 24	       | 03/06/2026	| Tratamento e depuração de código: erros vs. exceções, técnicas de prevenções de erros inevitáveis
+| 25	       | 08/06/2026	| Tratamento e depuração de código: técnicas para teste de código, técnicas de depuração de código.
+| 26	       | 10/06/2026	| Tratamento e depuração de código: exercícios.
+| 27	       | 15/06/2026	| Avaliação 3 - Programação defensiva / tratamento e depuração de código. 
+| 28	       | 17/06/2026	| Componentes e frameworks: conceitos e definições, frameworks caixa branca, caixa preta e caixa cinza
+| 29	       | 22/06/2026	| Componentes e frameworks: frameworks de domínio horizontal e de domínio vertical
+| 30	       | 24/06/2026	| Componentes e frameworks: implementação de frameworks
+| 31	       | 29/06/2026	| Componentes e frameworks: exercícios
+| 32	       | 01/07/2026	| Entrega de trabalho - Componentes e frameworks
+| 33	       | 06/07/2026	| Aula extra / Revisão de menção
+| 34	       | 08/07/2026	| Aula extra / Revisão de menção
+| 35	       | 13/07/2026	| Aula extra / Revisão de menção
+| 36	       | 15/07/2026	| Aula extra / Revisão de menção
 
 
 --- 
@@ -69,4 +69,4 @@ FGA - Faculdade do Gama
 --- 
 **Horário de atendimento:**  
 Segundas e quartas, de 13:00 às 14:00 horas.  
-UED (Sala 14) ou CEDIS (container #19)
+UED (Sala 14) ou CEDIS (container #5)

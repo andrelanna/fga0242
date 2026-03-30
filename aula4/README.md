@@ -1,72 +1,144 @@
-
 UnB - Universidade de Brasilia  
 FGA - Faculdade do Gama  
 FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula 4 - Testes parametrizados
+# Aula 4 - Exercícios de revisão de Design Patterns
 
-**Tópicos da aula**
-- Testes parametrizados
-- Objetos de teste
-- Construtor de testes
-- Método getParameters()
-- Método de teste
+---
 
-**Slides da aula**
-* [Slides](https://docs.google.com/presentation/d/1H9Dy6ZHJVIBqr5gnEaEHmZ_Lvm8RYqD-5D6icMNvIx0/edit?usp=sharing)
+Tópicos da aula:
+- Realizar exercíos sobre os seguintes padrões de projeto: 
+  - Composite
+  - Template Method
+  - Factory Method
+  - Singleton
 
-**Video da aula**  
+Observações:
+- Esse exercício será utilizado como base para as aulas de testes unitários. 
 
-* [Video](https://youtu.be/CFGCDrVld5I)
+--- 
 
-**Exercicios de fixacao**
+## Descrição do cenário:
 
-Você foi chamado para desenvolver uma calculadora de rentabilidade líquida anual
-para investimentos em CDB. Uma aplicação em CDB é caracterizada pelo seu prazo
-em dias (n), o valor da aplicação inicial ( p ), a taxa de juros anual (i)
-acordada no momento da aplicação e a tributação de imposto de renda (d). 
+#### Sistema de Processamento de Folha de Pagamento e Encargos
 
-A tributação do imposto de renda segue a seguinte tabela: 
+Uma empresa precisa de um sistema para gerenciar sua estrutura organizacional e
+automatizar o cálculo de pagamentos. A estrutura é composta por departamentos,
+subdepartamentos e funcionários individuais.
+
+##### Os Desafios:
+- Estrutura Hierárquica: Um departamento pode conter outros departamentos ou
+  funcionários. O sistema deve permitir calcular o custo total de qualquer nível
+da hierarquia de forma uniforme.
+
+- Processamento de Bônus: Existem diferentes tipos de contratos (CLT, PJ,
+  Estagiário). O processo de cálculo do bônus anual segue um rito obrigatório
+(verificar metas, calcular valor base, aplicar impostos), mas o cálculo do
+"valor base" e a "alíquota de imposto" variam drasticamente conforme o tipo de
+contrato.
+
+- Criação de Objetos: O sistema não deve acoplar a lógica de negócio à criação
+  de instâncias de funcionários, delegando isso a fábricas especializadas.
 
 
-: Prazo da aplicação :|: Alíquota de imposto :
-----------------------|-----------------------
-22,5%                 |  Até 180 dias
-20%                   |  De 181 a 360 dias
-17,5%                 |  De 361 a 720 dias
-15%                   |  Acima de 720 dias
 
-O rendimento bruto (rb) é dado por aplicar a taxa de juros sobre o valor inicial
-durante o tempo em que a aplicação esteve sob custódia de uma instituição
-financeira (ou seja, considere cálculo de juros simples). Para efeitos práticos,
-o tempo pode ser dado como um valor relativo ao período de 365 dias. Exemplo:
-183 dias = 0.5 ano, 91 dias = 0.25 ano, 730 dias = 2.0 ano, 639 dias = 1.75 ano.  
+##### Enunciado do Exercício
+- Objetivo: 
+    - Exercitar o projeto de padrões que colaboram entre si, tanto na formação
+      da estrutura construída pelas associações entre objetos, quando pela
+      execução de funcionalidades através das colaborações entre eles.
 
-A porcentagem do rendimento líquido é encontrada após se dividir o resultado
-final pelo capital inicial, multiplicar o valor encontrado por 100 e, na
-sequência, subtrair 100. Exemplos de cálculos de rentabilidade líquida estão
-descritos na tabela abaixo.
+    - Apresentar o Diagrama de Classes UML para a solução construída.
 
-Dias (n)  |  Apl. inicial (p)  |  Tx. juros (i)  |  Aliquota     |  IR       |  Rend liq (%)
----------:|-------------------:|----------------:|--------------:|----------:|-------------:
-  60      | R$  1.000,00       |           8,5 % |        22,5 % | R$   3,14 |  1,0829       
- 120      | R$    500,00       |           8,0 % |        22,5 % | R$   2,96 |  2,0384       
- 240      | R$  3.000,00       |           9,0 % |        20,0 % | R$  35,51 |  4,7342       
- 270      | R$  2.000,00       |           8,5 % |        20,0 % | R$  25,15 |  5,0301       
- 390      | R$    100,00       |           7,5 % |        17,5 % | R$   1,40 |  6,6113       
- 420      | R$    250,00       |           8,0 % |        17,5 % | R$   4,03 |  7,5945       
- 550      | R$    400,00       |           8,0 % |        17,5 % | R$   8,44 |  9,9452       
- 670      | R$    800,00       |           8,0 % |        17,5 % | R$  20,56 | 12,1151      
- 700      | R$  2.500,00       |           9,0 % |        17,5 % | R$  75,51 | 14,2397      
- 900      | R$  4.200,00       |           9,5 % |        15,0 % | R$ 147,58 | 19,9110      
-1000      | R$    100,00       |           7,5 % |        15,0 % | R$   3,08 | 17,4658      
+    - Implementar o núcleo do sistema em Java, aplicando padrões de projeto que
+      garantam extensibilidade e facilidade para futuros testes unitários.
 
-**Enunciado**: crie um teste parametrizado para cada resposta a ser calculada e,
-posteriormente, unifique todos os testes parametrizados em uma suíte de testes
-chamada ```SteTestesInvestimentos```. Os testes parametrizados deverão chamar
-```TstIR``` e ```TstRendLiq```. 
 
-:star: Sugestão: crie uma hierarquia de casos de teste para evitar código
-duplicado. :wink:
+- Requisitos Técnicos:
+  - Padrão Composite:
+
+    - Crie uma interface `ComponenteOrganizacional` com o método `getSalario()`.
+     
+    - Implemente a classe `Funcionario` (Folha) e `Departamento` (Composite). Um
+      departamento deve ser capaz de retornar a soma dos salários de todos os
+      seus membros (diretos ou indiretos).
+
+  - Padrão Template Method:
+  
+    - Crie uma classe abstrata `ProcessadorBonus`. Ela deve ter um método final
+      chamado `processarPagamento()`.
+     
+    - Este método deve definir os passos: `verificarPresenca()`,
+      `calcularValorBase()` (abstrato) e `aplicarImposto()` (abstrato).
+     
+    - Implemente as subclasses `BonusCLT`, `BonusPJ` e `BonusEstag`, provendo as
+      regras específicas de cada uma.
+
+    - Detalhamento de regras de negócio para os diferentes tipos de funcionários
+
+      1. Funcionário CLT (Consolidação das Leis do Trabalho)
+         - Os funcionários CLT recebem bônus baseados em tempo de casa e sofrem
+           retenção na fonte.
+          
+         - Cálculo do Valor Base: O bônus é de 15% do salário bruto para cada
+           ano completo de empresa (limite de 10 anos).
+          
+         - Aplicação de Imposto: 
+           - Se o valor base for menor que R$ 2.000,00: Isento (0%).
+          
+           - Se for maior ou igual a R$ 2.000,00: Retenção fixa de 27,5% de
+             IRRF.
+      
+      2. Funcionário PJ (Pessoa Jurídica)
+         - Os parceiros PJ recebem um bônus por entrega de metas contratuais e
+           gerem seus próprios impostos, mas a empresa aplica uma taxa de
+           serviço.
+          
+         - Cálculo do Valor Base: Valor fixo de R$ 5.000,00 (independente do
+           salário), multiplicado por um "Fator de Desempenho" (um valor double
+           entre 0.0 e 1.5 definido no cadastro do prestador).
+          
+         - Aplicação de Imposto: Taxa única de 5% de nota fiscal de serviço
+           (ISS) retida pela TechCorp.
+      
+      3. Estagiário
+         - Os estagiários possuem uma regra simplificada para incentivo aos
+           estudos.
+          
+         - Cálculo do Valor Base: Valor fixo de R$ 500,00 se a nota média da
+           faculdade (informada no sistema) for superior a 7.0. Caso contrário,
+           o bônus é zero.
+          
+         - Aplicação de Imposto: Isenção total (0%), conforme a legislação
+           vigente para bolsas de estágio.
+
+
+
+  - Padrão Factory Method:
+  
+    - Implemente uma `FuncionarioFactory` com um método `criarFuncionario(String
+      tipo)`.
+     
+    - Isso permitirá que, nos testes unitários, possamos instanciar diferentes
+      tipos de funcionários sem espalhar o operador `new` pelo código.
+  
+  - Padrão Singleton:
+  
+    - Crie uma classe `ConfiguracaoSistema` que armazena a "Taxa de Bônus
+      Global".
+     
+    - Garanta que apenas uma instância desta classe exista e que ela seja
+      acessível globalmente.
+
+##### Preparação para Testes Unitários (Próxima Etapa)
+Ao implementar, certifique-se de que sua lógica de negócio não esteja "presa" a
+métodos estáticos ou entradas de teclado (Scanner). Para facilitar os testes que
+escreveremos nas próximas aulas, você deverá ser capaz de:
+
+- Testar se o cálculo do Departamento está correto ao somar 3 funcionários.
+ 
+- Testar se o `ProcessadorBonus` lança uma exceção se a meta não for atingida.
+ 
+- Garantir que o Singleton mantém o estado consistente entre diferentes chamadas.

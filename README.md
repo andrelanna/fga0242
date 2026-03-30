@@ -12,7 +12,7 @@ FGA - Faculdade do Gama
 |  1	       | 16/03/2026	| [Apresentação do plano de ensino](/aula1) / Revisão de OO.
 |  2	       | 18/03/2026	| [Revisão de OO](/aula2) / Design Patterns.
 |  3	       | 23/03/2026	| Revisão de Design Patterns.
-|  4	       | 25/03/2026	| Exercícios OO / Design Patterns.
+|  4	       | 25/03/2026	| [Exercícios OO / Design Patterns](/aula4).
 |  5	       | 30/03/2026	| Testes Unitários: asserções, testes, casos de testes, independência de testes, testes de exceção.
 |  6	       | 01/04/2026	| Test Runners: suite de testes, rotulação de testes, testes parametrizados. 
 |  7	       | 06/04/2026	| Exercícios de testes unitários

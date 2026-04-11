@@ -5,120 +5,56 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula 5 - Exercícios de Testes Unitários 
+## Aula 5 - Revisão de testes unitários e frameworks xUnit
 
 **Tópicos da aula**
-- Testes unitários
-- Casos de testes
-- Suítes de testes
+- Revisão de testes unitários e frameworks xUnit; 
+- Propriedades de testes, 
+- Independência e atomicidade de testes
+- Casos de teste
+- Suites de testes
+- Testes de exceção
 - Categorias de testes
-- Testes de Exceção
-- Testes parametrizados
+- Testes com timeout
+- Ignorando testes
+
+**Slides da aula**
+* [Slides](https://docs.google.com/presentation/d/1cA1Sae4qgXidI7ZyVGhI-r9l5o0TMBrj5Yl0qyj2xfU/edit?usp=sharing)
+
+### Exercícios de fixação
+
+##### Exercício 1: Operações Matemáticas Simples:  
+
+Crie uma classe chamada `Calculadora` que possua dois métodos: `soma` e `multiplica`. O método soma deve receber dois inteiros como parâmetros e retornar a soma deles. O método multiplica também deve receber dois inteiros como parâmetros e retornar o produto deles. Escreva casos de teste utilizando JUnit 4 para verificar se os métodos soma e multiplica estão retornando os resultados corretos.
+
+##### Exercício 2: Verificação de Tipos e Valores Desenvolva três classes com métodos específicos:  
+ - Uma classe `Condicional` com um método `ehMaior` que recebe dois inteiros e retorna um booleano indicando se o primeiro é maior que o segundo.  
+ - Uma classe `Matematica` com um método `pi` que retorna o valor aproximado de pi como um float. Considere o erro máximo permitido de 0.001.  
+ - Uma classe `StringUtil` com um método `unir` que concatena duas strings recebidas como parâmetros e retorna a string resultante.  
+
+Para cada um desses métodos, escreva casos de teste utilizando JUnit 4 que empreguem asserções para validar se os valores retornados estão corretos. 
 
 
-**Exercicios de fixação:**
+##### Exercício 3: Testando um Carrinho de Compras de E-commerce  
 
-**Casos de testes simples, categorizados e organizados por suítes de testes**
+Imagine que você está trabalhando no desenvolvimento de uma aplicação de e-commerce. Uma das funcionalidades cruciais do sistema é o carrinho de compras, que permite aos usuários adicionar produtos, remover produtos e calcular o total da compra. Sua tarefa é implementar e testar a classe `CarrinhoDeCompras`.
 
-Seja o seguinte cenário: 
+A classe `CarrinhoDeCompras` deve ter os seguintes métodos:
 
-A condição de existência de um triângulo é que cada lado deve ser maior ou igual do que o módulo da diferença e menor ou igual do que o módulo da soma dos outros dois lados: $|b-c| \leq a \leq |b+c|$. Considere que todos os triângulos desse exercício sejam triângulos retângulos, em que $c$ é a hipotenusa e $a$ e $b$ sejam os catetos.
+ - `adicionarProduto(Produto p)`: adiciona um produto ao carrinho.
+ - `removerProduto(Produto p)`: remove um produto do carrinho.
+ - `calcularTotal()`: retorna o valor total dos produtos no carrinho como um float.
 
-Com base nesse cenário, faça o que se pede:
+A classe `Produto` deve ter um `id` do tipo `int`, um `nome` do tipo `String`, e um `preço` do tipo `float`.
 
-1. Crie um caso de teste parametrizado que, para dados $a$, $b$ e $c$, sejam calculadas as áreas e perímetros dos triângulos apresentados abaixo. Rotule os testes como `Funcional`. Considere $a$ como sendo a altura e $b$ como sendo a base do triângulo. 
+Escreva casos de teste utilizando JUnit 4 que verifiquem:
 
-| a  | b  | c  |Área|Per.|
-|----|----|----|----|----|
-| 3  | 4  | 5  | 6  | 12 |
-| 2  | 3  | 4  | 3  | 9  |
-| 5  | 6  | 7  | 15 | 18 |
+  - Se um produto adicionado está realmente no carrinho.
+  - Se o produto removido não está mais no carrinho.
+  - Se o total calculado está correto após adicionar e remover produtos.
 
-2. Extenda o caso de teste parametrizado da questão acima para incluir a verificação da condição de existência do triângulo. Caso os lados informados formem um triângulo, a classe deverá retornar o valor lógico `true` para o teste. Rotule esse teste como `Funcional`. 
-
-| a  | b  | c  |Área|Per.|Triang.?|
-|----|----|----|----|----|--------|
-| 3  | 4  | 5  | 6  | 12 |  True  |
-| 2  | 3  | 4  | 3  | 9  |  True  |
-| 5  | 6  | 7  | 15 | 18 |  True  |
-
-2.1 Para os casos em que os lados informados não formem um triângulo, uma exceção NaoEhTrianguloException deve ser disparada e capturada pelo teste. Rotule esse teste como `Excecao`. As medidas apresentadas abaixo são exemplos de lados que não formam um triângulo. Escreva um teste parametrizado capaz de capturar a exceção NaoEhTrianguloException.
-
-| a  | b  | c  |
-|----|----|----|
-| 4  | 5  | 12 |
-| 2  | 3  | 6  |
-| 1  | 1  | 3  |
-
-3. Crie as seguintes suites de testes:    
-   3.1 Suite de testes `SteFuncionais` que execute apenas os testes funcionais.   
-   3.2 Suite de testes `SteExcecao` que execute apenas os testes de excecao.    
-   3.3 Suite de testes `AllTests` que agrupe as duas suites mencionadas acima.    
-
----
-# Estudo Dirigido
-
-Conteúdo abordado: 
-  - Testes unitários, 
-  - Casos de teste, 
-  - Suítes de testes,
-  - Categorias de testes, 
-  - Testes de exceção, 
-  - Testes parametrizados
-
-
-## Exercício 1 - Jogo da Forca
-
-Considere a seguinte execução de um jogo da forca cuja palavra oculta é `arara`.
-Toda vez que o jogador tentar adivinhar uma palavra, o jogo informa quantos
-caracteres foram encontrados e os apresenta em suas respectivas posições. 
-
-Através de testes parametrizados, implemente os seguintes casos de testes:   
-| Caractere | # caracteres presentes | Palavra revelada |  
-|-----------|------------------------|------------------|
-|    a      |         3              |   `a*a*a`        |
-|    r      |         2              |   `*r*r*`        |
-|    b      |         0              |   `*****`        |
-
-Rotule seus testes parametrizados como sendo pertencentes à categoria
-`Funcional`.
-
-Dicas: Quem são as tuplas de seus testes? Em cada tupla, quem são os valores
-informados e os valores esperados para os testes? Quantos testes possuem seu
-caso de testes parametrizado? 
-
-No caso do usuário informar um caractere vazio ou nulo, o teste deverá capturar
-uma exceção do tipo `CaractereInvalidoException`. Rotule esse teste como
-`Excecao`. 
-
-Agrupe os testes em uma suíte de testes chamada `AllTests`.
-
-
-## Exercício 2 - Conta-corrente
-
-Considere uma conta-corrente, com um saldo inicial de R$ 200,00, não há cheque
-especial (não tem como resultar em saldo negativo após qualquer operação de
-retirada). Operações de retirada são sempre transações de valores negativos,
-operações de entrada são sempre transações de valores positivos. Não pode,
-portanto, haver operação de entrada com valor negativo. 
-
-Implemente, como testes parametrizados e rotulados como `Processamento`, as
-seguintes operações. 
-
-| Operação | Valor | Operação processada? | Saldo Final |
-|----------|-------|----------------------|-------------|
-| Deposito | 200   |   true               |  400        | 
-| Saque    | -100  |   true               |  100        | 
-| Pix      | -100  |   true               |  100        | 
-| Pix      | 300   |   true               |  500        | 
-| Pix      | -300  |   false              |  200        | 
-
-Nos casos em que há erro entre o tipo da operação e seu valor, uma exceção do
-tipo `OperacaoInvalidaException` deve ser lançada. Exemplo: 
-
-- Deposito, -300,00
-- Saque, 200,00
-
-Rotule esses testes com `Excecao`. 
-
-Agrupe esses testes em uma suite de testes chamada `AllTests`.
+Utilize asserções para verificar se os métodos estão funcionando conforme o
+esperado. Por exemplo, após adicionar um produto, use `assertTrue` para verificar
+se o `id` do produto está presente na lista de produtos do carrinho. Para o
+cálculo do total, use `assertEquals` com uma margem de erro para validar o valor
+retornado pelo método `calcularTotal()`.

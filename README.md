@@ -15,14 +15,14 @@ FGA - Faculdade do Gama
 |  4	       | 25/03/2026	| [Exercícios OO / Design Patterns](/aula4).
 |  5	       | 30/03/2026	| [Testes Unitários: asserções, testes, casos de testes, independência de testes, testes de exceção.](/aula5)
 |  6	       | 01/04/2026	| [Test Runners: suite de testes, rotulação de testes, testes parametrizados.](/aula6)
-|  7	       | 06/04/2026	| Exercícios de testes unitários
+|  7	       | 06/04/2026	| [Exercícios de testes unitários](/aula7)
 |  8	       | 08/04/2026	| TDD: conceitos, padrões barra verde e vermelha
-|  9	       | 13/04/2026	| Exercícios de TDD 
-| 10	       | 15/04/2026	| Avaliação 1 - TDD
+|  9	       | 13/04/2026	| Exercícios de TDD, [Estudo dirigido avaliação 1](/aula9/estudoDirigido)
+| 10	       | 15/04/2026	| (Paralização de professores) ~~Avaliação 1 - TDD~~ 
 | 11	       | 20/04/2026	| Facultativo
-| 12	       | 22/04/2026	| Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código. 
-| 13	       | 27/04/2026	| Atividade extra-classe
-| 14	       | 29/04/2026	| Atividade extra-classe
+| 12	       | 22/04/2026	| Avaliação 1 - TDD ~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~
+| 13	       | 27/04/2026	| Atividade extra-classe - TDD
+| 14	       | 29/04/2026	| Atividade extra-classe - Refatoração
 | 15	       | 04/05/2026	| Refatoração: grupos 1 e 2
 | 16	       | 06/05/2026	| Refatoração: grupos 3 e 4
 | 17	       | 11/05/2026	| Refatoração: grupos 5 e 6

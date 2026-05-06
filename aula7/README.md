@@ -5,7 +5,7 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula 5 - Exercícios de Testes Unitários 
+## Aula 7 - Exercícios de Testes Unitários 
 
 **Tópicos da aula**
 - Testes unitários

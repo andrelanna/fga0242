@@ -5,7 +5,7 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula 12 - Operações de Refatoração
+## Aula 15 - Operações de Refatoração
 
 **Tópicos da aula**
 - Extrair método / introduzir método 

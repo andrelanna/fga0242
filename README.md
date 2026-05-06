@@ -19,8 +19,8 @@ FGA - Faculdade do Gama
 |  8	       | 08/04/2026	| [TDD: conceitos, padrões barra verde e vermelha](/aula8)
 |  9	       | 13/04/2026	| [Exercícios de TDD](/aula9), [Estudo dirigido avaliação 1](/aula9/estudoDirigido)
 | 10	       | 15/04/2026	| (Paralização de professores) [~~Avaliação 1 - TDD~~](/aula10)
-| 11	       | 20/04/2026	| Facultativo
-| 12	       | 22/04/2026	| [Avaliação 1 - TDD](/aula10) ~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~
+| 11	       | 20/04/2026	| Facultativo [~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~](/aula11)
+| 12	       | 22/04/2026	| [Avaliação 1 - TDD](/aula10) [~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~](/aula11)
 | 13	       | 27/04/2026	| Atividade extra-classe - TDD
 | 14	       | 29/04/2026	| Atividade extra-classe - Refatoração
 | 15	       | 04/05/2026	| Refatoração: grupos 1 e 2

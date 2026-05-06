@@ -5,13 +5,18 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula 15 - Programação defensiva
+## Aula 12 - Operações de Refatoração
 
 **Tópicos da aula**
-- Conceitualização e importância
-- Introdução às técnicas de programação defensiva
+- Extrair método / introduzir método 
+- Mover método 
+- Mover atributo 
+- Extrair classe / introduzir classe
+
+\* Essas operações estão automatizadas no Eclipse
+
 
 **Slides da aula**
-* [Slides](https://docs.google.com/presentation/d/14hBakH53Qge-WDn1U84rDebPkn7V3TkM/edit?usp=sharing&ouid=112746484255766107555&rtpof=true&sd=true)  
+* [Slides](https://docs.google.com/presentation/d/1JizqaH0YcI1BA5uwBof1u3_gMe9BUwrB8vbht0iLUP0/edit?usp=sharing)
 
 **Exercicios de fixacao**

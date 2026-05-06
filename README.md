@@ -16,7 +16,7 @@ FGA - Faculdade do Gama
 |  5	       | 30/03/2026	| [Testes Unitários: asserções, testes, casos de testes, independência de testes, testes de exceção.](/aula5)
 |  6	       | 01/04/2026	| [Test Runners: suite de testes, rotulação de testes, testes parametrizados.](/aula6)
 |  7	       | 06/04/2026	| [Exercícios de testes unitários](/aula7)
-|  8	       | 08/04/2026	| TDD: conceitos, padrões barra verde e vermelha
+|  8	       | 08/04/2026	| [TDD: conceitos, padrões barra verde e vermelha](/aula8)
 |  9	       | 13/04/2026	| Exercícios de TDD, [Estudo dirigido avaliação 1](/aula9/estudoDirigido)
 | 10	       | 15/04/2026	| (Paralização de professores) ~~Avaliação 1 - TDD~~ 
 | 11	       | 20/04/2026	| Facultativo

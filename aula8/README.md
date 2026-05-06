@@ -5,13 +5,23 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula x - <título da aula>
+## Aula 8 - Test-Driven Development (TDD)
 
 **Tópicos da aula**
-- <topico 1>
-- <topico 2>
+- O que é TDD
+- Ciclo de vida do TDD
+    - Red-Green-Refactor
+- Padrões barra verde e barra vermelha
+- Técnicas de TDD
+    - Falsificação
+    - Duplicação
+    - Triangulação
 
-**Slides da aula**
-* [Slides](link para os slides)
+
+**Vídeos da aula**
+- [TDD - parte 1](https://youtu.be/flx-uW7U8mc)
+- [TDD - parte 2](https://youtu.be/qVCZUg68Rls)
 
 **Exercicios de fixacao**
+
+Implementação da calculadora de [IRPF](https://www27.receita.fazenda.gov.br/simulador-irpf/)

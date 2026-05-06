@@ -23,7 +23,7 @@ FGA - Faculdade do Gama
 | 12	       | 22/04/2026	| [Avaliação 1 - TDD](/aula10) [~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~](/aula11)
 | 13	       | 27/04/2026	| Atividade extra-classe - TDD
 | 14	       | 29/04/2026	| Atividade extra-classe - Refatoração
-| 15	       | 04/05/2026	| Refatoração: grupos 1 e 2
+| 15	       | 04/05/2026	| [Refatoração: grupos 1 e 2](/aula15)
 | 16	       | 06/05/2026	| Refatoração: grupos 3 e 4
 | 17	       | 11/05/2026	| Refatoração: grupos 5 e 6
 | 18	       | 13/05/2026	| Refatoração: grupos 7 e 8

@@ -17,10 +17,10 @@ FGA - Faculdade do Gama
 |  6	       | 01/04/2026	| [Test Runners: suite de testes, rotulação de testes, testes parametrizados.](/aula6)
 |  7	       | 06/04/2026	| [Exercícios de testes unitários](/aula7)
 |  8	       | 08/04/2026	| [TDD: conceitos, padrões barra verde e vermelha](/aula8)
-|  9	       | 13/04/2026	| Exercícios de TDD, [Estudo dirigido avaliação 1](/aula9/estudoDirigido)
-| 10	       | 15/04/2026	| (Paralização de professores) ~~Avaliação 1 - TDD~~ 
+|  9	       | 13/04/2026	| [Exercícios de TDD](/aula9), [Estudo dirigido avaliação 1](/aula9/estudoDirigido)
+| 10	       | 15/04/2026	| (Paralização de professores) [~~Avaliação 1 - TDD~~](/aula10)
 | 11	       | 20/04/2026	| Facultativo
-| 12	       | 22/04/2026	| Avaliação 1 - TDD ~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~
+| 12	       | 22/04/2026	| [Avaliação 1 - TDD](/aula10) ~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~
 | 13	       | 27/04/2026	| Atividade extra-classe - TDD
 | 14	       | 29/04/2026	| Atividade extra-classe - Refatoração
 | 15	       | 04/05/2026	| Refatoração: grupos 1 e 2

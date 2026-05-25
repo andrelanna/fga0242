@@ -22,15 +22,15 @@ FGA - Faculdade do Gama
 | 11	       | 20/04/2026	| Facultativo [~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~](/aula11)
 | 12	       | 22/04/2026	| [Avaliação 1 - TDD](/aula10) [~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~](/aula11)
 | 13	       | 27/04/2026	| Atividade extra-classe - TDD
-| 14	       | 29/04/2026	| Atividade extra-classe - Refatoração
+| 14	       | 29/04/2026	| [Atividade extra-classe - Refatoração](/ativsExtraClasse/refactoring)
 | 15	       | 04/05/2026	| [Refatoração: grupos 1 e 2](/aula15)
 | 16	       | 06/05/2026	| Refatoração: grupos 3 e 4
 | 17	       | 11/05/2026	| Refatoração: grupos 5 e 6
 | 18	       | 13/05/2026	| Refatoração: grupos 7 e 8
 | 19	       | 18/05/2026	| Exercícios de Refatoração.
-| 20	       | 20/05/2026	| Avaliação 2 - Refatoração
+| 20	       | 20/05/2026	| ~~Avaliação 2 - Refatoração~~
 | 21	       | 25/05/2026	| Programação defensiva: conceitualização e importância, introdução às técnicas de Prog. Defens.
-| 22	       | 27/05/2026	| Programação defensiva: programação por assertivas, Design by Contracts, pré-condições, pós-condições, invariantes.
+| 22	       | 27/05/2026	| ~~Programação defensiva: programação por assertivas, Design by Contracts, pré-condições, pós-condições, invariantes.~~ :warning: **Avaliação 2 - Refatoração**
 | 23	       | 01/06/2026	| Programação defensiva: exercícios
 | 24	       | 03/06/2026	| Tratamento e depuração de código: erros vs. exceções, técnicas de prevenções de erros inevitáveis
 | 25	       | 08/06/2026	| Tratamento e depuração de código: técnicas para teste de código, técnicas de depuração de código.

@@ -11,59 +11,121 @@ Enunciado Geral
   da seguinte maneira: 
   - Etapa 1: TDD
   - Etapa 2: Refactoring
-  - Etapa 3: Design by Contracts (DbC)
 
 * O trabalho deverá ser realizado em grupos de 3 a 5 alunos. 
-* Os grupos deverão ser informados através do formulário presente em [link](https://forms.gle/A28odYrQxo7fv19J8).
+* Os grupos deverão ser informados através do formulário presente no seguinte [link](https://forms.gle/A28odYrQxo7fv19J8).
 * A divisão dos pontos do trabalho será a seguinte: 
-  - Etapa 1 (TDD): 10 pontos
-  - Etapa 2 (Refactoring): 15 pontos
-  - Etapa 3 (DbC): 15 pontos
+  - Etapa 1 (TDD): 15 pontos
+  - Etapa 2 (Refactoring): 25 pontos
 
 * O trabalho pode ser desenvolvido na linguagem que o grupo desejar, desde que
-  haja 
+  haja um framework de testes unitários que contenha os recursos de testes
+  unitários vistos em sala de aula (principalmente categorias de testes, testes
+  de exceção, suites de testes, testes parametrizados).
 
 # Cenário da aplicação
 
-O Campeonato Brasileiro Série A de 2025 é disputado por 20 clubes em sistema de pontos corridos, com 38 rodadas ao longo da temporada. Cada rodada representa uma jornada em que todos os clubes jogam uma partida, enfrentando os demais em turno e returno — ou seja, cada equipe joga contra todas as outras duas vezes, uma em casa e outra fora. Ao final das 38 rodadas, o clube que acumular o maior número de pontos será declarado campeão brasileiro.
+Repositórios de informações científicas desempenham um papel importante nas
+instituições de pesquisa (tais como universidades públicas ou privadas,
+institutos de pesquisa, dentre outros), fundações de fomento à pesquisa (tais
+como agências de pesquisa -- FAPDF, por exemplo --, CAPES, CNPq, etc..) e órgãos
+governamentais. Tais repositórios ajudam na elaboração de editais,
+acompanhamento e avaliação da aplicação dos recursos financeiros nas pesquisas
+realizadas. Para isso, é necessário que os dados de todo o ecossistema de
+pesquisas sejam avaliados quanto à sua qualidade. 
 
-A pontuação dos times é definida com base no resultado de cada partida: uma vitória concede 3 pontos ao vencedor, um empate concede 1 ponto a cada equipe, e uma derrota não concede nenhum ponto. A soma desses pontos ao longo das rodadas determina a posição de cada clube na tabela de classificação. Além da pontuação, outros indicadores são fundamentais para definir o desempenho e, em casos de empate, o desempate entre os clubes.
+O desafio da avaliação desses dados reside na integração de diferentes fontes de
+dados, cada uma com seu formato de representação. Parte dessas informações vêm
+de fontes autodeclaratórias, em que os próprios pesquisadores são os
+responsáveis por cadastrar suas produções (o Currículo Lattes é o exemplo mais
+notório de repositório autodeclaratório). Além disso, muitos repositórios atuam
+como indexadores de informações científicas que estão armazenados em repositório
+de terceiros. Por exemplo, uma publicação de uma revista científica da área da
+Computação fica armazenada no repositório da ACM, mas é indexada por outros
+repositórios como ScienceDirect, IEEEXplore, Scopus, etc... Ao integrar os dados
+desses diferentes indexadores, é comum que duplicidades de registros sejam
+inseridas no banco de dados. 
 
-O número de vitórias corresponde à quantidade de jogos em que o clube saiu vencedor. Esse critério é o primeiro a ser considerado em caso de empate na pontuação entre dois ou mais clubes. O saldo de gols é calculado subtraindo o número de gols sofridos do número de gols marcados. Por exemplo, se um time marcou 45 gols e sofreu 30, seu saldo de gols é +15. Esse saldo é o segundo critério de desempate. O número de gols marcados, por sua vez, é a soma total de todos os gols que o clube fez ao longo do campeonato, independentemente dos gols sofridos. Esse indicador é usado como terceiro critério de desempate.
+Busca-se, na curadoria das informações desse repositório, cuidar das
+representações desses dados de modo a excluir registros duplicados, unificar as
+informações para o que é chamado de padrão-ouro, casos em que há uma
+representação padrão a ser adotada para uma parte do registro de informação
+científica. 
 
-Se ainda houver igualdade após esses três critérios, o confronto direto entre os clubes empatados é considerado, mas apenas quando o empate envolve dois clubes. Caso o empate persista, são analisados os cartões vermelhos recebidos (menor número favorece o clube), depois os cartões amarelos, e, por fim, se necessário, realiza-se um sorteio na sede da Confederação Brasileira de Futebol (CBF).
+# Exemplo de curadoria de dados
 
-Esses critérios não apenas definem o campeão, mas também determinam os clubes classificados para competições internacionais e os rebaixados para a Série B. Os seis primeiros colocados garantem vaga na Copa Libertadores da América do ano seguinte, enquanto os clubes entre a sétima e a décima segunda posição se classificam para a Copa Sul-Americana. Já os quatro últimos colocados ao final da 38ª rodada são rebaixados para a Série B de 2026.
+Seja o seguinte conjunto de registros para uma publicação (dados anonimizados).
+Esses dados são, respectivamente, o ID do autor e seu nome dentro de uma mesma
+publicação. 
 
-Assim, a pontuação, o número de vitórias, o saldo de gols e os gols marcados são elementos centrais que não apenas refletem o desempenho esportivo dos clubes, mas também influenciam diretamente seus destinos na temporada.
+| ID    | Nome                 |
+|:------|:---------------------|
+| 28372	| Ana de Mattos Seabra |
+| 243349	| Ana de Mattos Seabra |
+| 582585	| Ana de Mattos Seabra |
+| 582585	| Ana de Mattos Seabra |
+| 582585	| Ana de Mattos Seabra |
+| 582585	| Ana de Mattos Seabra |
+| 28371	| Cassius de Souza |
+| 746936	| Cassius de Souza |
+| 746936	| Cassius de Souza |
+| 746936	| Cassius de Souza |
+| 746936	| Cassius de Souza |
+| 31303	| Veronica de Oliveira Moreira |
+| 243352	| Verônica de Oliveira Moreira |
+| 608303	| Verônica de Oliveira Moreira |
+| 608303	| Verônica de Oliveira Moreira |
+| 608303	| Verônica de Oliveira Moreira |
+| 746941	| Verônica de Oliveira Noreira |
+| 746937	| Luiz de Oliveira de Souza |
+| 608296	| Luiz de Oliveira de Souza |
+| 549242	| Luiz de Oliveira de Souza |
+| 549242	| Luiz de Oliveira de Souza |
+| 31297	| Luiz de Oliveira de Souza |
+| 31299	| Monica Hirata Sant`anna |
+| 433095	| Mônica Hirata Sant’anna |
+| 549244	| Mônica Hirata Sant'anna |
+| 608298	| Mônica Hirata Sant'anna |
+| 746942	| Mônica Hirata St'anna   |
+| 763027	| Vanilda Cristina Junior |
+| 763027	| Vanilda Cristina Junior |
+| 335284	| Vanilda Cristina Júnior |
+| 335284	| Vanilda Cristina Júnior |
+| 335284	| Vanilda Cristina Júnior |
+| 554799	| Sergio Henrique Guaraldi |
+| 243350	| Sérgio Henrique Guaraldi |
+| 954057	| Sérgio Henrique Guaraldi |
+| 954057	| Sérgio Henrique Guaraldi |
+| 954057	| Sérgio Henrique Guaraldi |
+| 954057	| Sérgio Henrique Guaraldi |
+| 31298	| Raphael Goncalves Viana |
+| 433094	| Raphael Gonçalves Viana |
+| 549243	| Raphael Gonçalves Viana |
+| 608297	| Raphael Gonçalves Viana |
+| 746938	| Raphael Gonçalves Viana |
+| 899639	| Lilian Luíza Viana Vieira |
+| 243351	| Lílian Luíza Viana Vieira |
+| 663795	| Lílian Luíza Viana Vieira |
+| 663795	| Lílian Luíza Viana Vieira |
+| 663795	| Lílian Luíza Viana Vieira |
+| 663795	| Lilian Luíza Viana Vieira |
+| 713897	| Yuri Vieira Faria |
+| 713897	| Yuri Vieira Faria |
+| 713897	| Yuri Vieira Faria |
+| 713897	| Yuri Vieira Faria |
+
+
+
 
 
 # Enunciado do Trabalho Prático 1
 
-Considerando o cenário descrito acima, os grupos deverão desenvolver umaa
-aplicação que seja capaz de: 
-1)  realizar os sorteios de jogos de cada rodada; 
-2)  garantir que não existam dois jogos iguais ao longo de todas as rodadas (por jogos iguais entenda jogos com os mesmos times como mandantes e visitantes). 
-3)  calcular a pontuação dos times e a classificação a cada rodada, conforme os critérios de pontuação apresentados no enunciado (vitória - 3 pontos, empate - 1 ponto, derrota - 0 pontos). 
-4)  calcular os números de  vitórias, gols marcados, gols sofridos, e saldos de gols com base nos resultados dos jogos de cada rodada. 
-5)  aplicar o critério de desempate pelo número de vitórias. 
-
-Cada uma dessas funcionalidades deve ser desenvolvida em seu caso de teste
-próprio. O conjunto final contendo todos os casos de testes deve ser executado
-de uma só vez, através da suíte de testes ``AllTests``.
 
 # Critérios de correção:
-- Os sorteios de cada rodada acontecem adequadamente? 
-  - Não há repetição de times na rodada?
-  - Todos os times estão sorteados na rodada?
-- Não há duplicidade de confrontos entre todas as rodadas do campeonato? 
-- A pontuação é calculada adequadamente a cada rodada, para cada time, com base nos resultados dos confrontos?
-- Os cálculos de vitórias, gols marcados e sofridos, saldo de gols são calculados adequadamente com base nos resultados dos confrontos?
-- Dois (ou mais) times de mesma pontuação estão classificados de acordo com o número de vitórias? 
 
 # Data de entrega: 
 
-- ~~22/10/2025~~ 27/10/2025, 16:00hs, via moodle da disciplina. 
+- 10/06/2025, 16:00hs, via repositório dos grupos. 
 
 
 ---
@@ -82,26 +144,26 @@ pertence pelo número de matrícula.
 
 | Grupo # | Matrículas dos componentes                            | Extrair Método                           | Substituir Método por Objeto Método                  | Extrair classe    | 
 |:-------:|:------------------------------------------------------|:-----------------------------------------|:-----------------------------------------------------|:---------------   |
-|    1    | 202016720, 221007798, 221008338, 221022355            | Rodada::gerarRodadasSorteio              | Ranking::recomputarAteRodada                         | Partida           |
-|    2    | 202045482, 211061529, 211062802                       | Campeonato::gerarTabelaRoundRobin        | Partida::registrarResultado                          | Time              |
-|    3    | 211031083, 211031118, 211031664                       | Time::compareTo                          | Time::registrarPartida                               | Time              |
-|    4    | 180075462, 180108875, 190088168, 202016168            | Time::registrar_resultado                | Rodada::gerar_rodadas                                | Time              |
-|    5    | 200024949, 202016382, 211063200, 211063265            | Campeonato::gerar_rodadas                | ProcessadorRodada::processar_rodada                  | Partida           |
-|    6    | 211062080, 221022088, 222006660, 222022000            | Competition::getClassification           | Competition::scheduleRounds                          | Team              |
-|    7    | 190091606, 211039617, 211039680, 211061350            | SorteioService::sotearJogosRodada        | ClassificacaoService::calcularClassificacaoAteRodada | Time              |
-|    8    | 211062230, 211062651, 221021901, 221022050            | Cronograma::calculaIdaEVolta             | DadosClassificacao::adicionarResultadoPartida        | Partida           |
-|    9    | 202023663, 221007706, 222031045, 222037737            | Campeonato::gerarRodadas                 | Time::adicionarPartidaJogada                         | Time              |
-|   10    | 200021222, 211030827, 211031860, 211063069            | Campeonato::getTabelaClassificacao       | Campeonato::sortearRodadas                           | Time              |
-|   11    | 211062437, 221021984, 221022041, 221022275, 221022570 | Campeonato::confrontosDiretos            | Campeonato::classificacao                            | Time              |
-|   12    | 190116498, 200058258, 221007591, 221008033            | services::calcular_classificacao_rodada  | services::gerar_calendario                           | Classificacao     |
-|   13    | 211030291, 211030925, 211063013, 221022720, 221034973 | Campeonato::sortear_jogos                | Equipe::atualizar_estatisticas                       | Equipe            |
-|   14    | 200020323, 200049020, 222032810                       | Classificacao::processa_rodada           | Jogo::gerar_rodadas                                  | Time              |
-|   15    | 190028963, 190036761, 211029540                       | Campeonato::calcularPontuacaoTime        | Campeonato::calcularPontuacaoTime                    | Time              |
-|   16    | 180098080, 202017263, 202023968                       | Campeonato::ordenarClassificacao         | Campeonato::atualizarClassificacao                   | ClassificacaoTime |
-|   17    | 200058258, 211061814, 211061832                       | TabelaClassificacao::exibirClassificacao | Campeonato::gerarTurno                               | Time              |
-|   18    | 202015868, 211039671, 222006178, 222015186, 222029243 | Campeonato::gerar_tabela_final           | Campeonato::criar_rodada                             | Time              |
-|   19    |                                                       | X                                        | X                                                    | X                 |
-|   20    |                                                       | X                                        | X                                                    | X                 |
+|    1    |                                                       |                                          |                                                      |                   |
+|    2    |                                                       |                                          |                                                      |                   |
+|    3    |                                                       |                                          |                                                      |                   |
+|    4    |                                                       |                                          |                                                      |                   |
+|    5    |                                                       |                                          |                                                      |                   |
+|    6    |                                                       |                                          |                                                      |                   |
+|    7    |                                                       |                                          |                                                      |                   |
+|    8    |                                                       |                                          |                                                      |                   |
+|    9    |                                                       |                                          |                                                      |                   |
+|   10    |                                                       |                                          |                                                      |                   |
+|   11    |                                                       |                                          |                                                      |                   |
+|   12    |                                                       |                                          |                                                      |                   |
+|   13    |                                                       |                                          |                                                      |                   |
+|   14    |                                                       |                                          |                                                      |                   |
+|   15    |                                                       |                                          |                                                      |                   |
+|   16    |                                                       |                                          |                                                      |                   |
+|   17    |                                                       |                                          |                                                      |                   |
+|   18    |                                                       |                                          |                                                      |                   |
+|   19    |                                                       |                                          |                                                      |                   |
+|   20    |                                                       |                                          |                                                      |                   |
 
 ## Formato de entrega: 
 
@@ -125,4 +187,4 @@ posteriores serão desconsiderados.
 - Os testes continuam efetivos e passando? 
 
 ## Data-limite para entrega: 
-- 27/11/2025, 23:59hs. 
+- xx/xx/xxxx, xx:xxhs. 

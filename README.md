@@ -58,7 +58,7 @@ FGA - Faculdade do Gama
   - Avaliação 1: 20 pontos
   - Avaliação 2: 20 pontos
   - Avaliação 3: 20 pontos
-  - Trabalho prático: 40 pontos
+  - [Trabalho prático: 40 pontos](/trabalhoPratico)
 
 ---
 **Metodologia:** 

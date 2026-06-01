@@ -60,63 +60,107 @@ publicação.
 
 | ID    | Nome                 |
 |:------|:---------------------|
-| 28372	| Ana de Mattos Seabra |
-| 243349	| Ana de Mattos Seabra |
-| 582585	| Ana de Mattos Seabra |
-| 582585	| Ana de Mattos Seabra |
-| 582585	| Ana de Mattos Seabra |
-| 582585	| Ana de Mattos Seabra |
-| 28371	| Cassius de Souza |
-| 746936	| Cassius de Souza |
-| 746936	| Cassius de Souza |
-| 746936	| Cassius de Souza |
-| 746936	| Cassius de Souza |
-| 31303	| Veronica de Oliveira Moreira |
-| 243352	| Verônica de Oliveira Moreira |
-| 608303	| Verônica de Oliveira Moreira |
-| 608303	| Verônica de Oliveira Moreira |
-| 608303	| Verônica de Oliveira Moreira |
-| 746941	| Verônica de Oliveira Noreira |
-| 746937	| Luiz de Oliveira de Souza |
-| 608296	| Luiz de Oliveira de Souza |
-| 549242	| Luiz de Oliveira de Souza |
-| 549242	| Luiz de Oliveira de Souza |
-| 31297	| Luiz de Oliveira de Souza |
-| 31299	| Monica Hirata Sant`anna |
-| 433095	| Mônica Hirata Sant’anna |
-| 549244	| Mônica Hirata Sant'anna |
-| 608298	| Mônica Hirata Sant'anna |
-| 746942	| Mônica Hirata St'anna   |
-| 763027	| Vanilda Cristina Junior |
-| 763027	| Vanilda Cristina Junior |
-| 335284	| Vanilda Cristina Júnior |
-| 335284	| Vanilda Cristina Júnior |
-| 335284	| Vanilda Cristina Júnior |
-| 554799	| Sergio Henrique Guaraldi |
-| 243350	| Sérgio Henrique Guaraldi |
-| 954057	| Sérgio Henrique Guaraldi |
-| 954057	| Sérgio Henrique Guaraldi |
-| 954057	| Sérgio Henrique Guaraldi |
-| 954057	| Sérgio Henrique Guaraldi |
-| 31298	| Raphael Goncalves Viana |
-| 433094	| Raphael Gonçalves Viana |
-| 549243	| Raphael Gonçalves Viana |
-| 608297	| Raphael Gonçalves Viana |
-| 746938	| Raphael Gonçalves Viana |
-| 899639	| Lilian Luíza Viana Vieira |
-| 243351	| Lílian Luíza Viana Vieira |
-| 663795	| Lílian Luíza Viana Vieira |
-| 663795	| Lílian Luíza Viana Vieira |
-| 663795	| Lílian Luíza Viana Vieira |
-| 663795	| Lilian Luíza Viana Vieira |
-| 713897	| Yuri Vieira Faria |
-| 713897	| Yuri Vieira Faria |
-| 713897	| Yuri Vieira Faria |
-| 713897	| Yuri Vieira Faria |
+| 28372  | Ana de Mattos Seabra |
+| 243349 | Ana de Mattos Seabra |
+| 582585 | A. M. Seabra |
+| 582585 | Seabra A. M. |
+| 582585 | AM Seabra |
+| 582585 | Ana Mattos Seabra |
+| 28371  | Cassius de Souza |
+| 746936 | Cassius Souza |
+| 746936 | Souza C. |
+| 746936 | C. Souza |
+| 746936 | Souza, Cassius de |
+| 31303  | Veronica de Oliveira Moreira |
+| 243352 | Verônica de Oliveira Moreira |
+| 608303 | V. de O. Moreira |
+| 608303 | Moreira V O |
+| 608303 | Moreira V. de O.|
+| 746941 | Verônica de Oliveira Noreira |
+| 746937 | Luiz de Oliveira de Souza |
+| 608296 | Luiz Oliveira Souza |
+| 549242 | Souza, Luiz de Oliveira   |
+| 549242 | Luiz de O. de Souza |
+| 31297  | Souza, L. O. |
+| 31299  | Monica Hirata Sant`anna |
+| 433095 | Mônica Hirata Sant’anna |
+| 746942 | Mônica Hirata St'anna   |
+| 549244 | Sant'anna M. H. |
+| 608298 | M. H. Sant'anna |
+| 763027 | Vanilda Cristina Junior |
+| 763027 | Vanilda Cristina Junior |
+| 335284 | Vanilda Cristina Júnior |
+| 335284 | Vanilda Cristina Júnior |
+| 335284 | Vanilda Cristina Júnior |
+| 554799 | Sergio Henrique Guaraldi |
+| 243350 | Sérgio Henrique Guaraldi |
+| 954057 | Sérgio Henrique Guaraldi |
+| 954057 | Sérgio Henrique Guaraldi |
+| 954057 | Sérgio Henrique Guaraldi |
+| 954057 | Sérgio Henrique Guaraldi |
+| 31298  | Raphael Goncalves Viana |
+| 433094 | Raphael Gonçalves Viana |
+| 549243 | Raphael Gonçalves Viana |
+| 608297 | Raphael Gonçalves Viana |
+| 746938 | Raphael Gonçalves Viana |
+| 899639 | Lilian Luíza Viana Vieira |
+| 243351 | Lílian Luíza Viana Vieira |
+| 663795 | Lílian Luíza Viana Vieira |
+| 663795 | Lílian Luíza Viana Vieira |
+| 663795 | Lílian Luíza Viana Vieira |
+| 663795 | Lilian Luíza Viana Vieira |
+| 713897 | Yuri Vieira Faria |
+| 713897 | Yuri Vieira Faria |
+| 713897 | Yuri Vieira Faria |
+| 713897 | Yuri Vieira Faria |
 
 
+## Caso 1: Diferenças de grafia (tipográficas) 
+
+| ID     |                      |
+|--------|----------------------|
+| 31299  | M**o**nica Hirata Sant**`**anna |
+| 433095 | M**ô**nica Hirata Sant**’**anna |
+|--------|----------------------|
+| 554799 | S**e**rgio Henrique Guaraldi |
+| 243350 | S**é**rgio Henrique Guaraldi |
 
 
+## Caso 2: Sobrenome + Iniciais dos nomes
+
+| ID     |                      |
+|--------|----------------------|
+| 28372  | Ana de Mattos Seabra |
+| 582585 | Seabra A. M. |
+|--------|----------------------|
+| 28371  | Cassius de Souza |
+| 746936 | Souza C. |
+
+## Caso 3: Particulas *de* e uso de ponto nas abreviações opcionais
+
+| ID     |                      |
+|--------|----------------------|
+| 746937 | Luiz de Oliveira de Souza |
+| 608296 | Luiz Oliveira Souza |
+| 549242 | Souza, Luiz de O   |
+| 549242 | Luiz de O. de Souza |
+
+## Caso 4: Iniciais dos nomes agrupadas + sobrenome
+
+| ID     |                      |
+|--------|----------------------|
+| 763027 | Vanilda Cristina Junior |
+| 763027 | VC Junior |
+
+## Caso 5: IDs diferentes para o mesmo autor.
+
+| ID     |                      |
+|--------|----------------------|
+| 31298  | Raphael Goncalves Viana |
+| 433094 | Raphael Gonçalves Viana |
+| 549243 | Raphael Gonçalves Viana |
+| 608297 | Raphael Gonçalves Viana |
+| 746938 | Raphael Gonçalves Viana |
 
 # Enunciado do Trabalho Prático 1
 

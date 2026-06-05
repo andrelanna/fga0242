@@ -28,7 +28,7 @@ Enunciado Geral
 Repositórios de informações científicas desempenham um papel importante nas
 instituições de pesquisa (tais como universidades públicas ou privadas,
 institutos de pesquisa, dentre outros), fundações de fomento à pesquisa (tais
-como agências de pesquisa -- FAPDF, por exemplo --, CAPES, CNPq, etc..) e órgãos
+como agências de pesquisa -- FAPDF, CAPES, CNPq, etc..) e órgãos
 governamentais. Tais repositórios ajudam na elaboração de editais,
 acompanhamento e avaliação da aplicação dos recursos financeiros nas pesquisas
 realizadas. Para isso, é necessário que os dados de todo o ecossistema de
@@ -94,7 +94,7 @@ publicação.
 | 335284 | Vanilda Cristina Júnior |
 | 554799 | Sergio Henrique Guaraldi |
 | 243350 | Sérgio Henrique Guaraldi |
-| 954057 | Sérgio Henrique Guaraldi |
+| 954057 | SH Guaraldi |
 | 954057 | Sérgio Henrique Guaraldi |
 | 954057 | Sérgio Henrique Guaraldi |
 | 954057 | Sérgio Henrique Guaraldi |
@@ -115,7 +115,17 @@ publicação.
 | 713897 | Yuri Vieira Faria |
 
 
+No caso dessa publicação, a autoria contém diversos problemas. Cada problema
+está listado e explicado em seguida. 
+
 ## Caso 1: Diferenças de grafia (tipográficas) 
+
+Esse caso acontece quando há diferença na codificação utilizada ou na grafia dos
+nomes. São exemplos desses erros a presença/ausência de acentuação no mesmo
+caractere em registros diferentes, uso de acentuação diferente para representar
+o mesmo item (apóstrofo, crase ou acento agudo), presenca / ausencia de cedilha
+ou acentuação, dentre vários outros. Abaixo são dois exemplos de registros
+diferentes para o mesmo autor. 
 
 | ID     |                      |
 |--------|----------------------|
@@ -125,34 +135,107 @@ publicação.
 | 554799 | S**e**rgio Henrique Guaraldi |
 | 243350 | S**é**rgio Henrique Guaraldi |
 
+A solução para ambos os registros acima deve ser a unificação dos registros,
+garantindo que estejam corretamente acentuados e com o uso do caractere adequado
+(apostrofo) para a palavra composta. Desse modo, a solução seria a alteração dos
+nomes para os seguintes registros (as alterações estão destacadas em negrito): 
+
+| ID     |                      |
+|--------|----------------------|
+| 31299  | **Mônica Hirata Sant'anna** |
+| 433095 | **Mônica Hirata Sant'anna** |
+|--------|----------------------|
+| 554799 |   Sérgio Henrique Guaraldi   |
+| 243350 | **Sérgio Henrique Guaraldi** |
+
 
 ## Caso 2: Sobrenome + Iniciais dos nomes
+
+Nesse caso a ocorrência do nome completo e de sua versão abreviada (com ou sem
+pontos nas iniciais) devem ser consideradas iguais e unificadas para a versão
+completa. Os dois casos apresentados abaixo mostram os nomes completos de
+autores e suas versões simplificadas, com e sem a ocorrência de pontos nas
+iniciais. 
 
 | ID     |                      |
 |--------|----------------------|
 | 28372  | Ana de Mattos Seabra |
-| 582585 | Seabra A. M. |
+| 582585 | Seabra A M |
 |--------|----------------------|
 | 28371  | Cassius de Souza |
 | 746936 | Souza C. |
 
-## Caso 3: Particulas *de* e uso de ponto nas abreviações opcionais
+Nesse caso, a deduplicação dos nomes deve ser capaz de identificar a
+equivalência entre as versões abreviadas e completas dos nomes e unificá-las
+considerando a versão completa. Nesses casos, os registros ficariam (as
+alterações estão destacadas em negrito): 
+
+| ID     |                      |
+|--------|----------------------|
+| 28372  |   Ana de Mattos Seabra   |
+| 582585 | **Ana de Mattos Seabra** |
+|--------|----------------------|
+| 28371  |   Cassius de Souza   |
+| 746936 | **Cassius de Souza** |
+
+
+## Caso 3: Partículas *de* e uso de ponto nas abreviações opcionais
+
+É comum que o uso das partículas _de_ sejam omitidas em algumas bases. O uso de
+ponto nas abreviações dos nomes/sobrenome também é variável, considerado como
+elemento opcional. Os casos abaixo mostram registros que ocultam a partícula
+_de_ e o ponto após a abreviação. 
 
 | ID     |                      |
 |--------|----------------------|
 | 746937 | Luiz de Oliveira de Souza |
 | 608296 | Luiz Oliveira Souza |
-| 549242 | Souza, Luiz de O   |
 | 549242 | Luiz de O. de Souza |
 
+Todos esses casos devem ser considerados equivalentes e a forma completa (com o
+uso da partícula _de_) deve ser considerada para a deduplicação. Nesse caso, os
+registros ficariam da seguinte maneira (alterações destacadas em negrito): 
+
+| ID     |                      |
+|--------|----------------------|
+| 746937 | Luiz de Oliveira de Souza |
+| 608296 | **Luiz de Oliveira de Souza** |
+| 549242 | **Luiz de Oliveira de Souza** |
+
+
+
 ## Caso 4: Iniciais dos nomes agrupadas + sobrenome
+
+Há casos em que as iniciais do nome e dos primeiros sobrenomes são agrupadas
+restando por extenso apenas o último nome. Os registros apresentados abaixo
+mostram ocorreências desse tipo de duplicação de nomes. 
 
 | ID     |                      |
 |--------|----------------------|
 | 763027 | Vanilda Cristina Junior |
 | 763027 | VC Junior |
+| 243350 | Sérgio Henrique Guaraldi |
+| 954057 | SH Guaraldi |
+
+Em ambos os casos, a versão completa do nome deve ser preferida em relação à
+versão com abreviações. Nesses casos, a deduplicação deverá resultar nos
+seguintes registros (alterações destacadas em negrito): 
+
+| ID     |                      |
+|--------|----------------------|
+| 763027 | Vanilda Cristina Junior |
+| 763027 | **Vanilda Cristina Junior** |
+| 243350 | Sérgio Henrique Guaraldi |
+| 954057 | **Sérgio Henrique Guaraldi** |
+
 
 ## Caso 5: IDs diferentes para o mesmo autor.
+
+Por fim, devido às diversas fontes de dados, os registros de publicação e
+autorias ficam duplicados, sendo um registro para cada fonte. Nesses casos,
+todos os registros deverão ser mapeados para o mesmo id, sendo o id de menor
+valor eleito para ser utilizado na deduplicação. Os seguintes registros abaixo
+são de um mesmo autor em uma mesma publicação. 
 
 | ID     |                      |
 |--------|----------------------|
@@ -161,6 +244,18 @@ publicação.
 | 549243 | Raphael Gonçalves Viana |
 | 608297 | Raphael Gonçalves Viana |
 | 746938 | Raphael Gonçalves Viana |
+
+Nesse caso, todos os registros deverão ser mapeados para o ID 31298, conforme
+demonstra o resultado abaixo (alterações destacadas em negrito): 
+
+| ID     |                      |
+|--------|----------------------|
+| 31298  | Raphael Goncalves Viana |
+| **31298**  | Raphael Gonçalves Viana |
+| **31298**  | Raphael Gonçalves Viana |
+| **31298**  | Raphael Gonçalves Viana |
+| **31298**  | Raphael Gonçalves Viana |
+
 
 # Enunciado do Trabalho Prático 1
 

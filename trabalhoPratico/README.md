@@ -259,8 +259,48 @@ demonstra o resultado abaixo (alterações destacadas em negrito):
 
 # Enunciado do Trabalho Prático 1
 
+O trabalho prático 1 consiste no desenvolvimento das unidades para cada um dos
+casos apresentados acima, utilizando a técnica de _Test-Driven Development_
+(TDD). Os grupos deverão desenvolver os trabalhos em alguma **linguagem
+orientada a objetos**, à escolha do grupo, **desde que exista um framework de
+testes unitários para essa linguagem**. O framework de testes unitários deverá
+ter suporte a suítes de testes, categorias de testes, testes parametrizados e
+testes de exceção. 
+
+Todos os cinco casos acima deverão estar contemplados no trabalho dos grupos.
+Para cada caso deve haver, no mínimo um teste para a unidade correspondente.
+Caso a unidade desenvolvida seja testada por mais de um teste, todos os testes
+deverão estar agrupados em uma suite correspondente ao item que foi
+desenvolvido. 
+
+Os grupos podem considerar os dados de cada caso como valores para os testes que
+vão ser desenvolvidos. Recomenda-se, para efeitos de reforçar os testes, que os
+valores de cada item sejam complementados com alterações nos dados apresentados
+na tabela presente na seção `Exemplo de curadoria de dados`. 
+
+A raiz do repositório do trabalho do grupo deverá conter um arquivo `README.md`
+contendo os seguintes itens: 
+- Nome e matrícula de todos os integrantes do grupo
+- Linguagem Orientada por Objetos que foi utilizada
+- Framework de testes unitários que foi utilizado, indicando claramente a versão
+- **Instruções de execução dos testes no framework utilizado**
+
 
 # Critérios de correção:
+
+- Deve haver, no mínimo, um teste para cada caso de deduplicação de nomes. 
+- Deve haver, no mínimo, dois conjuntos de dados de teste para cada caso de
+  deduplicação. 
+- Cada teste, para ser avaliado, deve necessariamente passar (barra verde). Nos
+  casos em que os testes não passam (barra vermelha) a unidade será considerada
+como não implementada. 
+- Nos casos em que os testes passam, a unidade correspondente será avaliada
+  quando à efetividade de sua implementação. Unidades _hard-coded_ ou apenas
+falsificadas serão consideradas como não implementadas. 
+- Todos os testes deverão ser executados em conjunto, independentemente do
+  escalonamento dos testes (não deve haver condição de corrida). 
+
+
 
 # Data de entrega: 
 

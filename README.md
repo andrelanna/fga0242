@@ -29,7 +29,7 @@ FGA - Faculdade do Gama
 | 18	       | 13/05/2026	| Refatoração: grupos 7 e 8
 | 19	       | 18/05/2026	| Exercícios de Refatoração.
 | 20	       | 20/05/2026	| ~~Avaliação 2 - Refatoração~~
-| 21	       | 25/05/2026	| Programação defensiva: conceitualização e importância, introdução às técnicas de Prog. Defens.
+| 21	       | 25/05/2026	| [Programação defensiva: conceitualização e importância, introdução às técnicas de Prog. Defens.](/aula21)
 | 22	       | 27/05/2026	| ~~Programação defensiva: programação por assertivas, Design by Contracts, pré-condições, pós-condições, invariantes.~~ :warning: **Avaliação 2 - Refatoração**
 | 23	       | 01/06/2026	| Programação defensiva: exercícios
 | 24	       | 03/06/2026	| Tratamento e depuração de código: erros vs. exceções, técnicas de prevenções de erros inevitáveis

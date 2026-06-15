@@ -323,11 +323,11 @@ pertence pelo número de matrícula.
 
 | Grupo # | Matrículas dos componentes                            | Extrair Método                           | Substituir Método por Objeto Método                  | Extrair classe    | 
 |:-------:|:------------------------------------------------------|:-----------------------------------------|:-----------------------------------------------------|:---------------   |
-|    1    | 180132466, 202046102, 211062240, 222037700, 231026975 |                                          |                                                      |                   |
-|    2    | 190030801, 200022199, 221029230                       |                                          |                                                      |                   |
-|    3    | 211031682, 211061860, 211061897, 221022696            |                                          |                                                      |                   |
-|    4    | 200049020, 211030710, 211030765, 211031708            |                                          |                                                      |                   |
-|    5    | 211061672, 211062016, 211062769, 211063185            |                                          |                                                      |                   |
+|    1    | 180132466, 202046102, 211062240, 222037700, 231026975 | Deduplicador::deduplicar()               | NormalizadorNome::tokens()                           | NormalizadorNome  |
+|    2    | 190030801, 200022199, 221029230                       | CuradorDeDados::corresponde_caso2()      | DeduplicadorNomes::deduplicar_caso4()                | CuradorDeDados    |
+|    3    | 211031682, 211061860, 211061897, 221022696            | Deduplicador::sao_equivalentes_tipografia| Deduplicador::unificar_ids()                         | Deduplicador      |
+|    4    | 200049020, 211030710, 211030765, 211031708            | Case1Rule::apply()                       | Case2Rule::apply()                                   | Case3Rule         |
+|    5    | 211061672, 211062016, 211062769, 211063185            | ResolvedorTipografico::resolver          | ResolvedorParticulas::resolver()                     | ResolverdorIDs    |
 |    6    | 200019520, 202017521, 202045965, 211030729, 211030747 |                                          |                                                      |                   |
 |    7    | 190102683, 211030756, 231026886                       |                                          |                                                      |                   |
 |    8    | 200038028, 222026377, 222026715                       |                                          |                                                      |                   |

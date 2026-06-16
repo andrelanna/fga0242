@@ -365,4 +365,4 @@ posteriores serão desconsiderados.
 - Os testes continuam efetivos e passando? 
 
 ## Data-limite para entrega: 
-- xx/xx/xxxx, xx:xxhs. 
+- 29/06/2026, 23:59hs. 

@@ -338,10 +338,10 @@ pertence pelo número de matrícula.
 |   13    | 180100271, 202016266, 211031870, 211041240, 222024283 | NormalizadorIniciais::chaveComparacao()            | NormalizadorIniciaisAgrupadas::chaveComparacao()         | NormalizadorParticulas |
 |   14    | 221031130                                             | Caso2SobrenomeIniciais::extract\_name\_parts()     | Caso3Particulas::cluster\_records()                      | Caso4IniciaisAgrupadas |
 |   15    | 211030630                                             | Deduplicador::deduplicar()                         | Deduplicador::saoIguais()                                | Deduplicador           |
-|   16    | 202046229, 211039573, 211061805                       |                                                    |                                                          |                        |
-|   17    | 221031354, 231011426, 231028989, 231035769            |                                                    |                                                          |                        |
-|   18    | 202023627, 221008481, 231011785, 231026474, 231037709 |                                                    |                                                          |                        |
-|   19    | 221008285, 221021868, 222006801                       |                                                    |                                                          |                        |
+|   16    | 202046229, 211039573, 211061805                       | Curador::assinatura()                              | Curador::pontuar_nome()                                  | Curador                |
+|   17    | 221031354, 231011426, 231028989, 231035769            | \_classificar()                                    | equivalentes()                                           | normalizacao (:warning: Não usaram classes. |
+|   18    | 202023627, 221008481, 231011785, 231026474, 231037709 | AuthorCurator::\_curate\_by\_identity()            | AuthorCurator::curation\_punctuation()                   | AuthorCurator          |
+|   19    | 221008285, 221021868, 222006801                       | Caso2SobrenomeIniciais::\_assinatura()             | Caso3Particulas::sao\_equivalentes()                     | Caso4IniciaisAgrupadas |
 
 ## Formato de entrega: 
 

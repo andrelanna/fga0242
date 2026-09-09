@@ -1,0 +1,46 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'agrocoop 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'agrocoop 1.0-SNAPSHOT API'
+fga0242
+fga0242.service
+fga0242.model
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/src/main/java = 1788978416185
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/package-search-index.js = 1788979409276
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/overview-tree.html = 1788979409265
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/index.html = 1788979409266
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/allpackages-index.html = 1788979409275
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/allclasses-index.html = 1788979409274
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/tag-search-index.js = 1788979409276
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/type-search-index.js = 1788979409276
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/module-search-index.js = 1788979409275
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/element-list = 1788979409225
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/serialized-form.html = 1788979409242
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/overview-summary.html = 1788979409284
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/help-doc.html = 1788979409285
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/index-all.html = 1788979409282
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/search.html = 1788979409283
+/home/alpml/workspace/unb/fcte/fga0242/ativsExtraClasse/testesUnitarios/agrocoop/target/reports/apidocs/member-search-index.js = 1788979409276

@@ -23,7 +23,7 @@ FGA - Faculdade do Gama
 | 12	       | 16/09/2026	| [Refatoração: grupos 1 e 2](/aula15)
 | 13	       | 21/09/2026	| Semana universitária
 | 14	       | 23/09/2026	| Semana universitária
-| 15	       | 28/09/2026	| Refatoração: grupos 3 e 4
+| 15	       | 28/09/2026	| Refatoração: grupos 3 e 4 -- [Atividade extraclasse](/ativsExtraClasse/refactGrupos1e2)
 | 16	       | 30/09/2026	| Refatoração: grupos 5 e 6
 | 17	       | 05/10/2026	| :warning: Avaliação 1 -- TDD ~~Refatoração: grupos 7 e 8~~
 | 18	       | 07/10/2026	| Refatoração: grupos 7 e 8

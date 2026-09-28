@@ -9,44 +9,44 @@ FGA - Faculdade do Gama
 
 | **Aula no.** |  **Data**  | Descrição                                                                                                                         |
 |-------------:|:----------:|-------------------------------------------------------------------------------------------------------------------------|
-|  1	       | 16/03/2026	| [Apresentação do plano de ensino](/aula1) / Revisão de OO.
-|  2	       | 18/03/2026	| [Revisão de OO](/aula2) / Design Patterns.
-|  3	       | 23/03/2026	| Revisão de Design Patterns.
-|  4	       | 25/03/2026	| [Exercícios OO / Design Patterns](/aula4).
-|  5	       | 30/03/2026	| [Testes Unitários: asserções, testes, casos de testes, independência de testes, testes de exceção.](/aula5)
-|  6	       | 01/04/2026	| [Test Runners: suite de testes, rotulação de testes, testes parametrizados.](/aula6)
-|  7	       | 06/04/2026	| [Exercícios de testes unitários](/aula7)
-|  8	       | 08/04/2026	| [TDD: conceitos, padrões barra verde e vermelha](/aula8)
-|  9	       | 13/04/2026	| [Exercícios de TDD](/aula9), [Estudo dirigido avaliação 1](/aula9/estudoDirigido)
-| 10	       | 15/04/2026	| (Paralização de professores) [~~Avaliação 1 - TDD~~](/aula10)
-| 11	       | 20/04/2026	| Facultativo [~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~](/aula11)
-| 12	       | 22/04/2026	| [Avaliação 1 - TDD](/aula10) [~~Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.~~](/aula11)
-| 13	       | 27/04/2026	| Atividade extra-classe - TDD
-| 14	       | 29/04/2026	| [Atividade extra-classe - Refatoração](/ativsExtraClasse/refactoring)
-| 15	       | 04/05/2026	| [Refatoração: grupos 1 e 2](/aula15)
-| 16	       | 06/05/2026	| Refatoração: grupos 3 e 4
-| 17	       | 11/05/2026	| Refatoração: grupos 5 e 6
-| 18	       | 13/05/2026	| Refatoração: grupos 7 e 8
-| 19	       | 18/05/2026	| Exercícios de Refatoração.
-| 20	       | 20/05/2026	| ~~Avaliação 2 - Refatoração~~
-| 21	       | 25/05/2026	| [Programação defensiva: conceitualização e importância, introdução às técnicas de Prog. Defens.](/aula21)
-| 22	       | 27/05/2026	| ~~Programação defensiva: programação por assertivas, Design by Contracts, pré-condições, pós-condições, invariantes.~~ :warning: **Avaliação 2 - Refatoração**
-| 23	       | 01/06/2026	| Programação defensiva: exercícios
-| 24	       | 03/06/2026	| Tratamento e depuração de código: erros vs. exceções, técnicas de prevenções de erros inevitáveis
-| 25	       | 08/06/2026	| Tratamento e depuração de código: técnicas para teste de código, técnicas de depuração de código.
-| 26	       | 10/06/2026	| Tratamento e depuração de código: exercícios.
-| 27	       | 15/06/2026	| Avaliação 3 - Programação defensiva / tratamento e depuração de código. 
-| 28	       | 17/06/2026	| Componentes e frameworks: conceitos e definições, frameworks caixa branca, caixa preta e caixa cinza
-| 29	       | 22/06/2026	| Componentes e frameworks: frameworks de domínio horizontal e de domínio vertical
-| 30	       | 24/06/2026	| Componentes e frameworks: implementação de frameworks
-| 31	       | 29/06/2026	| Componentes e frameworks: exercícios
-| 32	       | 01/07/2026	| Entrega de trabalho - Componentes e frameworks
-| 33	       | 06/07/2026	| Aula extra / Revisão de menção
-| 34	       | 08/07/2026	| Aula extra / Revisão de menção
-| 35	       | 13/07/2026	| Aula extra / Revisão de menção
-| 36	       | 15/07/2026	| Aula extra / Revisão de menção
-
-
+|  1	       | 10/08/2026	| [Apresentação do plano de ensino](/aula1) / Revisão de OO.
+|  2	       | 12/08/2026	| [Revisão de OO](/aula2) / Design Patterns.
+|  3	       | 17/08/2026	| Revisão de Design Patterns.
+|  4	       | 19/08/2026	| [Exercícios OO / Design Patterns](/aula4).
+|  5	       | 24/08/2026	| [Testes Unitários: asserções, testes, casos de testes, independência de testes, testes de exceção.](/aula5)
+|  6	       | 26/08/2026	| [Test Runners: suite de testes, rotulação de testes, testes parametrizados.](/aula6)
+|  7	       | 31/08/2026	| [Exercícios de testes unitários](/aula7)
+|  8	       | 02/09/2026	| [TDD: conceitos, padrões barra verde e vermelha](/aula8)
+|  9	       | 07/09/2026	| [Exercícios de TDD](/aula9), [Estudo dirigido avaliação 1](/aula9/estudoDirigido)
+| 10	       | 09/09/2026	| [Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.](/aula11)
+| 11	       | 14/09/2026	| [Avaliação 1 - TDD](/aula10) [Refatoração: introdução à refatoração, quando refatorar, quando não refatorar, maus cheiros de código.](/aula11)
+| 12	       | 16/09/2026	| [Refatoração: grupos 1 e 2](/aula15)
+| 13	       | 21/09/2026	| Semana universitária
+| 14	       | 23/09/2026	| Semana universitária
+| 15	       | 28/09/2026	| Refatoração: grupos 3 e 4
+| 16	       | 30/09/2026	| Refatoração: grupos 5 e 6
+| 17	       | 05/10/2026	| :warning: Avaliação 1 -- TDD ~~Refatoração: grupos 7 e 8~~
+| 18	       | 07/10/2026	| Refatoração: grupos 7 e 8
+| 19	       | 12/10/2026	| Exercícios de Refatoração.
+| 20	       | 14/10/2026	| :warning: Avaliação 2 - Refatoração
+| 21	       | 19/10/2026	| [Programação defensiva: conceitualização e importância, introdução às técnicas de Prog. Defens.](/aula21)
+| 22	       | 21/10/2026	| Programação defensiva: programação por assertivas, Design by Contracts, pré-condições, pós-condições, invariantes.
+| 23	       | 26/10/2026	| Programação defensiva: exercícios
+| 24	       | 28/10/2026	| Tratamento e depuração de código: erros vs. exceções, técnicas de prevenções de erros inevitáveis
+| 25	       | 02/11/2026	| Tratamento e depuração de código: técnicas para teste de código, técnicas de depuração de código.
+| 26	       | 04/11/2026	| Tratamento e depuração de código: exercícios.
+| 27	       | 09/11/2026	| :warning: Avaliação 3 - Programação defensiva / tratamento e depuração de código. 
+| 28	       | 11/11/2026	| Componentes e frameworks: conceitos e definições, frameworks caixa branca, caixa preta e caixa cinza
+| 29	       | 16/11/2026	| Componentes e frameworks: frameworks de domínio horizontal e de domínio vertical
+| 30	       | 18/11/2026	| Componentes e frameworks: implementação de frameworks
+| 31	       | 23/11/2026	| Componentes e frameworks: exercícios
+| 32	       | 25/11/2026	| Entrega de trabalho - Componentes e frameworks
+| 33	       | 30/11/2026	| Aula extra / Revisão de menção
+| 34	       | 02/12/2026	| Aula extra / Revisão de menção
+| 35	       | 07/12/2026	| Aula extra / Revisão de menção
+| 36	       | 09/12/2026	| Aula extra / Revisão de menção
+                              
+                              
 --- 
 **Frequência:**  
 * Haverá lista de chamadas em todas as aulas.  

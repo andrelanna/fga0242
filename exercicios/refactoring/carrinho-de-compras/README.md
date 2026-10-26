@@ -39,18 +39,15 @@ coluna para as operações que não puderam ser aplicadas no código).
 
 | Refatoração | Mau-cheiro | Local onde pode ser aplicada no projeto |
 |:-----------:|:----------:|:---------------------------------------:|
-|`Extrair método`                      |            |                |
-|`Extrair variável`                    |            |                |
-|`Dividir variável temporária`         |            |                |
-|`Mover método`                        |            |                |
-|`Mover campo (atributo)`              |            |                |
-|`Extrair Classe`                      |            |                |
-|`Substituir método por objeto-método`.|            |                |
-
-
-
-
-
-
-
+|`Extrair método`                          |  |Fatura::fecharPedido() |
+|`Extrair variável`                        |  |Fatura::prazoEntrega(), Fatura::prazoTroca(), Fatura::vencimentoBoleto() |
+|`Dividir variável temporária`             |  |                     |
+|`Mover método`                            |  |                     |
+|`Mover campo (atributo)`                  |  |                     |
+|`Extrair Classe`                          |  |                     |
+|`Substituir método por objeto-método`.    |  |Fatura::fecharPedido() |
+|`Encapsular campo`                        |  |Não se aplica        |
+|`Substituir tipo código por classes`      |  |Remover enum TipoCliente |
+|`Consolidar expressão condicional`        |  |Fatura::fecharPedido() |
+|`Substituir condicional por polimorfismo` |  |Carrinho::Carrinho() |
 

@@ -1,0 +1,7 @@
+Baixe estes três arquivos e coloque nesta pasta (libs/). São as ÚNICAS bibliotecas permitidas.
+
+  h2-2.3.232.jar          https://repo1.maven.org/maven2/com/h2database/h2/2.3.232/h2-2.3.232.jar
+  junit-4.13.2.jar        https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
+  hamcrest-core-1.3.jar   https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+
+Não faça commit dos .jar (já estão no .gitignore).

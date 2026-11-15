@@ -14,9 +14,12 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 - Programação assertiva
 - Uso de exceções
 - Uso de recursos
+- _Fail fast_
+- Contratos
 
 **Material didático**
 - [Slides](https://docs.google.com/presentation/d/14hBakH53Qge-WDn1U84rDebPkn7V3TkM/edit?usp=sharing&ouid=112746484255766107555&rtpof=true&sd=true)
+- [Slides (novos)](https://docs.google.com/presentation/d/1qw20QLhzCtaqymiqv3FODyKLGZOYuBFv/edit?usp=sharing&ouid=112746484255766107555&rtpof=true&sd=true)
 
 
 ### Exercício de Fixação

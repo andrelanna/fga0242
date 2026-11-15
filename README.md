@@ -29,12 +29,12 @@ FGA - Faculdade do Gama
 | 18	       | 07/10/2026	| Refatoração: grupos 7 e 8
 | 19	       | 12/10/2026	| Exercícios de Refatoração.
 | 20	       | 14/10/2026	| :warning: Avaliação 2 - Refatoração
-| 21	       | 19/10/2026	| [Programação defensiva: conceitualização e importância, introdução às técnicas de Prog. Defens.](/aula21)
-| 22	       | 21/10/2026	| Programação defensiva: programação por assertivas, Design by Contracts, pré-condições, pós-condições, invariantes.
+| 21	       | 19/10/2026	| [Programação defensiva: conceitualização e importância, introdução às técnicas de Prog. Defens., programação por assertivas, Design by Contracts, pré-condições, pós-condições, invariantes.](/aula21)
+| 22	       | 21/10/2026	| [Programação defensiva: Asserções e exceções](/aula22)
 | 23	       | 26/10/2026	| Programação defensiva: exercícios
-| 24	       | 28/10/2026	| Tratamento e depuração de código: erros vs. exceções, técnicas de prevenções de erros inevitáveis
-| 25	       | 02/11/2026	| Tratamento e depuração de código: técnicas para teste de código, técnicas de depuração de código.
-| 26	       | 04/11/2026	| Tratamento e depuração de código: exercícios.
+| 24	       | 28/10/2026	| [Programação defensiva: Nulos, cópias defensivas e tipos fortes](/aula24)
+| 25	       | 02/11/2026	| [Programação defensiva: Recursos, barricadas e segurança](/aula25)
+| 26	       | 04/11/2026	| [Programação defensiva: Comparação entres as técnicas](/aula26)
 | 27	       | 09/11/2026	| :warning: Avaliação 3 - Programação defensiva / tratamento e depuração de código. 
 | 28	       | 11/11/2026	| Componentes e frameworks: conceitos e definições, frameworks caixa branca, caixa preta e caixa cinza
 | 29	       | 16/11/2026	| Componentes e frameworks: frameworks de domínio horizontal e de domínio vertical

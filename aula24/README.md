@@ -5,15 +5,15 @@ FGA0242 - Técnicas de Programação para Plataformas Emergentes
 
 ---
 
-## Aula 24 - Componentes e Frameworks
+## Aula 24 - Programacao Defensiva
 
 **Tópicos da aula**
-- Frameworks de domínio horizontal
-- Frameworks de domínio vertical
-- Implementação de frameworks
+- Programação defensiva
+  - Nulos, 
+  - Cópias defensivas
+  - Tipos fortes
 
 **Slides da aula**
-* [Slides]()
-  :warning: (será atualizado em breve)
+* [Slides](https://docs.google.com/presentation/d/1CrtPN9fOQuUhmcr3vXQR9g5arPIjxH9S/edit?usp=sharing&ouid=112746484255766107555&rtpof=true&sd=true)
 
 **Exercicios de fixacao**
